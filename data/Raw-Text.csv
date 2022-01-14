@@ -1,0 +1,1208 @@
+Author,Section,Question,Answer
+Raw Text,2.0,ELIZA could carry on a limited conversation with a user by imitating the responses of what?,Rogerian psychotherapist
+Raw Text,2.0,What is the output of ELIZA?,"""What would it mean to you if you got X?"""
+Raw Text,2.0,What program doesn't need to know anything to mimic a Rogerian psychotherapist?,ELIZA
+Raw Text,2.0,When did Weizenbaum write about ELIZA?,1976
+Raw Text,2.0,What do modern conversational agents rely on?,more sophisticated understanding of the user's intent
+Raw Text,2.0,What kind of methods did ELIZA use?,simple pattern-based methods
+Raw Text,2.0,What is the most important tool for describing text patterns?,regular expression
+Raw Text,2.0,What can be used to specify strings we might want to extract from a document?,Regular expressions
+Raw Text,2.0,What is a set of tasks collectively called?,text normalization
+Raw Text,2.0,"What means converting text to a more convenient, standard form?",Normalizing
+Raw Text,2.0,What is the task of normalizing text?,tokenization
+Raw Text,2.0,English words are often separated from each other by what?,whitespace
+Raw Text,2.0,What are sometimes treated as large words despite the fact that they contain spaces?,New York and rock 'n' roll
+Raw Text,2.0,What is a hashtag that we'll need to tokenize for processing tweets?,#nlproc
+Raw Text,2.0,What language doesn't have spaces between words?,Japanese
+Raw Text,2.0,What is the task of determining that two words have the same root?,lemmatization
+Raw Text,2.0,What is the common lemma of the words sing?,sing
+Raw Text,2.0,"What is the common lemma of the words sang, sung, and sings?",sing
+Raw Text,2.0,What is essential for processing morphologically complex languages like Arabic?,Lemmatization
+Raw Text,2.0,What refers to a simpler version of lemmatization in which we mainly strip suffixes from the end of the word?,Stemming
+Raw Text,2.0,Text normalization breaks up a text into individual what?,sentences
+Raw Text,2.0,What will we need to do with words and other strings?,compare
+Raw Text,2.0,What metric measures how similar two strings are based on the number of edits?,edit distance
+Raw Text,2.0,What is an algorithm with applications throughout language processing?,Edit distance
+Raw Text,2.1.0,What language is used for specifying text search strings?,regular expression
+Raw Text,2.1.0,What are some of the tools that use the regular expression?,Unix tools grep or Emacs
+Raw Text,2.1.0,What is a regular expression?,algebraic notation
+Raw Text,2.1.0,Regular expressions are particularly useful for searching in texts when we have a pattern to search for and what to search through?,corpus of texts
+Raw Text,2.1.0,"What will search through the corpus, returning all texts that match the pattern?",A regular expression search function
+Raw Text,2.1.0,What types of corpus can a regular expression search function search through?,a single document or a collection
+Raw Text,2.1.0,What Unix command-line tool takes a regular expression and returns every line of the input document that matches the expression?,grep
+Raw Text,2.1.0,What can a regular expression search return if there are more than one match?,every match on a line
+Raw Text,2.1.0,What do we usually underline in the following examples?,the exact part of the pattern that matches the regular expression
+Raw Text,2.1.0,What are regular expressions delimited by?,slashes
+Raw Text,2.1.0,Regular expressions come in many what?,variants
+Raw Text,2.1.0,What will we be describing?,extended regular expressions
+Raw Text,2.1.0,What is a handy way to test out your regular expressions?,online regular expression tester
+Raw Text,2.1.1,What is the simplest kind of regular expression?,a sequence of simple characters
+Raw Text,2.1.1,"To search for woodchuck, we type what?",/woodchuck/
+Raw Text,2.1.1,What expression matches any string containing the substring Buttercup?,/Buttercup/
+Raw Text,2.1.1,What is an example of a sequence of characters in a regular expression?,/urgl/
+Raw Text,2.1.1,Regular expressions are what?,case sensitive
+Raw Text,2.1.1,What will the pattern /woodchucks/ not match?,the string Woodchucks
+Raw Text,2.1.1,What can be used to solve this problem?,square braces
+Raw Text,2.1.1,What specifies a disjunction of characters to match?,The string of characters inside the braces
+Raw Text,2.1.1,What shows that the pattern /[wW]/ matches patterns containing either w or W?,Fig. 2.2
+Raw Text,2.1.1,What does the regular expression /[1234567890]/ specify?,specifies any single digit
+Raw Text,2.1.1,What classes of characters are important building blocks in expressions?,digits or letters
+Raw Text,2.1.1,What can be used with the dash (-) to specify any one character in a range?,brackets
+Raw Text,2.1.1,What does the pattern /[2-5]/ specify?,"any one of the characters 2, 3, 4, or 5"
+Raw Text,2.1.1,The pattern /[b-g]/ specifies one of which characters?,"b, c, d, e, f, or g"
+Raw Text,2.1.1,What can be used to specify what a single character cannot be?,square braces
+Raw Text,2.1.1,What can be used to specify what a single character cannot be?,square braces
+Raw Text,2.1.1,What is the first symbol after the open square brace?,caret
+Raw Text,2.1.1,What is the first symbol after the open square brace?,a
+Raw Text,2.1.1,What is the first symbol after the open square brace?,caret
+Raw Text,2.1.1,What does the caret stand for if it occurs anywhere else?,a caret
+Raw Text,2.1.1,What is an optional s in woodchuck and woodchucks?,optional elements
+Raw Text,2.1.1,What do square brackets not allow us to say?,s or nothing
+Raw Text,2.1.1,What does the question mark /?/ mean?,the preceding character or nothing
+Raw Text,2.1.1,"What signifies ""zero or one instances of the previous character""?",question mark
+Raw Text,2.1.1,What does the question mark mean?,zero or one instances of the previous character
+Raw Text,2.1.1,What is the question mark a way of specifying?,how many of something that we want
+Raw Text,2.1.1,What does the language of certain sheep look like?,baa!
+Raw Text,2.1.1,What does the language of certain sheep look like?,baaaa!
+Raw Text,2.1.1,What does the language of certain sheep look like?,baa! baaa! baaaa!
+Raw Text,2.1.1,What is the name of the string in the language of certain sheep?,b
+Raw Text,2.1.1,"The set of operators that allows us to say things like ""some number of as"" are based on the asterisk or *, commonly called what",Kleene *
+Raw Text,2.1.1,What does the Kleene star mean?,zero or more occurrences of the immediately previous character or regular expression
+Raw Text,2.1.1,"What means ""any string of zero or more as""?",/a*/
+Raw Text,2.1.1,What will /a*/ match?,match a or aaaaa
+Raw Text,2.1.1,What is the regular expression for matching one or more a's?,/aa*/
+Raw Text,2.1.1,What can also be repeated?,More complex patterns
+Raw Text,2.1.1,What does /ab*/ mean?,zero or more right square braces
+Raw Text,2.1.1,What will this match?,strings like aaaa or ababab or aabb
+Raw Text,2.1.1,What is the regular expression for a single digit?,/[0-9]/
+Raw Text,2.1.1,What is an integer?,a string of digits
+Raw Text,2.1.1,What is the regular expression for a single digit?,/[0-9]*/
+Raw Text,2.1.1,What is it like to have to write the regular expression for digits twice?,annoying
+Raw Text,2.1.1,"What means ""one or more occurrences of the immediately preceding character or regular expression""?",Kleene +
+Raw Text,2.1.1,The expression /[0-9]+/ is the normal way to specify what?,a sequence of digits
+Raw Text,2.1.1,What are the two ways to specify the sheep language?,/baaa*!/ or /baa+!/
+Raw Text,2.1.1,What is a wildcard expression that matches any single character except a carriage return?,the period
+Raw Text,2.1.1,The wildcard is often used together with the Kleene star to mean what?,any string of characters
+Raw Text,2.1.1,The wildcard is often used together with the Kleene star to mean what?,any string of characters
+Raw Text,2.1.1,What is an example of a word that appears twice in a line?,aardvark
+Raw Text,2.1.1,What is the regular expression used to specify this?,/aardvark
+Raw Text,2.1.1,What are special characters that anchor regular expressions to particular places in a string?,Anchors
+Raw Text,2.1.1,What are special characters that anchor regular expressions to particular places in a string?,Anchors
+Raw Text,2.1.1,The caret  matches what?,the start of a line
+Raw Text,2.1.1,What are the three uses of the caret?,"to match the start of a line, to indicate a negation inside of square brackets, and just to mean a caret"
+Raw Text,2.1.1,What allows grep or Python to know which function a given caret is supposed to have?,contexts
+Raw Text,2.1.1,What matches the end of a line?,The dollar sign $
+Raw Text,2.1.1,What does /.$/ match a line that contains only the phrase The dog?,The dog
+Raw Text,2.1.1,"What do we have to use in order to use the. to mean ""period"" and not the wildcard?",backslash
+Raw Text,2.1.1,What do we want the backslash to mean?,period
+Raw Text,2.1.1,What does /btheb/ match?,the but not the word other
+Raw Text,2.1.1,"What is a ""word"" for the purposes of a regular expression defined as?","any sequence of digits, underscores, or letters"
+Raw Text,2.1.1,What string does /b99b/ match?,99 in
+Raw Text,2.1.1,What does /b99b/ match?,99 in $99
+Raw Text,2.1.2,What are we particularly interested in when searching for texts about pets?,cats and dogs
+Raw Text,2.1.2,What would we want to search for in a text about pets?,string cat or the string dog
+Raw Text,2.1.2,"What can't we use to search for ""cat or dog""?",square brackets
+Raw Text,2.1.2,What is the pipe symbol?,disjunction operator
+Raw Text,2.1.2,What pattern matches either the string cat or the string dog?,/cat|dog/
+Raw Text,2.1.2,What operator does the pattern /cat|dog/ match in the midst of a larger sequence?,disjunction operator
+Raw Text,2.1.2,What do I want to search for for my cousin David?,pet fish
+Raw Text,2.1.2,What can I specify when searching for information about pet fish for my cousin David?,guppy and guppies
+Raw Text,2.1.2,What would match only the strings guppy and ies?,guppy|ies
+Raw Text,2.1.2,What takes precedence over the disjunction operator?,sequences like guppy
+Raw Text,2.1.2,What do we need to use to make the disjunction operator apply only to a specific pattern?,parenthesis operators
+Raw Text,2.1.2,Enclosing a pattern in parentheses makes it act like what for the purposes of neighboring operators?,single character
+Raw Text,2.1.2,What is the pattern /gupp?,y
+Raw Text,2.1.2,What operator applies by default only to a single character?,Kleene*
+Raw Text,2.1.2,What do we want to match with the Kleene* operator?,repeated instances of a string
+Raw Text,2.1.2,What is the name of the column labels on a line that we want to match repeated instances of a string?,Column 1 Column 2 Column 3
+Raw Text,2.1.2,What will the expression /Column [0-9] */ match?,a single column followed by any number of spaces
+Raw Text,2.1.2,The star here applies only to what?,the space that precedes it
+Raw Text,2.1.2,What expression could be written in parentheses to match the word Column?,/ (Column [0-9]+ *)*/
+Raw Text,2.1.2,What formalizes the idea that one operator may take precedence over another?,operator precedence hierarchy
+Raw Text,2.1.2,What is the order of RE operator precedence?,highest precedence to lowest precedence
+Raw Text,2.1.2,What has a higher precedence than sequences?,counters
+Raw Text,2.1.2,What has a higher precedence than disjunction?,sequences
+Raw Text,2.1.2,What can be ambiguous in another way?,Patterns
+Raw Text,2.1.2,"What expression could match nothing, or just the first letter o, on, one, or once?",/ [a-z]*/
+Raw Text,2.1.2,What does /[a-z]*/ match?,zero or more letters
+Raw Text,2.1.2,What do regular expressions say patterns are?,patterns are greedy
+Raw Text,2.1.2,What qualifier is used to enforce non-greedy matching?,?
+Raw Text,2.1.2,What is another way to enforce non-greedy matching?,qualifier
+Raw Text,2.1.2,What is the operator *??,Kleene star
+Raw Text,2.1.2,What is the operator *??,Kleene star
+Raw Text,2.1.2,What is the operator +??,Kleene plus
+Raw Text,2.1.2,What is the operator +??,Kleene plus
+Raw Text,2.1.3,What English article would we want to find cases of?,the
+Raw Text,2.1.3,What is a simple pattern for a RE to find cases of the English article the?,/the/
+Raw Text,2.1.3,What is a problem with the /the/ pattern?,miss the word
+Raw Text,2.1.3,What is the pattern that will miss the word when it begins a sentence?,/[tT]he/
+Raw Text,2.1.3,What will we still return texts with?,embedded in other words
+Raw Text,2.1.3,What does /b/ not treat as word boundaries?,underscores and numbers
+Raw Text,2.1.3,What do we want?,instances in which there are no alphabetic letters on either side of the the
+Raw Text,2.1.3,What is the problem with the pattern?,it won't find the word the when it begins a line
+Raw Text,2.1.3,What implies that there must be some single (although non-alphabetic) character before the the?,the regular expression
+Raw Text,2.1.3,What are two things we can avoid by specifying that before the the we require?,beginning-of-line or a non-alphabetic character
+Raw Text,2.1.3,What are strings that we incorrectly matched like other or there?,false positives
+Raw Text,2.1.3,What two kinds of errors come up again and again in implementing?,speech and language processing systems
+Raw Text,2.1.3,What is one antagonistic effort to reduce the overall error rate for an application?,increasing precision
+Raw Text,2.1.3,When will we come back to precision and recall with more precise definitions?,Chapter 4
+Raw Text,2.1.4,What shows some aliases for common ranges?,Figure 2.8
+Raw Text,2.1.4,Where can we use explicit numbers as counters?,curly brackets
+Raw Text,2.1.4,What will match a followed by 24 dots followed by z (but not a followed by 23 or 25 dots followed by z)?,/a
+Raw Text,2.1.4,What can also be specified?,A range of numbers
+Raw Text,2.1.4,"/n,m/ specifies from what occurrences of the previous char or expression?",n to m
+Raw Text,2.1.4,What are summarized in Fig. 2.9?,REs
+Raw Text,2.1.4,Where are REs for counting summarized?,2.9
+Raw Text,2.1.4,What are referred to by special notation based on the backslash?,special characters
+Raw Text,2.1.4,Special characters are referred to by special notation based on what?,backslash
+Raw Text,2.1.4,"To refer to characters that are special themselves, precede them with what?",a backslash
+Raw Text,2.1.5,Let's try out a more significant example of the power of what?,REs
+Raw Text,2.1.5,What do we want to help a user buy a computer on the Web?,build an application
+Raw Text,2.1.5,What would a user want to buy a computer for?,$1000
+Raw Text,2.1.5,What is the price of a Mac?,$999.99
+Raw Text,2.1.5,What will we work out in the rest of this section?,simple regular expressions
+Raw Text,2.1.5,What do we need to complete our regular expression for?,prices
+Raw Text,2.1.5,What is the regular expression for a dollar sign followed by a string of digits?,/$[0-9]+/
+Raw Text,2.1.5,What function does the $ character have a different function from?,end-of-line function
+Raw Text,2.1.5,Most regular expression parsers are smart enough to realize that $ here doesn't mean what?,end-of-line
+Raw Text,2.1.5,Who might figure out the function of $ from the context?,regex parsers
+Raw Text,2.1.5,What do we now need to deal with?,fractions of dollars
+Raw Text,2.1.5,What will we add after the decimal point and two digits?,a decimal point and two digits
+Raw Text,2.1.5,What is the only price that this pattern allows?,$199.99
+Raw Text,2.1.5,What do we need to do to make the cents optional?,make the cents optional
+Raw Text,2.1.5,What would be far too expensive?,$199999.99
+Raw Text,2.1.5,What would be far too expensive?,$199999.99
+Raw Text,2.1.5,What do we need to do to limit prices like $199999.99?,limit the dollars
+Raw Text,2.1.5,What do we need to allow for optional fractions?,disk space
+Raw Text,2.1.5,How much disk space will we need to allow for optional fractions?,5.5 GB
+Raw Text,2.1.5,What does / */ mean?,zero or more spaces
+Raw Text,2.1.5,What does b/ mean?,*(GB|[Gg]igabytes?)
+Raw Text,2.1.5,What is left as an exercise for the reader?,more than 500 GB
+Raw Text,2.1.6,What is an important use of regular expressions?,substitutions
+Raw Text,2.1.6,What substitution operator allows a string characterized by a regular expression to be replaced by another string?,s/colour/color
+Raw Text,2.1.6,What do we want to put around all integers in a text?,angle brackets
+Raw Text,2.1.6,What do we want to add to the first pattern?,brackets
+Raw Text,2.1.6,What is the number operator used in the second pattern?,1
+Raw Text,2.1.6,What can the parenthesis and number operators specify?,a certain string or expression must occur twice in the text
+Raw Text,2.1.6,What is the pattern that we want to constrain the two X's to be the same string?,"the Xer they were, the Xer they will be"
+Raw Text,2.1.6,How do we constrain the two X's to be the same string?,by surrounding the first X with the parenthesis operator
+Raw Text,2.1.6,"What is the Xer they were, the Xer they will be?",1er they will be
+Raw Text,2.1.6,What will the 1 be replaced by?,whatever string matched the first item in parentheses
+Raw Text,2.1.6,What will the first item in parentheses match?,the bigger they were
+Raw Text,2.1.6,What is the use of parentheses to store a pattern in memory called?,capture group
+Raw Text,2.1.6,Where is the resulting match stored when a capture group is used?,numbered register
+Raw Text,2.1.6,What does 2 mean if you match two sets of parentheses?,whatever matched the second capture group
+Raw Text,2.1.6,What will the 1er we 2/ match?,faster they ran
+Raw Text,2.1.6,What is the third capture group stored in?,3
+Raw Text,2.1.6,What is used to group terms for specifying the order in which operators should apply?,Parentheses
+Raw Text,2.1.6,"What do we sometimes want to use for grouping, but don't want to capture the resulting pattern in a register?",parentheses
+Raw Text,2.1.6,How is a non-capturing group specified?,putting the commands
+Raw Text,2.1.6,Where is a non-capturing group specified?,after the open paren
+Raw Text,2.1.6,What is a non-capturing group specified by putting the commands?,pattern
+Raw Text,2.1.6,What is a non-capturing group?,people|cats
+Raw Text,2.1.6,What are very useful in implementing simple chatbots like ELIZA?,Substitutions and capture groups
+Raw Text,2.1.6,What does ELIZA simulate?,Rogerian psychologist
+Raw Text,2.1.6,What does ELIZA have a series or cascade of?,regular expression substitutions
+Raw Text,2.1.6,What are input lines in ELIZA?,first uppercased
+Raw Text,2.1.6,What do the first substitutions do?,"change all instances of MY to YOUR, and I'M to YOU ARE"
+Raw Text,2.1.6,What happens to the next set of substitutions in ELIZA?,matches and replaces other patterns in the input
+Raw Text,2.1.6,"In ELIZA, substitutions are assigned what?",rank
+Raw Text,2.1.6,Creating patterns is the topic of what exercise?,Exercise 2.3
+Raw Text,2.1.7,What do we do when we need to predict the future?,look ahead in the text
+Raw Text,2.1.7,What syntax do lookahead assertions make use of?,(?
+Raw Text,2.1.7,What do lookahead assertions use the (? syntax for?,non-capture groups
+Raw Text,2.1.7,When is the operator (?= pattern) true?,if pattern occurs
+Raw Text,2.1.7,"What happens if the operator (?= pattern) is true if pattern occurs, but is zero-width?",the match pointer doesn't advance
+Raw Text,2.1.7,What operator returns true if a pattern does not match?,pattern
+Raw Text,2.1.7,What operator returns true if a pattern does not match?,pattern
+Raw Text,2.1.7,What is commonly used when we are parsing some complex pattern but want to rule out a special case?,Negative lookahead
+Raw Text,2.1.7,What word would you want to match at the beginning of a line?,Volcano
+Raw Text,2.1.7,"What do we use when we want to match, at the beginning of a line, any single word that doesn't start with ""Volcano",negative lookahead
+Raw Text,2.1.7,"What is a word that doesn't start with ""Volcano""?",!Volcano
+Raw Text,2.2,"Before we talk about processing words, we need to decide what?",what counts as a word
+Raw Text,2.2,What is a computer-readable collection of text or speech called?,plural corpora
+Raw Text,2.2,How many written English texts are in the Brown corpus?,500
+Raw Text,2.2,When was the Brown corpus assembled?,1963-64
+Raw Text,2.2,How many words are in the following Brown sentence?,How many words are in the following Brown sentence
+Raw Text,2.2,What did Brown encounter when he stepped out into the hall?,water brother
+Raw Text,2.2,How many words does the Brown sentence have if we don't count punctuation marks as words?,13
+Raw Text,2.2,What is a comma called?,period
+Raw Text,2.2,"Punctuation is critical for finding boundaries of things (commas, periods, colons) and identifying some aspects of meaning (question",comma
+Raw Text,2.2,What is critical for finding boundaries of things?,Punctuation
+Raw Text,2.2,Punctuation marks are sometimes treated as if they were separate words for what tasks?,part-of-speech tagging or parsing or speech synthesis
+Raw Text,2.2,What corpus of American English telephone conversations between strangers was collected in the early 1990s?,Switchboard
+Raw Text,2.2,What does the Switchboard corpus of spoken language not have?,punctuation
+Raw Text,2.2,What is the main part of an utterance?,business data processing
+Raw Text,2.2,How many kinds of disfluencies does an utterance have?,two
+Raw Text,2.2,The broken-off word main- is called what?,a fragment
+Raw Text,2.2,What are fillers called?,filled pauses
+Raw Text,2.2,Fillers or filled pauses are considered to be what?,words
+Raw Text,2.2,What determines whether fillers or filled pauses are words?,the application
+Raw Text,2.2,"If we are building a speech transcription system, we might want to strip out what?",disfluencies
+Raw Text,2.2,What do we sometimes keep around?,disfluencies
+Raw Text,2.2,What disfluencies are helpful in speech recognition in predicting the upcoming word?,uh or um
+Raw Text,2.2,What can be a cue to speaker identification?,different disfluencies
+Raw Text,2.2,Who showed that uh and um have different meanings?,Clark and Fox Tree
+Raw Text,2.2,What are uh and um like?,capitalized tokens
+Raw Text,2.2,What are uh and um like?,capitalized tokens
+Raw Text,2.2,What are capitalized tokens and uncapitalized tokens lumped together in?,speech recognition
+Raw Text,2.2,What word has the same lemma cat but are different wordforms?,cats
+Raw Text,2.2,What do cats and cat have the same?,lemma cat
+Raw Text,2.2,"What is a set of lexical forms having the same stem, the same major part-of-speech, and the same word sense",A lemma
+Raw Text,2.2,What is the word-form?,full inflected or derived form
+Raw Text,2.2,"For morphologically complex languages like Arabic, we often need to deal with what?",lemmatization
+Raw Text,2.2,What is sufficient for many tasks in English?,wordforms
+Raw Text,2.2,How many words are there in English?,How many words
+Raw Text,2.2,How many ways of talking about words are there in English?,two
+Raw Text,2.2,What are tokens?,the total number N of running words
+Raw Text,2.2,Where did the Browns picnic?,the pool
+Raw Text,2.2,"When we speak about the number of words in the language, we are generally referring to what?",word types
+Raw Text,2.2,What shows the rough numbers of types and tokens computed from some popular English corpora?,2.11
+Raw Text,2.2,What shows the rough numbers of types and tokens computed from some popular English corpora?,2.11
+Raw Text,2.2,What is the relationship between the number of types |V | and number of tokens N called?,Herdan's Law
+Raw Text,2.2,Where is Herdan's Law shown?,Eq. 2.1
+Raw Text,2.2,What are positive constants in Herdan's Law?,k and B
+Raw Text,2.2,The value of B depends on what?,corpus size and the genre
+Raw Text,2.2,What goes up significantly faster than the square root of its length in words?,vocabulary size
+Raw Text,2.2,What is another measure of the number of words in English?,lemmas
+Raw Text,2.2,Dictionaries can help in giving what?,lemma counts
+Raw Text,2.2,How many entries were in the 1989 edition of the Oxford English Dictionary?,"615,000"
+Raw Text,2.3,What doesn't appear out of nowhere?,Words
+Raw Text,2.3,What is a specific dialect of?,language
+Raw Text,2.3,When are NLP algorithms most useful?,when they apply across many languages
+Raw Text,2.3,How many languages does the world have at the time of this writing?,7097
+Raw Text,2.3,What language do NLP algorithms tend to be tested on?,English
+Raw Text,2.3,What are some of the official languages of large industrialized nations?,"Chinese, Spanish, Japanese, German"
+Raw Text,2.3,What do most languages have?,multiple varieties
+Raw Text,2.3,What is the name for the many variations of language used by millions of people in African American communities?,African American Language
+Raw Text,2.3,What social network might use features often used by speakers of African American Language?,Twitter
+Raw Text,2.3,In what year did Blodgett and others study word segmentation?,2015
+Raw Text,2.3,What is it called when a speaker or writer uses multiple languages in a single communicative act?,code switching
+Raw Text,2.3,What is enormously common across the world?,Code switching
+Raw Text,2.3,What is another dimension of variation?,genre
+Raw Text,2.3,What types of texts do NLP algorithms have to process?,"newswire, fiction or non-fiction books, scientific articles, Wikipedia, or religious texts"
+Raw Text,2.3,What are some examples of spoken genres?,"telephone conversations, business meetings, police body-worn cameras, medical interviews, or transcripts of television shows or movies"
+Raw Text,2.3,What are some examples of work situations that NLP algorithms must process?,"doctors' notes, legal text, or parliamentary or congressional proceedings"
+Raw Text,2.3,What can all influence the linguistic properties of the text we are processing?,"their age, gender, race, socioeconomic class"
+Raw Text,2.3,What is important to consider when developing computational models for language processing from a corpus?,time
+Raw Text,2.3,How does a corpus of texts from different historical periods change?,Language changes over time
+Raw Text,2.3,"When developing computational models for language processing from a corpus, it's important to consider what?","who produced the language, in what context, for what purpose"
+Raw Text,2.3,What is the best way for the creator to build a datasheet for each corpus?,data statement
+Raw Text,2.3,What is the context of a corpus?,When and in what situation was the text written/spoken
+Raw Text,2.3,What type of situation was the text written/spoken?,task
+Raw Text,2.3,What is an example of a language used in a corpus?,monologue vs. dialogue
+Raw Text,2.3,What language was the corpus in?,What language
+Raw Text,2.3,What are the demographics of the authors of a text?,age or gender
+Raw Text,2.3,What is the collection process of a corpus?,How big is the data
+Raw Text,2.3,What was the data collected with?,consent
+Raw Text,2.3,What is the collection process of a corpus?,"How was the data pre-processed, and what metadata is available"
+Raw Text,2.3,What are the annotators?,demographics
+Raw Text,2.3,What type of restrictions are there in relation to the distribution of a corpus?,intellectual property
+Raw Text,2.4.0,"Before almost any natural language processing of a text, the text has to be what?",normalized
+Raw Text,2.4.0,What is the term for segmenting words?,Tokenizing
+Raw Text,2.4.0,How do we go through each of these tasks?,walk through
+Raw Text,2.4.1,What was the inspiration for the UNIX command-line?,Church
+Raw Text,2.4.1,What Unix command is used to change particular characters in input?,tr
+Raw Text,2.4.1,What collapses and counts adjacent identical lines?,uniq
+Raw Text,2.4.1,What is the name of the textfile that contains the 'complete words' of Shakespeare?,sh.txt
+Raw Text,2.4.1,What type of characters can be changed to a newline with tr?,alphabetic
+Raw Text,2.4.1,How many words per line can we sort?,one
+Raw Text,2.4.1,The -n option to sort means to sort what rather than alphabetically?,numerically
+Raw Text,2.4.1,What can be very handy in building quick word count statistics for any corpus?,Unix tools
+Raw Text,2.4.2,What is the task of segmenting running text into words called?,tokenization
+Raw Text,2.4.2,What did the Unix command sequence remove?,all the numbers and punctuation
+Raw Text,2.4.2,What is a useful piece of information for parsers?,commas
+Raw Text,2.4.2,What do most NLP applications want to keep in their tokenization?,punctuation that occurs word internally
+Raw Text,2.4.2,What is the price of AT&T?,45.55
+Raw Text,2.4.2,What is an example of an email address?,someone@cs.colorado.edu
+Raw Text,2.4.2,"Commas are used inside numbers in English, every three digits: what?","555,500.50"
+Raw Text,2.4.2,What do many continental European languages use to mark the decimal point?,comma
+Raw Text,2.4.2,What can a tokenizer be used to expand clitic contractions that are marked by?,apostrophes
+Raw Text,2.4.2,What is a part of a word that can't stand on its own?,A clitic
+Raw Text,2.4.2,What are examples of clitic contractions in French?,articles and pronouns
+Raw Text,2.4.2,What is required to tokenize multiword expressions like New York or rock 'n' roll as a single token?,multiword expression dictionary
+Raw Text,2.4.2,Tokenization is intimately tied to what?,named entity recognition
+Raw Text,2.4.2,What is the most commonly used tokenization standard?,Penn Treebank tokenization standard
+Raw Text,2.4.2,What does the Penn Treebank tokenization standard do?,separates out clitics
+Raw Text,2.4.2,Why is tokenization needed to be very fast?,tokenization needs to be run before any other language processing
+Raw Text,2.4.2,What are deterministic algorithms compiled into?,finite state automata
+Raw Text,2.4.2,What shows an example of a basic regular expression that can be used to tokenize with the nltk.regexp tokenize,Fig. 2.12
+Raw Text,2.4.2,What language is the nltk.regexp tokenize function of?,Python
+Raw Text,2.4.2,When did Bird and colleagues publish their work on the Python-based Natural Language Toolkit?,2009
+Raw Text,2.4.2,What needs to be tokenized differently when used as a genitive marker?,apostrophe
+Raw Text,2.4.2,What languages do not use spaces to mark potential word-boundaries?,"Chinese, Japanese, and Thai"
+Raw Text,2.4.2,What are characters called in Chinese?,hanzi
+Raw Text,2.4.2,What is a unit of meaning called?,a morpheme
+Raw Text,2.4.2,How many characters long are words on average?,2.4
+Raw Text,2.4.2,What is deciding what counts as a word in Chinese?,complex
+Raw Text,2.4.2,"What is a sentence that could be treated as 3 words ('Chinese Treebank' segmentation): ""YaoMing ","""Yao Ming reaches the finals"""
+Raw Text,2.4.2,"Who argued that the sentence ""Yao Ming reaches the finals"" could be treated as 3 words?",Chen et al.
+Raw Text,2.4.2,"How many words could be treated as ""YaoMing reaches the finals""?",3
+Raw Text,2.4.2,What is 'Yao Ming reaches overall finals' segmentation?,Peking University
+Raw Text,2.4.2,What are the basic elements of a sentence in Chinese?,characters
+Raw Text,2.4.2,For most Chinese NLP tasks it turns out to work better to take what as input?,characters
+Raw Text,2.4.2,For what languages is a character too small a unit?,Japanese and Thai
+Raw Text,2.4.2,What are algorithms for word segmentation useful for Chinese in the rare situations where word rather than words are required?,character boundaries
+Raw Text,2.4.2,How are neural sequence models trained?,supervised machine learning
+Raw Text,2.4.3,What option is there to tokenizing text?,third
+Raw Text,2.4.3,"Instead of words, what can we use our data to tell us what the tokens should be?",characters
+Raw Text,2.4.3,What is an important problem in language processing?,unknown words
+Raw Text,2.4.3,What is a corpus that NLP algorithms learn from?,training corpus
+Raw Text,2.4.3,What words do NLP algorithms learn from a training corpus?,"low, new, newer, but not lower"
+Raw Text,2.4.3,What are sets of tokens that include tokens smaller than words called?,subwords
+Raw Text,2.4.3,What can subwords be?,arbitrary substrings
+Raw Text,2.4.3,What is the smallest meaning-bearing unit of a language?,morpheme
+Raw Text,2.4.3,What is an example of a frequently occurring morpheme?,-er
+Raw Text,2.4.3,What word can be represented by a sequence of known subword units?,lower
+Raw Text,2.4.3,What are the two parts of most tokenization schemes?,"a token learner, and a token seg- menter"
+Raw Text,2.4.3,What does the token learner induce?,a set of tokens
+Raw Text,2.4.3,What takes a raw test sentence and segments it into the tokens in the vocabulary?,token segmenter
+Raw Text,2.4.3,What is one of the three algorithms used by the token learner?,byte-pair encoding
+Raw Text,2.4.3,What is the simplest of the three algorithms?,byte-pair encoding or BPE algorithm
+Raw Text,2.4.3,What is the simplest of the three algorithms?,2.13
+Raw Text,2.4.3,What does the BPE token learner begin with?,a vocabulary that is just the set of all individual characters
+Raw Text,2.4.3,What is the new merged symbol added to the vocabulary?,AB
+Raw Text,2.4.3,How many merges have been done creating k novel tokens?,k
+Raw Text,2.4.3,The resulting vocabulary consists of the original set of characters plus how many new symbols?,k
+Raw Text,2.4.3,Where is the BPE algorithm usually run?,inside words
+Raw Text,2.4.3,What is the starting vocabulary of the BPE algorithm?,11
+Raw Text,2.4.3,What is the most frequent pair of adjacent symbols?,e r
+Raw Text,2.4.3,What is the most frequent pair of adjacent symbols?,er
+Raw Text,2.4.3,What is the token parser used to do?,tokenize a test sentence
+Raw Text,2.4.3,What just runs on the test data the merges we have learned from the training data?,The token parser
+Raw Text,2.4.3,Why does the token parser run on the test data?,the frequencies in the test data don't play a role
+Raw Text,2.4.3,What do we segment each test sentence word into?,characters
+Raw Text,2.4.3,What is the first rule of the BPE algorithm?,replace every instance of er in the test corpus with r
+Raw Text,2.4.3,What would be tokenized as a full word if the test corpus contained the word?,n e w e r
+Raw Text,2.4.3,What new word would be merged into the two tokens low er?,l o w e r
+Raw Text,2.4.3,How many merges are there in real algorithms?,thousands
+Raw Text,2.4.3,What happens when BPE is run with thousands of merges on a very large input corpus?,most words will be represented as full symbols
+Raw Text,2.4.4,What is the task of putting words/tokens in a standard format?,Word normalization
+Raw Text,2.4.4,What is lost in the normalization process?,spelling information
+Raw Text,2.4.4,What are two types of normalization that we might want to see information from documents whether they mention the US or the USA?,information retrieval or information extraction
+Raw Text,2.4.4,What is another kind of normalization?,Case folding
+Raw Text,2.4.4,Mapping everything to lower case means that what two words are represented identically?,Woodchuck and woodchuck
+Raw Text,2.4.4,What are some tasks that require case folding?,"sentiment analysis and other text classification tasks, information extraction, and machine translation"
+Raw Text,2.4.4,What can outweigh the advantage in generalization that case folding would have provided for other words?,US the country and us the pronoun
+Raw Text,2.4.4,For many natural language processing situations we also want what of a word to behave similarly?,two morphologically different forms
+Raw Text,2.4.4,"What language has different endings in the phrases Moscow, of Moscow, to Moscow, and so on?",Russian
+Raw Text,2.4.4,What is the task of determining that two words have the same root?,Lemmatization
+Raw Text,2.4.4,What words have the shared lemma be?,"am, are, and is"
+Raw Text,2.4.4,"What Russian word has different endings than am, are, and is?",Moscow
+Raw Text,2.4.4,"What is the lemmatized form of a sentence like ""He is reading detective stories""?",He be read detective story
+Raw Text,2.4.4,What is the process of determining that two words have the same root?,lemmatization
+Raw Text,2.4.4,What is one of the most sophisticated methods for lemmatization?,complete morphological parsing
+Raw Text,2.4.4,What is the study of the way words are built up from smaller meaning-bearing units called morphemes?,Morphology
+Raw Text,2.4.4,"What is the central morpheme of the word, supplying the main meaning, and affixes?",stems
+Raw Text,2.4.4,What is the morpheme of the word/ox?,morpheme fox
+Raw Text,2.4.4,How can lemmatization algorithms be?,complex
+Raw Text,2.4.4,What is a simpler but cruder method called stemming?,chopping off word-final affixes
+Raw Text,2.4.4,What is a naive version of morphological analysis called?,stemming
+Raw Text,2.4.4,When was the Porter stemmer first used?,1980
+Raw Text,2.4.4,What produces the following stemmed output?,The Porter stemmer
+Raw Text,2.4.4,What is the Porter stemmer based on?,series of rewrite rules run in series
+Raw Text,2.4.4,In what languages can code be found on Martin Porter's homepage?,"Java, Python, etc."
+Raw Text,2.4.4,Who wrote the original paper on the Porter stemmer?,Martin Porter
+Raw Text,2.4.4,What can be useful in cases where we need to collapse across different variants of the same lemma?,Simple stemmers
+Raw Text,2.4.4,Simple stemmers tend to commit errors of what?,over- and under-generalizing
+Raw Text,2.4.5,What is another important step in text processing?,Sentence segmentation
+Raw Text,2.4.5,What is one of the most useful cues for segmenting a text into sentences?,punctuation
+Raw Text,2.4.5,What are relatively unambiguous markers of sentence boundaries?,Question marks and exclamation points
+Raw Text,2.4.5,What is more ambiguous than question marks and exclamation points?,Periods
+Raw Text,2.4.5,What character is ambiguous between a sentence boundary marker and a marker of abbreviations like Mr. or Inc?,period character
+Raw Text,2.4.5,What are two abbreviations that are ambiguous between a sentence boundary marker and a marker of abbreviations?,Mr. or Inc
+Raw Text,2.4.5,What marked both an abbreviation and a sentence boundary marker?,the final period of Inc.
+Raw Text,2.4.5,What can be addressed jointly?,tokenization
+Raw Text,2.4.5,What is part of a word or a sentence-boundary marker?,a period
+Raw Text,2.4.5,In what year was the final sentence splitter created?,2006
+Raw Text,2.4.5,In what toolkit is sentence splitting rule-based?,Stanford CoreNLP toolkit
+Raw Text,2.4.5,What happens when a sentence-ending punctuation is not already grouped with other characters into a token?,optionally followed by additional final quotes or brackets
+Raw Text,2.5.0,What is much of natural language processing concerned with?,measuring how similar two strings are
+Raw Text,2.5.0,What is an example of an erroneous string?,graffe
+Raw Text,2.5.0,What is a similar word to a graffe?,graffe
+Raw Text,2.5.0,What word differs by only one letter from graffe?,giraffe
+Raw Text,2.5.0,What is the task of deciding whether two strings refer to the same entity?,coreference
+Raw Text,2.5.0,How many words do the two strings differ by?,one
+Raw Text,2.5.0,What gives us a way to quantify both of these intuitions about string similarity?,Edit distance
+Raw Text,2.5.0,What is the minimum edit distance between two strings?,minimum number of editing operations
+Raw Text,2.5.0,What is the gap between intention and execution?,5
+Raw Text,2.5.0,What is the most important visualization for string distances?,alignment between the two strings
+Raw Text,2.5.0,What is the number of sequences in which an alignment is a correspondence between substrings of the two sequences?,2.14
+Raw Text,2.5.0,What is a correspondence between substrings of two sequences?,an alignment
+Raw Text,2.5.0,What do we say I aligns with?,empty string
+Raw Text,2.5.0,What represents an operation list for converting the top string into the bottom string?,a series of symbols
+Raw Text,2.5.0,What can we assign to each of these operations?,a particular cost or weight
+Raw Text,2.5.0,What is the simplest weighting factor in which each of the three operations has a cost of 1?,Levenshtein
+Raw Text,2.5.0,What is the Levenshtein distance between intention and execution?,5.
+Raw Text,2.5.0,What did Levenshtein propose in his metric that each insertion or deletion has a cost of 1 and what else?,substitutions are not allowed
+Raw Text,2.5.0,What is the Levenshtein distance between intention and execution equivalent to?,allowing substitution
+Raw Text,2.5.0,What is the Levenshtein distance between intention and execution?,8.
+Raw Text,2.5.1,How do we find the minimum edit distance?,minimum edit distance
+Raw Text,2.5.1,How do we find the minimum edit distance?,a search task
+Raw Text,2.5.1,What is the space of all possible edits?,enormous
+Raw Text,2.5.1,How do we find the minimum edit distance?,recomputing all those paths
+Raw Text,2.5.1,What is the name for a class of algorithms that apply a table-driven method to solve problems by combining solutions to sub-problems?,dynamic programming
+Raw Text,2.5.1,When was dynamic programming first introduced?,1957
+Raw Text,2.5.1,What is the name of the algorithm used for parsing?,CKY algorithm
+Raw Text,2.5.1,How can a large problem be solved?,by properly combining the solutions to various sub-problems
+Raw Text,2.5.1,The shortest path of transformed words represents the minimum edit distance between the strings intention and execution shown in what?,Fig. 2.16
+Raw Text,2.5.1,What is the shortest path of transformed words that represents the minimum edit distance between the strings intention and execution shown in Fig. 2.16?,2.16
+Raw Text,2.5.1,What is a string in the shortest path of transformed words that represents the minimum edit distance between intention and execution shown in Fig. 2.16?,exention
+Raw Text,2.5.1,"If exention is in what operation list, the optimal sequence must also include the optimal path from intention to exention?",optimal
+Raw Text,2.5.1,What would happen if there were a shorter path from intention to exention?,shorter overall path
+Raw Text,2.5.1,Who named the minimum edit distance algorithm?,Wagner and Fischer
+Raw Text,2.5.1,What is the first step in the minimum edit distance algorithm?,minimum edit distance between two strings
+Raw Text,2.5.1,What is the edit distance between X 1..i and Y 1..j?,"D|i, j"
+Raw Text,2.5.1,What is the edit distance between X and Y?,"D(n, m)"
+Raw Text,2.5.1,"What will we use to compute D n, m) bottom up?",dynamic programming
+Raw Text,2.5.1,What does going from i characters to 0 require?,i deletes
+Raw Text,2.5.1,What does a target substring of length j require to go from 0 characters to y characters?,j inserts
+Raw Text,2.5.1,"What do we compute for small i, j?","D i, j"
+Raw Text,2.5.1,What value is computed by taking the minimum of the three possible paths through the matrix which arrive there?,"i, j"
+Raw Text,2.5.1,"What is the computation for D i, j?",2.8
+Raw Text,2.5.1,Where is the minimum edit distance algorithm summarized?,Fig. 2.17
+Raw Text,2.5.1,In what figure is the minimum edit distance algorithm summarized?,2.17
+Raw Text,2.5.1,What shows the results of applying the algorithm to the distance between intention and execution with the version of Levenshtein in Eq.,2.18
+Raw Text,2.5.1,What is the minimum edit distance?,2.8
+Raw Text,2.5.1,What is knowing the minimum edit distance useful for?,spelling error corrections
+Raw Text,2.5.1,What can the edit distance algorithm provide with a small change?,the minimum cost alignment between two strings
+Raw Text,2.5.1,What is useful throughout speech and language processing?,Aligning two strings
+Raw Text,2.5.1,"In speech recognition, what is the minimum edit distance alignment used for?",to compute the word error rate
+Raw Text,2.5.1,Alignment plays a role in what?,machine translation
+Raw Text,2.5.1,How can we extend the edit distance algorithm to produce an alignment?,visualizing an alignment
+Raw Text,2.5.1,What shows the path through the edit distance matrix?,Figure 2.19
+Raw Text,2.5.1,What does each boldfaced cell represent?,an alignment of a pair of letters in the two strings
+Raw Text,2.5.1,"If two boldfaced cells occur in the same row, what will occur in going from the source to the target?",insertion
+Raw Text,2.5.1,What shows the intuition of how to compute this alignment path?,Figure 2.19
+Raw Text,2.5.1,How many steps does the computation proceed in?,two steps
+Raw Text,2.5.1,What is the first step of the minimum edit distance algorithm?,to store backpointers in each cell
+Raw Text,2.5.1,The backpointer from a cell points to what?,previous cell (or cells)
+Raw Text,2.5.1,Where are the backpointers from a cell shown?,Fig. 2.19
+Raw Text,2.5.1,Where are the backpointers from a cell shown in Fig. 2.19?,2.19
+Raw Text,2.5.1,Some cells have what because the minimum extension could have come from multiple previous cells?,multiple backpointers
+Raw Text,2.5.1,What is performed in the second step?,a backtrace
+Raw Text,2.5.1,Where do we start in a backtrace?,last cell
+Raw Text,2.5.1,What is each complete path between the final cell and the initial cell?,minimum distance alignment
+Raw Text,2.5.1,What exercise asks you to modify the minimum edit distance algorithm to store the pointers and compute the backtrace to output an alignment?,Exercise 2.7
+Raw Text,2.5.1,What did we use in our example?,Levenshtein distance
+Raw Text,2.5.1,What does the algorithm in Fig. 2.17 allow on the operations?,arbitrary weights
+Raw Text,2.5.1,What is more likely to happen between letters that are next to each other on the keyboard?,substitutions
+Raw Text,2.5.1,What is a probabilistic extension of minimum edit distance?,Viterbi algorithm
+Raw Text,2.5.1,"What does Viterbi compute instead of the ""minimum edit distance"" between two strings?",maximum probability alignment
+Raw Text,2.5.1,In what chapter will we discuss the Viterbi algorithm?,Chapter 8
+Raw Text,3.0,"What is difficult, especially about the future?",Predicting
+Raw Text,3.0,What is an example of something that seems much easier to predict?,the next few words
+Raw Text,3.0,"What is a very likely word to be in, or possibly over, but probably not?",refrigerator or the
+Raw Text,3.0,How will we formalize this intuition?,introducing models
+Raw Text,3.0,Models that assign a probability to each possible next word will also serve to assign a probability to what?,entire sentence
+Raw Text,3.0,What could a model predict that the following sequence has a much higher probability of appearing in a text?,probability
+Raw Text,3.0,"What are essential in any task in which we have to identify words in noisy, ambiguous input?",Probabilities
+Raw Text,3.0,What is a more probable sequence than a bassoon dish?,bassoon dish
+Raw Text,3.0,What writing tools are needed to find and correct errors in writing?,spelling correction or grammatical error correction
+Raw Text,3.0,"What phrase will be much more probable than ""Their are""?","""There are"""
+Raw Text,3.0,Assigning probabilities to sequences of words is also essential in what?,machine translation
+Raw Text,3.0,What language is a source sentence in?,Chinese
+Raw Text,3.0,What part of a Chinese source sentence did the translator introduce reporters to?,main contents
+Raw Text,3.0,What could suggest that briefed reporters on is a more probable English phrase than briefed to reporters?,A probabilistic model of word sequences
+Raw Text,3.0,Probabilities are important for what types of systems?,augmentative and alternative communication systems
+Raw Text,3.0,Who et al. 2017 said that probabilities are important for augmentative and alternative communication systems?,Kane
+Raw Text,3.0,In what year did Kane et al. publish a paper on the importance of probabilities in augmentative and alternative communication systems?,2017
+Raw Text,3.0,What can people use AAC devices to select words from a menu to be spoken by the system?,use eye gaze or other specific movements
+Raw Text,3.0,What can be used to suggest likely words for the menu?,Word prediction
+Raw Text,3.0,What are models that assign probabilities to sequences of words called?,language models or LMs
+Raw Text,3.0,What is the simplest model that assigns probabilities to sentences and sequences of words?,n-gram
+Raw Text,3.0,What is a sequence of n words?,n
+Raw Text,3.0,What model will we use to estimate the probability of the last word of an n-gram given the previous words?,n-gram
+Raw Text,3.0,"In terminological ambiguity, what term is used to mean the word sequence itself or the predictive model that assigns it a probability?",n-gram
+Raw Text,3.0,What model assigns the probability of the last word of an n-gram?,predictive model
+Raw Text,3.0,What is the name of the language model introduced in Chapter 9?,RNN LMs
+Raw Text,3.1,What is the probability of a word w given some history h?,P(w|h)
+Raw Text,3.1,What is one way to estimate the probability of a word w given some history h?,relative frequency counts
+Raw Text,3.1,How many times was the history h followed by the word w?,how many times
+Raw Text,3.1,What is a large enough corpus to compute the probability of a word w given some history h?,the web
+Raw Text,3.1,What is the probability of a word w given some history h?,3.2
+Raw Text,3.1,What should you do to estimate the probability of a word w given some history h?,compute this estimate for yourself
+Raw Text,3.1,What isn't big enough to give us good estimates in most cases?,web
+Raw Text,3.1,Why is the webn't big enough to give us good estimates in most cases?,language is creative
+Raw Text,3.1,What example sentence used to have counts of zero?,"""Walden Pond's water is so transparent that the"""
+Raw Text,3.1,"What is the probability of an entire sequence of words like ""Walden Pond's water is so transparent""?",its water is so transparent
+Raw Text,3.1,"What would we have to get the count of if we wanted to know the probability of an entire sequence of words like ""its water is so transparent?""",its water is so transparent
+Raw Text,3.1,"How much to estimate the probability of an entire sequence of words like ""its water is so transparent""?",rather a lot
+Raw Text,3.1,What is the first step in estimating the probability of a word given a history h?,formalizing of notation
+Raw Text,3.1,"To represent the probability of a particular random variable X, taking on the value ""the"", or P(Xi=""the""), we will",P(the)
+Raw Text,3.1,What will we represent a sequence of N words as?,w1...wn or w1:n
+Raw Text,3.1,What is one thing we can do to compute probability of entire sequences?,decompose
+Raw Text,3.1,What shows the link between computing the joint probability of a sequence and computing the conditional probability of a word given previous words?,The chain rule
+Raw Text,3.1,What suggests that we could estimate the joint probability of an entire sequence of words by multiplying together a number of conditional probabilities?,Equation 3.4
+Raw Text,3.1,What doesn't seem to help us estimate the probability of a word given a long sequence of preceding words?,using the chain rule
+Raw Text,3.1,We don't know any way to compute what?,the exact probability of a word given a long sequence of preceding words
+Raw Text,3.1,Why can't we just estimate by counting the number of times every word occurs following every long string?,language is creative
+Raw Text,3.1,How can we approximate the probability of a word given its entire history?,by just the last few words
+Raw Text,3.1,What model approximates the probability of a word given all the previous words?,bigram model
+Raw Text,3.1,What is the probability P(the|Walden Pond's water is so transparent that) approximated with?,the probability P(the|that)
+Raw Text,3.1,What is the approximation of the conditional probability of the next word?,P(wn|w1:n-1)
+Raw Text,3.1,What is the assumption that the probability of a word depends only on the previous word called?,Markov assumption
+Raw Text,3.1,What are the class of probabilistic models that assume we can predict the probability of some future unit without looking too far into the past?,Markov models
+Raw Text,3.1,What model looks two words into the past?,trigram
+Raw Text,3.1,What is the general equation for the conditional probability of the next word in a sequence?,(3.8)
+Raw Text,3.1,What equation is used to compute the probability of a complete word sequence?,Eq. 3.7
+Raw Text,3.1,What is the substitution of Eq. 3.4 for the probability of a complete word sequence?,3.7
+Raw Text,3.1,What is the probability of a complete word sequence by substituting Eq. 3.7 into Eq. 3.4?,3.9
+Raw Text,3.1,What is another name for bigram?,n-gram
+Raw Text,3.1,What is an intuitive way to estimate probabilities called?,maximum likelihood estimation
+Raw Text,3.1,What are the MLE estimates for the parameters of an n-gram model?,0 and 1
+Raw Text,3.1,What is the count of a bigram to compute a particular bigram probability of a word y given a previous word x?,C(xy)
+Raw Text,3.1,How many sentences are in the mini-corpus?,three
+Raw Text,3.1,What symbol is needed at the beginning of a sentence to give us the context of the first word?,s>
+Raw Text,3.1,What do we need to augment each sentence with a special symbol at the beginning of the sentence to give us the bigram context of the first word?,special end-symbol
+Raw Text,3.1,What is a special end-symbol?,s>
+Raw Text,3.1,What is the general case of MLE?,n-gram
+Raw Text,3.1,What equation estimates the n-gram probability by dividing the observed frequency of a particular sequence by the observed frequency of a prefix?,Equation 3.12
+Raw Text,3.1,What equation estimates the n-gram probability by dividing the observed frequency of a particular sequence by the observed frequency of a prefix?,Equation 3.12
+Raw Text,3.1,What is the ratio that estimates the n-gram probability by dividing the observed frequency of a particular sequence by the observed frequency of a pre,relative frequency
+Raw Text,3.1,What is an example of maximum likelihood estimation?,MLE
+Raw Text,3.1,"In MLE, the resulting parameter set maximizes what?",the likelihood of the training set T
+Raw Text,3.1,How many times does the word Chinese occur in a corpus of a million words?,400
+Raw Text,3.1,How many times does the word Chinese occur in a corpus of a million words?,400
+Raw Text,3.1,What is not the best estimate of the probability of Chinese occurring in all situations?,.0004
+Raw Text,3.1,How many times in a million-word corpus is Chinese likely to occur?,400
+Raw Text,3.1,Where do we present ways to modify the MLE estimates to get better probability estimates?,Section 3.4
+Raw Text,3.1,How many words are in the example above?,14
+Raw Text,3.1,"What is the name of the dialogue system that answered questions about a database of restaurants in Berkeley, California?",Berkeley Restaurant Project
+Raw Text,3.1,What shows the bigram counts from a piece of a bigram grammar from the Berkeley Restaurant Project?,Figure 3.1
+Raw Text,3.1,What are the majority of the bigram counts from a piece of a bigram grammar from the Berkeley Restaurant Project?,zero
+Raw Text,3.1,How many words were selected from a random set?,seven
+Raw Text,3.1,What shows the bigram probabilities after normalization?,Figure 3.2
+Raw Text,3.1,What is the row of cells in Fig. 3.1 divided by?,unigram
+Raw Text,3.1,How can we compute the probability of sentences like I want English food or I want Chinese food?,multiplying the appropriate bigram probabilities together
+Raw Text,3.1,"What exercise is used to compute the probability of ""i want chinese food""?",Exercise 3.2
+Raw Text,3.1,What kind of phenomena are captured in bigram statistics?,linguistic
+Raw Text,3.1,What is usually a noun or an adjective?,eat
+Raw Text,3.1,What is the high probability of sentences beginning with the words I?,personal assistant task
+Raw Text,3.1,What is the higher probability that people are looking for?,Chinese versus English food
+Raw Text,3.1,What condition on the previous two words rather than the previous word?,trigram models
+Raw Text,3.1,"For larger n-grams, we'll need to assume what to the left and right of the sentence end?",extra contexts
+Raw Text,3.1,What do we use to compute trigram probabilities at the very beginning of the sentence?,two pseudo-words
+Raw Text,3.1,What do we always represent and compute language model probabilities in log format as?,log probabilities
+Raw Text,3.1,What are probabilities by definition?,less than or equal to 1
+Raw Text,3.1,Multiplying enough n-grams together would result in what?,numerical underflow
+Raw Text,3.1,What do we use instead of raw probabilities to get numbers that are not as small?,log probabilities
+Raw Text,3.1,What is equivalent to multiplying in linear space?,Adding in log space
+Raw Text,3.1,What is the exp of a bigram statistic?,logprob
+Raw Text,3.2.0,What is the best way to evaluate the performance of a language model?,measure how much the application improves
+Raw Text,3.2.0,What is the best way to evaluate the performance of a language model?,extrinsic evaluation
+Raw Text,3.2.0,What is the only way to know if a particular improvement in a component is really going to help the task at hand?,Extrinsic evaluation
+Raw Text,3.2.0,"What can we compare the performance of two language models by running the speech recognizer twice, once with each language model, and seeing which gives the more accurate",speech recognition
+Raw Text,3.2.0,Is running big NLP systems end-to-end expensive or expensive?,expensive
+Raw Text,3.2.0,What can be used to quickly evaluate potential improvements in a language model?,metric
+Raw Text,3.2.0,What does an intrinsic evaluation metric measure?,quality of a model independent of any application
+Raw Text,3.2.0,What do we need for an intrinsic evaluation of a language model?,a test set
+Raw Text,3.2.0,What are the probabilities of an n-gram model trained on?,the training set or training corpus
+Raw Text,3.2.0,What is the unseen data used to measure the quality of an n-gram model?,test set or test corpus
+Raw Text,3.2.0,Why do we call test sets held out corpora?,hold them out from the training data
+Raw Text,3.2.0,What do we divide the corpus of text into?,training and test sets
+Raw Text,3.2.0,What does it mean to compare two different n-gram models?,fit the test set
+Raw Text,3.2.0,What is a better model?,whichever model assigns a higher probability to the test set
+Raw Text,3.2.0,What is the better model given two probabilistic models?,the one that has a tighter fit to the test data
+Raw Text,3.2.0,What is our evaluation metric based on?,test set probability
+Raw Text,3.2.0,What is a sentence that we are trying to compute the probability of?,test
+Raw Text,3.2.0,"If a test sentence is part of the training corpus, we will mistakenly assign it what?",artificially high probability
+Raw Text,3.2.0,"When a test sentence is part of the training corpus, we mistakenly assign it an artificially high probability when it occurs in the test set",training on the test set
+Raw Text,3.2.0,What introduces a bias that makes the probabilities all look too high?,Training on the test set
+Raw Text,3.2.0,What do we do when we use a particular test set so often that we need a fresh test set that is truly unseen?,implicitly tune to its characteristics
+Raw Text,3.2.0,What do we need when we use a particular test set so often that we implicitly tune to its characteristics?,a fresh test set that is truly unseen
+Raw Text,3.2.0,What is the initial test set called when we need a fresh test set that is truly unseen?,development test set
+Raw Text,3.2.0,What do we divide our data into?,"training, development, and test sets"
+Raw Text,3.2.0,How much training data do we want in a test set?,as much training data as possible
+Raw Text,3.2.0,What gives us enough statistical power to measure a statistically significant difference between two potential models?,smallest test set
+Raw Text,3.2.0,"In practice, we often divide our data into what percentage of training, 10% development, and 10% test?",80%
+Raw Text,3.2.0,What can be taken from some continuous sequence of text inside the corpus?,test data
+Raw Text,3.2.1,What is a variant of raw probability used for evaluating language models?,perplexity
+Raw Text,3.2.1,What is the perplexity of a language model on a test set?,inverse probability of the test set
+Raw Text,3.2.1,What is the perplexity of a test set?,w1w2...wN
+Raw Text,3.2.1,What can we use to expand the probability of W?,the chain rule
+Raw Text,3.2.1,What language model is used to compute the perplexity of W?,bigram
+Raw Text,3.2.1,"Why is the higher the conditional probability of the word sequence, the lower the perplexity?",the inverse
+Raw Text,3.2.1,What is the conditional probability of the word sequence?,higher
+Raw Text,3.2.1,What is equivalent to maximizing the test set probability according to the language model?,minimizing perplexity
+Raw Text,3.2.1,What is the entire sequence of words in some test set?,Eq. 3.15 or Eq. 3.16
+Raw Text,3.2.1,What do we generally use for word sequence in Eq. 3.15 or Eq. 3.16?,the entire sequence of words in some test set
+Raw Text,3.2.1,What do we generally use for word sequence in Eq. 3.15 or Eq. 3.16?,the entire sequence of words in some test set
+Raw Text,3.2.1,What do we need to include in the perplexity calculation?,begin- and end-sentence markers
+Raw Text,3.2.1,What is the number of possible next words that can follow any word?,The branching factor
+Raw Text,3.2.1,What is the probability that each of the 10 digits occurs with equal probability?,P 0.1
+Raw Text,3.2.1,What is the perplexity of the mini-language?,10
+Raw Text,3.2.1,What is the test string of digits of length N?,assume that in the training set all the digits occurred with equal probability
+Raw Text,3.2.1,What is the perplexity of the test string of digits of length N?,Eq. 3.15
+Raw Text,3.2.1,What is the branching factor of a language?,3.15
+Raw Text,3.2.1,What is the perplexity of the test string of digits of length N?,the number zero is really frequent and occurs far more often than other numbers
+Raw Text,3.2.1,How many times does 0 occur in the training set?,91
+Raw Text,3.2.1,Why is the perplexity of the test set to be lower?,most of the time the next number will be zero
+Raw Text,3.2.1,What is the probability that the next number will be zero?,has a high probability
+Raw Text,3.2.1,What is the branching factor of a language?,10
+Raw Text,3.2.1,What is the exact calculation of the branching factor of a language?,exercise 12
+Raw Text,3.2.1,Perplexity is closely related to the information-theoretic notion of what?,entropy
+Raw Text,3.2.1,What can be used to compare different n-gram models?,perplexity
+Raw Text,3.2.1,"How many words did we train unigram, bigram, and trigram grammars on?",38 million
+Raw Text,3.2.1,How many words were used in the test set?,1.5 million
+Raw Text,3.2.1,How many words were used in the test set?,1.5 million
+Raw Text,3.2.1,The table below shows the perplexity of what word WSJ test set according to each of these grammars?,1.5 million
+Raw Text,3.2.1,What determines the lower perplexity?,the more information the n-gram gives us about the word sequence
+Raw Text,3.2.1,Perplexity is related inversely to what?,likelihood of the test sequence according to the model
+Raw Text,3.2.1,What is required in computing perplexities?,n-gram model P must be constructed without any knowledge of the test set or any prior knowledge of the vocabulary of the test set
+Raw Text,3.2.1,What can cause the perplexity to be artificially low?,Any kind of knowledge of the test set
+Raw Text,3.2.1,How is the perplexity of two language models comparable?,if they use identical vocabularies
+Raw Text,3.2.1,What does not guarantee an (extrinsic) improvement in the performance of a language processing task like speech recognition or machine translation?,(intrinsic) improvement in perplexity
+Raw Text,3.2.1,Perplexity is commonly used as what?,quick check on an algorithm
+Raw Text,3.2.1,What should a model's improvement in perplexity always be confirmed by before concluding the evaluation of the model?,end-to-end evaluation of a real task
+Raw Text,3.3.0,What is the n-gram model dependent on?,training corpus
+Raw Text,3.3.0,What often encode specific facts about a given training corpus?,the probabilities
+Raw Text,3.3.0,When was Shannon born?,1951
+Raw Text,3.3.0,For what case is it simplest to visualize how the n-gram model works?,unigram
+Raw Text,3.3.0,What is the probability space between all the words of the English language?,0 and 1
+Raw Text,3.3.0,What is the probability space between the words of the English language?,0 and 1
+Raw Text,3.3.0,What do we continue choosing and generating words until we randomly generate the sentence-final token?,random numbers
+Raw Text,3.3.0,What is the first word of a bigram?,w
+Raw Text,3.3.0,What is the second part of a bigram that starts with s?,w
+Raw Text,3.3.0,"What shows the random sentences generated from unigram, bigram, trigram, and 4-gram models trained on Shakespeare's works?",Fig. 3.3
+Raw Text,3.3.0,"What shows the random sentences generated from unigram, bigram, trigram, and 4-gram models trained on Shakespeare's works?",Fig. 3.3
+Raw Text,3.3.0,How long is the context on which we train the model?,longer
+Raw Text,3.3.0,What type of sentences have no coherent relation between words or any sentence-final punctuation?,unigram
+Raw Text,3.3.0,What sentences have some local word-to-word coherence?,bigram
+Raw Text,3.3.0,The tri-gram and what other sentence are beginning to look a lot like Shakespeare?,4-gram
+Raw Text,3.3.0,What do the 4-gram sentences look a little too much like?,Shakespeare
+Raw Text,3.3.0,"Who wrote the words ""It cannot be but so""?",King John
+Raw Text,3.3.0,"Why do the words ""It cannot be but so"" look like Shakespeare?",his oeuvre is not very large
+Raw Text,3.3.0,How many possible bigrams are there?,"844,000,000"
+Raw Text,3.3.0,"For many 4-grams, how many possible continuations are there?",one
+Raw Text,3.3.0,What newspaper does WSJ stand for?,Wall Street Journal
+Raw Text,3.3.0,What language are both Shakespeare and the Wall Street Journal?,English
+Raw Text,3.3.0,"What shows the sentences generated by unigram, bigram, and trigram grammars trained on 40 million words from WSJ?",Fig. 3.4
+Raw Text,3.3.0,"What is the size of the sentences generated by unigram, bigram, and trigram grammars trained on 40 million words from WSJ?",3.4
+Raw Text,3.3.0,"What is the name of the person who wrote the words ""It cannot be but so"" in Fig. 3.4?",pseudo-Shakespeare
+Raw Text,3.3.0,"What is the number of n-grams that both model ""English-like sentences""?",3.3
+Raw Text,3.3.0,What do both Shakespeare and WSJ model?,English-like sentences
+Raw Text,3.3.0,What are likely to be pretty useless as predictors if the training sets and the test sets are as different as Shakespeare and WSJ?,Statistical models
+Raw Text,3.3.0,What type of models should we build to deal with this problem?,n-gram models
+Raw Text,3.3.0,What type of genre should a training corpus have?,similar genre
+Raw Text,3.3.0,What do we need a training corpus of?,legal documents
+Raw Text,3.3.0,What do we need to build a language model for a question-answering system?,a training corpus of questions
+Raw Text,3.3.0,What is it important to get training data in when processing social media posts or spoken transcripts?,dialect or variety
+Raw Text,3.3.0,What is the name for the many variations of language used in African American communities?,African American Language
+Raw Text,3.3.0,What is a spelling for a word that marks immediate future tense that doesn't occur in other varieties?,den for then
+Raw Text,3.3.0,What language has markedly different vocabulary and n-gram patterns from American English?,Nigerian English
+Raw Text,3.3.0,What is beta get ur wiv twitter?,IT placement
+Raw Text,3.3.0,What is still not sufficient?,Matching genres and dialects
+Raw Text,3.3.0,Our models may still be subject to the problem of what?,sparsity
+Raw Text,3.3.0,What is a good estimate of the probability of a sufficient number of times?,n-gram
+Raw Text,3.3.0,What language is bound to be missing from any corpus?,English
+Raw Text,3.3.0,What do we have many cases of that should have some non-zero probability?,"""zero probability n-grams"""
+Raw Text,3.3.0,What is the bigram that follows the bigram in the WSJ Treebank corpus?,denied the
+Raw Text,3.3.0,What are two phrases in the WSJ Treebank corpus that our model will incorrectly estimate that the P(offer|denied the),denied the offer or denied the loan
+Raw Text,3.3.0,What is the P(offer|denied the)?,0
+Raw Text,3.3.0,What are things that don't ever occur in the training set but do occur in the test set?,zeros
+Raw Text,3.3.0,What means we are underestimating the probability of all sorts of words that might occur?,their presence
+Raw Text,3.3.0,"If the probability of any word in the test set is 0, what is the entire probability of the test set?","if the probability of any word in the test set is 0, the entire probability of the test set is 0."
+Raw Text,3.3.0,What is perplexity based on?,inverse probability of the test set
+Raw Text,3.3.0,Why can't we compute perplexity if some words have zero probability?,we can't divide by 0
+Raw Text,3.3.1,What is the problem of words whose probability is zero?,bigram probability
+Raw Text,3.3.1,What is the problem of words whose bigram probability is zero?,words we simply have never seen before
+Raw Text,3.3.1,Why can't we have a language task in which this can't happen?,because we know all the words that can occur
+Raw Text,3.3.1,"In a closed vocabulary system, the test set can only contain words from this lexicon, and there will be no what?",unknown words
+Raw Text,3.3.1,What is a domain where we have a pronunciation dictionary or a phrase table that are fixed in advance?,machine translation
+Raw Text,3.3.1,What are OOV words?,out of vocabulary
+Raw Text,3.3.1,What is the percentage of OOV words that appear in the test set called?,OOV rate
+Raw Text,3.3.1,What is the pseudo-word used in an open vocabulary system?,UNK>
+Raw Text,3.3.1,How many ways are there to train the probabilities of the unknown word model UNK>?,two
+Raw Text,3.3.1,What is an example of a vocabulary size V in advance?,"50,000"
+Raw Text,3.3.1,What is UNK> treated like in a language model?,a regular word
+Raw Text,3.3.1,What metrics does the exact choice of UNK> model have an effect on?,perplexity
+Raw Text,3.3.1,How can a language model achieve low perplexity?,by choosing a small vocabulary and assigning the unknown word a high probability
+Raw Text,3.3.1,What should only be compared across language models with the same vocabularies?,perplexities
+Raw Text,3.4.0,What is an example of an unseen context for words that appear in a test set?,they appear after a word they never appeared after in training
+Raw Text,3.4.0,What do we do to keep a language model from assigning zero probability to unseen events?,shave off a bit of probability mass
+Raw Text,3.4.0,What is shave off a bit of probability mass from some more frequent events and give it to the events we've never seen?,smoothing or discounting
+Raw Text,3.4.0,What type of smoothing is introduced?,Kneser-Ney
+Raw Text,3.4.1,What is the simplest way to do smoothing?,add one
+Raw Text,3.4.1,All the counts that used to be zero will now have a count of what?,1
+Raw Text,3.4.1,What is the simplest way to do smoothing?,Laplace smoothing
+Raw Text,3.4.1,What does Laplace smoothing apply to?,unigram probabilities
+Raw Text,3.4.1,What is Laplace smoothing's alternate name?,add-one smoothing
+Raw Text,3.4.1,What do we need to adjust the denominator to take into account?,the extra Y observations
+Raw Text,3.4.1,What happens to our P values if we don't do?,increase the denominator
+Raw Text,3.4.1,How does a smoothing algorithm affect the numerator?,by defining an adjusted count c*
+Raw Text,3.4.1,What is the adjusted count c* easier to compare with?,MLE counts
+Raw Text,3.4.1,What is lowering some non-zero counts in order to get the probability mass that will be assigned to the zero counts?,discounting
+Raw Text,3.4.1,What is the ratio of the discounted counts to the original counts?,relative discount d
+Raw Text,3.4.1,What do we smooth now that we have the intuition for the unigram case?,Berkeley Restaurant Project bigrams
+Raw Text,3.4.1,What shows the add-one smoothed counts for the bigrams in Fig. 3.1?,Figure 3.5
+Raw Text,3.4.1,What shows the add-one smoothed counts for the bigrams in Fig. 3.1?,Figure 3.5
+Raw Text,3.4.1,What shows the add-one smoothed probabilities for the bigrams in Fig. 3.2?,Figure 3.6
+Raw Text,3.4.1,Figure 3.6 shows the add-one smoothed probabilities for the bigrams in Fig. what?,3.2
+Raw Text,3.4.1,How are normal bigram probabilities computed?,by normalizing each row of counts by the unigram count
+Raw Text,3.4.1,What is the number of total word types in the vocabulary?,V
+Raw Text,3.4.1,What is the number of times a smoothing algorithm has changed the original counts?,3.6
+Raw Text,3.4.1,How can we see how much a smoothing algorithm has changed the original counts?,reconstruct the count matrix
+Raw Text,3.4.1,How can adjusted counts be computed?,Eq. 3.24
+Raw Text,3.4.1,How much a smoothing algorithm has changed the original counts?,3.24
+Raw Text,3.4.1,What shows the reconstructed counts?,Figure 3.7
+Raw Text,3.4.1,What smoothing algorithm has made a very big change to the counts?,add-one
+Raw Text,3.4.1,What changed from 609 to 238?,C(want to)
+Raw Text,3.4.1,P(to|want) decreases from what in the unsmoothed case to.26 in the smoothed case?,.66
+Raw Text,3.4.1,What is the discount for the bigram want to?,.39
+Raw Text,3.4.1,Why does the sharp change in counts and probabilities occur?,because too much probability mass is moved to all the zeros
+Raw Text,3.4.2,What is one alternative to add-one smoothing?,move a bit less of the probability mass
+Raw Text,3.4.2,What does add-k smoothing add instead of adding I to each count?,fractional count k
+Raw Text,3.4.2,What is the fractional count k?,.01
+Raw Text,3.4.2,What is the fractional count k?,.01
+Raw Text,3.4.2,What is a fractional count k called?,add-k smoothing
+Raw Text,3.4.2,What does add-k smoothing require?,a method for choosing k
+Raw Text,3.4.2,Add-k smoothing doesn't work well for what?,language modeling
+Raw Text,3.4.3,The discounting we have been discussing so far can help solve the problem of what?,zero frequency n-grams
+Raw Text,3.4.3,What can we draw on to solve the problem of zero frequency n-grams?,additional source of knowledge
+Raw Text,3.4.3,What can we estimate the probability of a trigram if we have no examples of it?,bigram probability
+Raw Text,3.4.3,"If we don't have counts to compute the bigram probability, what can we look to?",unigram probability
+Raw Text,3.4.3,What does using less context help to generalize more for?,contexts that the model hasn't learned much about
+Raw Text,3.4.3,How many ways are there to use this n-gram hierarchy?,two
+Raw Text,3.4.3,What does backoff use if the evidence is sufficient?,trigram
+Raw Text,3.4.3,What do we back off to if we have zero evidence for a higher-order n-gram?,lower-order n-gram
+Raw Text,3.4.3,In what method do we always mix the probability estimates from all the n-gram estimators?,interpolation
+Raw Text,3.4.3,How do we combine different order n-grams?,linearly interpolating all the models
+Raw Text,3.4.3,How do we estimate the trigram probability?,"by mixing together the unigram, bigram, and trigram probabilities"
+Raw Text,3.4.3,How is each weight computed in a slightly more sophisticated version of linear interpolation?,by conditioning on the context
+Raw Text,3.4.3,"If we have particularly accurate counts for a particular bigram, we assume that what will be more trustworthy?",the counts of the trigrams based on this bigram
+Raw Text,3.4.3,What shows the equation for interpolation with context-conditioned weights?,Equation 3.28
+Raw Text,3.4.3,What are the simple interpolation and conditional interpolation lambdas learned from?,held-out corpus
+Raw Text,3.4.3,What is an additional training corpus that we use to set hyperparameters like these lambda values?,A held-out corpus
+Raw Text,3.4.3,What do we fix in a held-out corpus?,n-gram probabilities
+Raw Text,3.4.3,"When plugged into Eq. 3.28, what gives us the highest probability of the held-out set?",3.26
+Raw Text,3.4.3,How many ways are there to find the optimal set of lambdas?,various
+Raw Text,3.4.3,What is an iterative learning algorithm that converges on locally optimal lambdas?,EM algorithm
+Raw Text,3.4.3,How do we approximate a n-gram if it has zero counts?,by backing off to the (N-1)-gram
+Raw Text,3.4.3,When do we continue backing off to the (N-1)-gram?,until we reach a history that has some counts
+Raw Text,3.4.3,"In order for a backoff model to give a correct probability distribution, we have to discount the higher-order n-grams to save",lower order n-grams
+Raw Text,3.4.3,What smoothing method is used when the higher-order n-grams aren't discounted?,add-one
+Raw Text,3.4.3,What is the name of the function that distributes the probability mass to the lower order n-grams?,n
+Raw Text,3.4.3,What is a backoff with discounting called?,Katz backoff
+Raw Text,3.4.3,What is a backoff with discounting called?,Katz backoff
+Raw Text,3.4.3,What do we recursively back off to for the shorter-history (N-1)-gram?,Katz probability
+Raw Text,3.4.3,What smoothing method is often combined with Katz backoff?,Good-Turing
+Raw Text,3.4.3,What backoff algorithm involves quite detailed computation for estimating the Good-Turing smoothing and the P* and alpha values?,Good-Turing
+Raw Text,3.5,What is one of the most commonly used and best performing n-gram smoothing methods?,interpolated Kneser-Ney algorithm
+Raw Text,3.5,What is the Kneser-Ney method called?,absolute discounting
+Raw Text,3.5,Why is discounting the counts for frequent n-grams necessary?,to save some probability mass
+Raw Text,3.5,Who wrote a clever idea for the Kneser-Ney algorithm?,Church and Gale
+Raw Text,3.5,What does an n-gram have?,count 4
+Raw Text,3.5,How do we discount an n-gram that has count 4?,by some amount
+Raw Text,3.5,How much should we discount an n-gram that has count 4?,how much
+Raw Text,3.5,Church and Gale's clever idea was to look at a held-out corpus and see what the count is for all those bigrams,count 4
+Raw Text,3.5,Church and Gale computed a bigram grammar from how many words of AP newswire?,22 million
+Raw Text,3.5,How many times did a bigram occur in the next 22 million words?,3.23
+Raw Text,3.5,What shows the counts for bigrams with c from 0 to 9?,Fig. 3.8
+Raw Text,3.5,Church and Gale's Fig. 3.8 shows the counts for bigrams with what count?,c from 0 to 9
+Raw Text,3.5,What figure shows that all the other bigram counts in the held-out set could be estimated pretty well by just subtracting 0.75 from the count in,Fig. 3.8
+Raw Text,3.5,How many bigram counts could be estimated pretty well by subtracting from the count in the training set?,0.75
+Raw Text,3.5,What formalizes this intuition by subtracting a fixed (absolute) discount d from each count?,Absolute discounting
+Raw Text,3.5,What will not affect the very high counts?,a small discount d
+Raw Text,3.5,What will a small discount d mainly modify?,smaller counts
+Raw Text,3.5,Fig. 3.8 suggests that in practice this discount is actually a good one for bigrams with what counts?,counts 2 through 9
+Raw Text,3.5,What is the second term in the equation for interpolated absolute discounting applied to bigrams?,unigram with an interpolation weight lambda
+Raw Text,3.5,What is the discount value for bigrams with counts of 1?,0.5
+Raw Text,3.5,What augments absolute discounting with a more sophisticated way to handle the lower-order unigram distribution?,Kneser-Ney discounting
+Raw Text,3.5,What is the job of Kneser-Ney discounting?,predicting the next word
+Raw Text,3.5,"What word is more likely to follow the word ""I can't see without my reading""?",glasses
+Raw Text,3.5,"What is a very frequent word in the word ""glasses""?",Hong Kong
+Raw Text,3.5,What will assign Kong a higher probability than glasses?,A standard unigram model
+Raw Text,3.5,What phrase is Kong mainly frequent in?,Hong Kong
+Raw Text,3.5,What word has a much wider distribution than Kong?,glasses
+Raw Text,3.5,"What answers the question ""How likely is w?""",P(w)
+Raw Text,3.5,How likely is w to appear as a new unseen context?,novel
+Raw Text,3.5,How likely is w to appear as a new unseen context?,novel
+Raw Text,3.5,What is the Kneser-Ney intuition based on?,the number of bigram types it completes
+Raw Text,3.5,When was every bigram type a novel continuation?,the first time it was seen
+Raw Text,3.5,We hypothesize that words that have appeared in what number of contexts in the past are more likely to appear in some new context as well?,more
+Raw Text,3.5,What do we normalize to turn this count into a probability?,the total number of word bigram types
+Raw Text,3.5,What is normalized by the number of words preceding all words?,the number of word types seen to precede w
+Raw Text,3.5,How many contexts does a frequent word (Kong) occur in?,one
+Raw Text,3.5,What is the final equation for Interpolated Kneser-Ney smoothing for bigrams?,3.35
+Raw Text,3.5,What is the lambda?,normalizing constant
+Raw Text,3.5,What is the first term of the normalized discount?,d
+Raw Text,3.5,What is the second term in the equation for Kneser-Ney smoothing for bigrams?,number of word types that can follow wi-1
+Raw Text,3.5,"What is the highest-order n-gram being interpolated if we are interpolating trigram, bigram, and unigram",trigram
+Raw Text,3.5,What is the number of unique single word contexts?,The continuation count
+Raw Text,3.5,What parameter is the empty string in the uniform distribution?,epsilon
+Raw Text,3.5,What word is included as a regular vocabulary entry with count zero?,UNK>
+Raw Text,3.5,Who wrote the best performing version of Kneser-Ney smoothing?,Chen and Goodman
+Raw Text,3.5,What are the three different discounts used in modified Kneser-Ney smoothing?,"d1, d2 and d3+"
+Raw Text,3.5,Who published a study on modified Kneser-Ney smoothing in 2013?,Heafield et al.
+Raw Text,3.5,In what year did Heafield et al. publish their work on modified Kneser-Ney smoothing?,2013
+Raw Text,3.6,What can be used to build large language models?,enormous collections
+Raw Text,3.6,How many words are in the Web 1 Trillion 5-gram corpus?,"1,024,908,267,229"
+Raw Text,3.6,How many tokens of n-grams are in Google Books Ngrams corpora?,800 billion
+Raw Text,3.6,How many words are in the COCA corpus of American English?,1 billion
+Raw Text,3.6,What is a balanced corpora?,COCA
+Raw Text,3.6,What considerations are important when building language models that use large sets of n-grams?,Efficiency
+Raw Text,3.6,How is each word represented in memory?,a 64-bit hash number
+Raw Text,3.6,How are probabilities quantized?,4-8 bits
+Raw Text,3.6,How can n-grams be shrunk?,pruning
+Raw Text,3.6,What is a technique used to build approximate language models?,Bloom filters
+Raw Text,3.6,When did Church and Osborne use Bloom filters?,2007
+Raw Text,3.6,What efficient language model toolkit uses sorted arrays?,KenLM
+Raw Text,3.6,What do efficient language model toolkits use?,sorted arrays
+Raw Text,3.6,What does KenLM use to efficiently build the probability tables in a minimal number of passes through a large corpus?,merge sorts
+Raw Text,3.6,What is used to build web-scale language models?,Kneser-Ney smoothing
+Raw Text,3.6,What may be sufficient with very large language models?,a much simpler algorithm
+Raw Text,3.6,What algorithm gives up the idea of trying to make the language model a true probability distribution?,stupid backoff
+Raw Text,3.6,What gives up the idea of trying to make the language model a true probability distribution?,Stupid backoff
+Raw Text,3.6,What does stupid backoff not do to the higher-order probabilities?,discounting
+Raw Text,3.6,"If a higher-order probability has a zero count, we simply backoff to a lower-order probability, weighed by a fixed",n-gram
+Raw Text,3.6,What does stupid backoff not produce?,probability distribution
+Raw Text,3.6,Where does the backoff terminate?,unigram
+Raw Text,3.6,What value worked well for lambda?,0.4
+Raw Text,3.6,What language model did Brants et al. find that a value of 0.4 worked well for?,lambda
+Raw Text,3.7,What was introduced in Section 3.2.1 as a way to evaluate n-gram models on a test set?,perplexity
+Raw Text,3.7,What does a better n-gram model assign to the test data?,higher probability
+Raw Text,3.7,What does the perplexity measure originate from?,information-theoretic concept of cross-entropy
+Raw Text,3.7,What is the relationship between perplexity and the information-theoretic concept of cross-entropy?,entropy
+Raw Text,3.7,What is a measure of information?,Entropy
+Raw Text,3.7,What is the entropy of the random variable X called?,p(x)
+Raw Text,3.7,"In principle, the log can be computed in what?",any base
+Raw Text,3.7,What is the resulting value of entropy measured in if we use log base 2?,bits
+Raw Text,3.7,What is an intuitive way to think about entropy?,lower bound on the number of bits it would take to encode a certain decision or piece of information in the optimal coding scheme
+Raw Text,3.7,Who wrote a standard information theory textbook in 1991?,Cover and Thomas
+Raw Text,3.7,Why would we want to send a short message to the bookie to tell him which of the eight horses to bet on?,it is too far to go all the way to Yonkers Racetrack
+Raw Text,3.7,What is the binary representation of the horse's number?,888
+Raw Text,3.7,How many bits is each horse coded with?,3 bits
+Raw Text,3.7,What is the question of entropy?,Can we do better
+Raw Text,3.7,What does the spread represent?,the prior probability of each horse
+Raw Text,3.7,What random variable gives us a lower bound on the number of bits?,X
+Raw Text,3.7,"A code that averages what bit per race can be built with short encodings for more probable horses, and longer encodings for less",2 bits
+Raw Text,3.7,What are the remaining horses in a code?,10
+Raw Text,3.7,What if the horses are what?,equally likely
+Raw Text,3.7,How many bits did each horse take to code?,3
+Raw Text,3.7,What is the same as the entropy of a binary code?,entropy
+Raw Text,3.7,What is the probability of each horse in an equal-length binary code?,1/8
+Raw Text,3.7,What is the entropy of the choice of horses?,3 bits
+Raw Text,3.7,Until now we have been computing the entropy of what?,single variable
+Raw Text,3.7,What is most of what we will use entropy for?,sequences
+Raw Text,3.7,For what is the entropy of some sequence of words used?,a grammar
+Raw Text,3.7,What is one way to compute the entropy of some sequence of words?,variable that ranges over sequences of words
+Raw Text,3.7,What is the entropy rate?,per-word entropy
+Raw Text,3.7,"To measure the true entropy of a language, we need to consider sequences of what length?",infinite length
+Raw Text,3.7,"What theorem states that if the language is regular in certain ways (to be exact, if it is both stationary and ergo",Shannon-McMillan-Breiman theorem
+Raw Text,3.7,What is the Shannon-McMillan-Breiman theorem?,a single sequence that is long enough
+Raw Text,3.7,What is the intuition of the Shannon-McMillan-Breiman theorem?,Shannon-McMillan-Breiman theorem
+Raw Text,3.7,What is said to be stationary if the probabilities it assigns to a sequence are invariant with respect to shifts in the time index,A stochastic process
+Raw Text,3.7,What is the same for words at time t as the probability distribution at time t+1?,probability distribution
+Raw Text,3.7,What models are stationary?,Markov models
+Raw Text,3.7,What is dependent only on Pi-1 in a bigram?,Pi
+Raw Text,3.7,"If we shift our time index by x, what is still dependent on Pi+x-1?",Pi+x
+Raw Text,3.7,"What is not stationary, since the probability of upcoming words can be dependent on events that were arbitrarily distant and time dependent?",natural language
+Raw Text,3.7,What do our statistical models give to the correct distributions and entropies of natural language?,approximation
+Raw Text,3.7,How can we compute the entropy of some stochastic process?,by taking a very long sample of the output and computing its average log probability
+Raw Text,3.7,What does the Shannon-McMillan-Breiman theorem introduce?,cross-entropy
+Raw Text,3.7,When is the cross-entropy useful?,when we don't know the actual probability distribution p
+Raw Text,3.7,What is a model of p?,m
+Raw Text,3.7,How is the cross-entropy of m on p defined?,"by drawing sequences according to the probability distribution p, but summing the log of their probabilities according to m"
+Raw Text,3.7,What is an upper bound on the entropy H(p)?,"H(p,m)"
+Raw Text,3.7,What can we use a simplified model m to help estimate the true entropy of?,a sequence of symbols drawn according to probability y
+Raw Text,3.7,"The more accurate m is, the closer what is the cross-entropy H(p, m) to the true entropy",closer
+Raw Text,3.7,What is a measure of how accurate a model is?,"H(p, m) and H(p)"
+Raw Text,3.7,What are the two models with the lowest cross-entropy?,m1 and m2
+Raw Text,3.7,The cross-entropy can never be lower than what?,true entropy
+Raw Text,3.7,What is the relation between cross-entropy and cross-entropy?,perplexity
+Raw Text,3.7,"In Eq. 3, what is the relation between perplexity and cross-entropy?",3.49
+Raw Text,3.7,The length of the observed word sequence goes to what?,infinity
+Raw Text,3.7,What will we need to estimate the cross-entropy?,an approximation
+Raw Text,3.7,The perplexity of a model P on a sequence of words W is now formally defined as what?,exp
+Raw Text,4.0,What lies at the heart of both human and machine intelligence?,Classification
+Raw Text,4.0,What is one example of assigning a category to an input?,assigning grades
+Raw Text,4.0,"Who imagined classifying animals into suckling pigs, mermaids, mermaids and stray dogs?",Jorge Luis Borges
+Raw Text,4.0,What type of tasks involve classification?,language processing tasks
+Raw Text,4.0,What is text categorization?,assigning a label or category to an entire text or document
+Raw Text,4.0,What is the extraction of positive or negative orientation that a writer expresses toward some object?,sentiment analysis
+Raw Text,4.0,What does an editorial or political text express sentiment toward?,a candidate or political action
+Raw Text,4.0,What type of cues do the words of a review provide?,excellent
+Raw Text,4.0,What types of reviews provide cues for sentiment analysis?,positive and negative
+Raw Text,4.0,What are two examples of cues from positive and negative reviews of movies and restaurants?,awful and ridiculously
+Raw Text,4.0,What is another important commercial application?,Spam detection
+Raw Text,4.0,What can be used to perform the binary classification task of assigning an email to one of the two classes spam or not-spam?,Many lexical and other features
+Raw Text,4.0,What phrases might you be suspicious of an email containing?,"""online pharmaceutical"" or ""WITHOUT ANY COST"" or ""Dear Winner"""
+Raw Text,4.0,What is another thing we might want to know about a text?,the language it's written in
+Raw Text,4.0,Texts on what can be in any number of languages?,social media
+Raw Text,4.0,What is the first step in most language processing pipelines?,language id
+Raw Text,4.0,What is determining a text's author?,authorship attribution
+Raw Text,4.0,What is one of the oldest tasks in text classification?,assigning a library subject category or topic label
+Raw Text,4.0,What is an important component of information retrieval?,epidemiology
+Raw Text,4.0,What does MeSH stand for?,Medical Subject Headings
+Raw Text,4.0,When was the naive Bayes algorithm invented?,1961
+Raw Text,4.0,Classification is essential for what?,tasks below the level of the document
+Raw Text,4.0,What is deciding if a character should be a word boundary?,word tokenization
+Raw Text,4.0,Even language modeling can be viewed as what?,classification
+Raw Text,4.0,What is the goal of classification?,"to take a single observation, extract some useful features, and thereby classify the observation into one of a set of discrete classes"
+Raw Text,4.0,What is one method for classifying text?,handwritten rules
+Raw Text,4.0,What constitutes a state-of-the-art system?,handwritten rule-based classifiers
+Raw Text,4.0,Why are handwritten rules fragile?,humans aren't necessarily good at coming up with the rules
+Raw Text,4.0,How are most cases of classification in language processing done?,supervised machine learning
+Raw Text,4.0,"What is the term for a data set of input observations, each associated with some correct output?",supervised learning
+Raw Text,4.0,What is the goal of supervised learning?,learn how to map from a new observation to a correct output
+Raw Text,4.0,"What type of classification is to take input x and a fixed set of output classes Y=y1,y2,...,yM and return",supervised
+Raw Text,4.0,What class does supervised classification use instead of y?,c
+Raw Text,4.0,What is the training set of in supervised classification?,N documents
+Raw Text,4.0,What tells us the probability of the observation being in the class?,probabilistic classifier
+Raw Text,4.0,What can be useful when combining systems?,making discrete decisions early on
+Raw Text,4.0,What is used to build classifiers?,machine learning algorithms
+Raw Text,4.0,What machine learning algorithm is introduced in this chapter?,naive Bayes
+Raw Text,4.0,How many ways of doing classification do naive Bayes and logistic regression exemplify?,two
+Raw Text,4.0,What type of classifiers build a model of how a class could generate some input data?,Generative classifiers
+Raw Text,4.0,What do Generative classifiers return given an observation?,the class most likely to have generated the observation
+Raw Text,4.0,What type of classifier learns what features from the input are most useful to discriminate between the different possible classes?,Discriminative classifiers
+Raw Text,4.0,What type of classifiers still have a role in supervised classification?,generative classifiers
+Raw Text,4.1,What is the multinomial Bayes classifier called?,naive
+Raw Text,4.1,Where is the intuition of the naive Bayes classifier shown?,Fig. 4.1
+Raw Text,4.1,What is the intuition of the naive Bayes classifier shown in Fig. 4.1?,4.1
+Raw Text,4.1,What does the classifier represent a text document as if it were?,a bag-of-words
+Raw Text,4.1,What is one example of a naive Bayes classifier?,I love this movie
+Raw Text,4.1,What type of classifier is naive Bayes?,probabilistic
+Raw Text,4.1,Who first applied Bayesian inference to text classification?,Mosteller and Wallace
+Raw Text,4.1,What is the intuition of Bayesian classification?,to transform Eq. 4.1
+Raw Text,4.1,What does Bayes' rule transform Eq. 4.1 into?,other probabilities
+Raw Text,4.1,How many other probabilities can a conditional probability P(x|y) be broken down into?,three
+Raw Text,4.1,What can we do by dropping the denominator P(d)?,simplify
+Raw Text,4.1,How can we simplify Eq. 4.3?,dropping the denominator
+Raw Text,4.1,How can we simplify Eq. 4.3 by dropping the denominator P(d)?,computing Eq. 4.3
+Raw Text,4.1,What is the denominator for Eq. 4.3?,4.3
+Raw Text,4.1,How does P(d) change for each class?,P(d) doesn't change for each class
+Raw Text,4.1,What can we choose to simplify Eq. 4.3 by dropping the denominator P(d)?,the class that maximizes this simpler formula
+Raw Text,4.1,What is Naive Bayes called?,generative model
+Raw Text,4.1,What could we imagine generating by following the generative model?,artificial documents
+Raw Text,4.1,In what chapter will we discuss the intuition of generative models?,Chapter 5
+Raw Text,4.1,What are the two probabilities that determine the most probable class c given some document d?,the prior probability of the class P(c) and the likelihood of the document P(d|c)
+Raw Text,4.1,"Without some simplifying assumptions, estimating the probability of every possible combination of features would require what?",huge numbers of parameters and impossibly large training sets
+Raw Text,4.1,What makes two simplifying assumptions?,Naive Bayes classifiers
+Raw Text,4.1,What is the first simplifying assumption of naive Bayes classifiers?,the bag of words assumption
+Raw Text,4.1,What do we assume the features only encode?,encode word identity and not position
+Raw Text,4.1,What is the naive Bayes assumption?,conditional independence assumption
+Raw Text,4.1,How do we apply the naive Bayes classifier to text?,by simply walking an index through every word position in the document
+Raw Text,4.1,Why are naive Bayes calculations done in log space?,increase speed
+Raw Text,4.1,Where do naive Bayes calculations take place?,log space
+Raw Text,4.1,What is the name of the naive Bayes calculation that computes the predicted class as a linear function of input features?,4.10
+Raw Text,4.1,What are classifiers that use a linear combination of inputs to make a classification decision called?,linear classifiers
+Raw Text,4.2,What probabilities can we learn?,P(c) and P(fi|c)
+Raw Text,4.2,What are the probabilities P(c) and P(fi|c)?,maximum likelihood estimate
+Raw Text,4.2,What do we use to estimate the maximum likelihood?,frequencies in the data
+Raw Text,4.2,What is the probability P(fi|c)?,"P(w, c)"
+Raw Text,4.2,What is used to give a maximum likelihood estimate of the probability?,the frequency of wi
+Raw Text,4.2,What is a problem with the maximum likelihood estimate?,maximum likelihood training
+Raw Text,4.2,"What is the problem with estimating the probability of the word ""fantastic"" given class positive?","suppose there are no training documents that both contain the word ""fantastic"" and are classified as positive"
+Raw Text,4.2,"How does the word ""fantastic"" happen in a negative class?",sarcastically
+Raw Text,4.2,"What class does the word ""fantastic"" occur in?",negative
+Raw Text,4.2,"What is the probability for the word ""fantastic"" in a negative class?",zero
+Raw Text,4.2,What naively multiplies all the feature likelihoods together?,naive Bayes
+Raw Text,4.2,What is Laplace smoothing?,add-one
+Raw Text,4.2,What is usually replaced by more sophisticated smoothing algorithms in language modeling?,Laplace smoothing
+Raw Text,4.2,What does the vocabulary V consist of?,all the word types in all classes
+Raw Text,4.2,Why are words not in our vocabulary at all?,they did not occur in any training document in any class
+Raw Text,4.2,What is the solution for unknown words that are not in our vocabulary at all because they did not occur in any training document in any class?,ignore them
+Raw Text,4.2,"What are very frequent words like ""the"" and ""a""?",stop words
+Raw Text,4.2,How can some systems completely ignore stop words?,"by sorting the vocabulary by frequency in the training set, and defining the top 10-100 vocabulary entries as stop words"
+Raw Text,4.2,What is removed from both training and test documents as if they had never occurred?,stop words
+Raw Text,4.2,"In most text classification applications, what is more common than using a stop word list?",make use of the entire vocabulary and not use a stop word list
+Raw Text,4.4,Standard naive Bayes text classification can work well for what?,sentiment analysis
+Raw Text,4.4,What seems to matter more than its frequency?,whether a word occurs or not
+Raw Text,4.4,How many words are clipped in each document?,1
+Raw Text,4.4,What is the variant of naive Bayes called?,binary multinomial naive Bayes
+Raw Text,4.4,What does binary multinomial naive Bayes use?,Eq. 4.10
+Raw Text,4.4,What does binary multinomial naive Bayes do for each document?,remove all duplicate words
+Raw Text,4.4,What shows an example in which a set of four documents (shortened and text-normalized for this example) are remapped to binary?,Fig. 4.3
+Raw Text,4.4,What shows an example in which a set of four documents (shortened and text-normalized for this example) are remapped to binary?,Fig. 4.3
+Raw Text,4.4,Why is the example worked without add-1 smoothing?,make the differences clearer
+Raw Text,4.4,The word great has a count of how many even for Binary NB?,2
+Raw Text,4.4,What is another important addition commonly made when doing text classification for sentiment?,negation
+Raw Text,4.4,"What is the meaning of ""I really like this movie""?",positive
+Raw Text,4.4,"What is the difference between ""I really like this movie"" and ""I didn't like this movie""?",negative
+Raw Text,4.4,What completely alters the inferences we draw from the predicate like?,negation
+Raw Text,4.4,Negation can modify what word to produce a positive review?,negative
+Raw Text,4.4,What prefix is prepended to every word after a token of logical negation?,NOT_
+Raw Text,4.4,"What phrase becomes ""didn't NOT_like NOT_this NOT_movie, but I""?","""didn't like this movie, but I"""
+Raw Text,4.4,"Newly formed words like NOT_like, NOT_recommend will occur more often in what type of documents?",negative
+Raw Text,4.4,When will we return to the use of parsing to deal more accurately with the scope relationship between negation words and the predicates they modify?,Chapter 16
+Raw Text,4.4,What do naive Bayes classifiers estimate?,positive and negative sentiment
+Raw Text,4.4,What are lists of words that are pre-annotated with positive or negative sentiment?,sentiment lexicons
+Raw Text,4.4,Who created the MPQA Subjectivity Lexicon?,"Wilson et al., 2005"
+Raw Text,4.4,How many words does the MPQA subjectivity lexicon have?,6885
+Raw Text,4.4,What is a common way to use lexicons in a naive Bayes classifier?,add a feature that is counted whenever a word from that lexicon occurs
+Raw Text,4.4,What is a feature that is counted whenever a word from a lexicon occurs?,this word occurs in the positive lexicon
+Raw Text,4.4,What is a feature that is counted whenever a word from a lexicon occurs?,this word occurs in the negative lexicon
+Raw Text,4.4,How many features won't work in a naive Bayes classifier?,two
+Raw Text,4.4,"When training data is not representative of the test set, using dense lexicon features instead of sparse individual-word features may generalize better.",sparse
+Raw Text,4.4,In what chapter will we discuss the use of lexicons?,Chapter 20
+Raw Text,4.5,What does not require that our classifier use all the words in the training data as features?,naive Bayes
+Raw Text,4.5,What can features in naive Bayes express?,any property of the input text
+Raw Text,4.5,What is the task of deciding if a particular piece of email is an example of spam?,spam detection
+Raw Text,4.5,What is a common solution to using all the words as features?,predefine likely sets of words or phrases as features
+Raw Text,4.5,What feature does SpamAssassin predefine?,one hundred percent guaranteed
+Raw Text,4.5,What is a non-linguistic feature of naive Bayes?,the path that the email took to arrive
+Raw Text,4.5,What is a naive Bayes feature that pretends everything is a string of raw bytes?,byte n-grams
+Raw Text,4.5,What can model statistics about the beginning or ending of words?,byte n-grams
+Raw Text,4.5,What is a widely used naive Bayes system?,langid.py
+Raw Text,4.5,Language ID systems are trained on what type of text?,multilingual
+Raw Text,4.5,What are two countries with large Anglophone populations?,Nigeria or India
+Raw Text,4.6,What can naive Bayes classifiers use?,"dictionaries, URLs, email addresses, network features, phrases"
+Raw Text,4.6,What does naive Bayes have an important similarity to?,language modeling
+Raw Text,4.6,A naive Bayes model can be viewed as a set of class-specific what?,unigram language models
+Raw Text,4.6,What do the likelihood features from the naive Bayes model assign to each word P(word|c)?,probability
+Raw Text,4.7.0,What type of detection tasks are used to evaluate text classification?,binary
+Raw Text,4.7.0,What is the definition of a spam category?,positive
+Raw Text,4.7.0,What is another name for spam detection?,negative
+Raw Text,4.7.0,What do we need to know for each item?,whether our system called it spam or not
+Raw Text,4.7.0,What do we need to know?,whether the email is actually spam or not
+Raw Text,4.7.0,What do we refer to as the gold labels?,human-defined labels
+Raw Text,4.7.0,What are the human labels for each document that we are trying to match?,gold labels
+Raw Text,4.7.0,What is the name of the company that you're the CEO of?,Delicious Pie
+Raw Text,4.7.0,What is the positive class?,tweets about Delicious Pie
+Raw Text,4.7.0,What do we need in order to know how well our spam detector is doing?,metric
+Raw Text,4.7.0,What is a table for visualizing how an algorithm performs with respect to the human gold labels?,confusion matrix
+Raw Text,4.7.0,What is a table for visualizing how an algorithm performs with respect to the human gold labels?,confusion matrix
+Raw Text,4.7.0,What is a table for visualizing how an algorithm performs with respect to the human gold labels?,confusion matrix
+Raw Text,4.7.0,What are documents that are indeed spam that our system correctly said were spam?,true positives
+Raw Text,4.7.0,What are documents that are indeed spam but our system incorrectly labeled as non-spam?,False negatives
+Raw Text,4.7.0,To the bottom right of the table is the equation for what percentage of all the observations (for the spam or pie examples that means all emails or tweets,accuracy
+Raw Text,4.7.0,What do we generally don't use accuracy for?,text classification tasks
+Raw Text,4.7.0,What is a large majority of email?,spam
+Raw Text,4.7.0,How many tweets are discussing their love or hatred for our pie?,100
+Raw Text,4.7.0,What would a simple classifier classify every tweet as?,not about pie
+Raw Text,4.7.0,What is the accuracy of a simple classifier?,99.99%
+Raw Text,4.7.0,What is the level of accuracy in a classifier?,accuracy
+Raw Text,4.7.0,How many false negatives would a classifier have?,"999,900"
+Raw Text,4.7.0,What would a 'no pie' classifier be useless for?,it wouldn't find a single one of the customer comments
+Raw Text,4.7.0,What is a common situation in the world where accuracy is not a good metric?,rare
+Raw Text,4.7.0,What are the two other metrics shown in Fig. 4.4?,precision and recall
+Raw Text,4.7.0,What are the two other metrics shown in Fig. 4.4?,precision and recall
+Raw Text,4.7.0,"What measures the percentage of items that the system detected (i.e., the system labeled as positive) that are in fact positive?",Precision
+Raw Text,4.7.0,What measures the percentage of items actually present in input that were correctly identified by the system?,Recall
+Raw Text,4.7.0,What classifier has a terrible recall of 0?,nothing is pie
+Raw Text,4.7.0,"What is the accuracy of the ""nothing is pie"" classifier?",99.99%
+Raw Text,4.7.0,"What is a problem with the ""nothing is pie"" classifier?",relevant tweets
+Raw Text,4.7.0,What do precision and recall emphasize?,true positives
+Raw Text,4.7.0,There are many ways to define a single metric that incorporates aspects of what?,precision and recall
+Raw Text,4.7.0,What is the simplest way to define a single metric that incorporates aspects of precision and recall?,F-measure
+Raw Text,4.7.0,What parameter differentially weights the importance of recall and precision?,The B parameter
+Raw Text,4.7.0,What value favors recall?,B>1
+Raw Text,4.7.0,What is the most commonly used metric when precision and recall are equally balanced?,FB=1 or just F1
+Raw Text,4.7.0,What does the F-measure come from?,a weighted harmonic mean of precision and recall
+Raw Text,4.7.0,What is the reciprocal of the arithmetic mean of reciprocals?,The harmonic mean of a set of numbers
+Raw Text,4.7.0,Why is the harmonic mean used?,because it is a conservative metric
+Raw Text,4.7.0,What does the harmonic mean weigh more heavily than the arithmetic mean?,lower of the two numbers
+Raw Text,4.7.1,"Up to now, we have been describing text classification tasks with how many classes?",two
+Raw Text,4.7.1,What do lots of classification tasks in language processing have?,more than two classes
+Raw Text,4.7.1,What are the three classes for sentiment analysis?,"positive, negative, neutral"
+Raw Text,4.7.1,What is already a multi-class classification algorithm?,naive Bayes algorithm
+Raw Text,4.7.1,What definitions will we need to modify to make the naive Bayes algorithm a multi-class classification algorithm?,precision and recall
+Raw Text,4.7.1,What is the example confusion matrix for in Fig. 4.5?,"hypothetical 3-way ""one-of"" email categorization decision"
+Raw Text,4.7.1,"What are some examples of ""one-of"" email categorization decisions?","urgent, normal, spam"
+Raw Text,4.7.1,What did the system mistakenly label as urgent?,one spam document
+Raw Text,4.7.1,How can we derive a single metric that tells us how well the system is doing?,combine these values in two ways
+Raw Text,4.7.1,"What computes the performance for each class, and then averages over classes?",macroaveraging
+Raw Text,4.7.1,In what method do we collect the decisions for all classes into a single confusion matrix?,microaveraging
+Raw Text,4.7.1,What figure shows the confusion matrix for each class separately?,4.6
+Raw Text,4.7.1,What figure shows the confusion matrix for each class separately?,4.6
+Raw Text,4.7.1,What class dominates a microaverage?,more frequent class
+Raw Text,4.7.1,What better reflects the statistics of the smaller classes?,macroaverage
+Raw Text,4.8,What is another name for the development test set?,devset
+Raw Text,4.8,What is the purpose of the test set?,to report its performance
+Raw Text,4.8,What does the use of a devset avoid?,overfitting
+Raw Text,4.8,Wouldn't it be better if we could use all our data for training and still use all our data for test?,use all our data for training and still use all our data for test
+Raw Text,4.8,How can we use all our data for training and still use all our data for test?,by cross-validation
+Raw Text,4.8,What does cross-validation repeat with?,a different randomly selected training set and test set
+Raw Text,4.8,How many times do we do cross-validation?,10
+Raw Text,4.8,What is cross-validation called?,10-fold cross-validation
+Raw Text,4.8,What is the problem with cross-validation?,blind
+Raw Text,4.8,What is important in designing NLP systems?,looking at the corpus
+Raw Text,4.8,What is it common to do in training and testing?,"create a fixed training set and test set, then do 10-fold cross-validation inside the training set"
+Raw Text,4.8,What type of cross-validation is done inside a fixed training set and test set?,10-fold cross-validation
+Raw Text,4.9.0,"In building systems, we often need to compare the performance of how many systems?",two
+Raw Text,4.9.0,How can we know if the new system we just built is better than the old one?,new system we just built is better than our old one
+Raw Text,4.9.0,How can we know if the new system we just built is better or worse than the other system described in the literature?,better
+Raw Text,4.9.0,What is the domain of comparing the performance of two systems?,statistical hypothesis testing
+Raw Text,4.9.0,Who published a study on statistical significance for NLP classifiers in 2012?,Berg-Kirkpatrick et al.
+Raw Text,4.9.0,When was Berg-Kirkpatrick et al. published?,2012
+Raw Text,4.9.0,What do we compare the performance of classifiers A and B on?,metric M
+Raw Text,4.9.0,What is the F1 score of our logistic regression sentiment classifier A?,higher
+Raw Text,4.9.0,What is the score that system A gets on test set x?,"M(A,x)"
+Raw Text,4.9.0,What means that our logistic regression classifier has a higher F1 than our naive Bayes classifier on X?,"d(x) > 0,"
+Raw Text,4.9.0,What is the effect size?,d(x)
+Raw Text,4.9.0,What is the F1 score of A higher than that of Bs?,.04
+Raw Text,4.9.0,Can we be certain that A is better than B?,We cannot
+Raw Text,4.9.0,Can we be certain that A is better than B?,We cannot
+Raw Text,4.9.0,Why do we want to know if A's superiority over B is likely to hold again if we checked another test set x'?,A might just be accidentally better than B
+Raw Text,4.9.0,How do we test the null hypothesis?,by formalizing two hypotheses
+Raw Text,4.9.0,What is the hypothesis H0 called?,the null hypothesis
+Raw Text,4.9.0,What hypothesis does the null hypothesis support?,H1
+Raw Text,4.9.0,How do we support the null hypothesis?,creating a random variable X ranging over all test sets
+Raw Text,4.9.0,What is the probability that we would see if the null hypothesis is true?,d(x)
+Raw Text,4.9.0,What is the probability that we would see d(x) assuming the null hypothesis is true?,p-value
+Raw Text,4.9.0,What is the probability that we would see d(x)?,assuming A is not better than B
+Raw Text,4.9.0,What is A's F1?,.9
+Raw Text,4.9.0,What might be less surprising to us if the null hypothesis is true and A is not really better than B?,if d(x) is very small
+Raw Text,4.9.0,A very small p-value means that the difference we observed is what under the null hypothesis?,very unlikely
+Raw Text,4.9.0,What counts as a p-value if the null hypothesis is true?,very small
+Raw Text,4.9.0,What value means that if the p-value (the probability of observing the d we saw assuming H0 is true) is less,.01
+Raw Text,4.9.0,"If a result is statistically significant, what is the null hypothesis?",if the d we saw has a probability that is below the threshold
+Raw Text,4.9.0,What is the probability of observing the d we saw assuming H0 is true?,p-value
+Raw Text,4.9.0,What are two examples of simple parametric tests in NLP?,t-tests or ANOVAs
+Raw Text,4.9.0,Parametric tests make assumptions about the distributions of the test statistic that don't generally hold in our cases.,normality
+Raw Text,4.9.0,What are non-parametric tests based on?,sampling
+Raw Text,4.9.0,"If we had lots of different test sets, what would we measure all the d(x') for all the x'?",x'
+Raw Text,4.9.0,What do we get when we measure all the d(x') for all the x'?,a distribution
+Raw Text,4.9.0,What percentage of deltas are smaller than the delta we observed?,99% or more
+Raw Text,4.9.0,What is the probability of seeing a d(x) as big as the one we saw?,p-value(x)
+Raw Text,4.9.0,What is the most common non-parametric test used in NLP?,approximate randomization
+Raw Text,4.9.0,What is the most common non-parametric test used in NLP?,bootstrap test
+Raw Text,4.9.0,What is the most common non-parametric test used in NLP?,bootstrap
+Raw Text,4.9.0,What are those in which we compare two sets of observations that are aligned?,Paired tests
+Raw Text,4.9.0,When do Paired tests happen?,when we are comparing the performance of two systems on the same test set
+Raw Text,4.9.1,What can apply to any metric?,bootstrap test
+Raw Text,4.9.1,What is the term for large numbers of smaller samples with replacement from an original larger sample?,bootstrap samples
+Raw Text,4.9.1,How can we create many virtual test sets from an observed test set?,by repeatedly sampling from it
+Raw Text,4.9.1,The bootstrap test only makes the assumption that the sample is what?,representative of the population
+Raw Text,4.9.1,What is the test set for a tiny text classification example?,x of 10 documents
+Raw Text,4.9.1,What row of Fig. 4.8 shows the results of two classifiers?,first row
+Raw Text,4.9.1,The first row of Fig. 1 shows the results of two classifiers (A and B) on a test set x of 10 documents,4.8
+Raw Text,4.9.1,Which two classifiers get the correct class on the first document?,A and B
+Raw Text,4.9.1,"If we assume for simplicity that our metric is accuracy, what is d(z)?",.20
+Raw Text,4.9.1,What is a large num of virtual test sets x(i)?,b
+Raw Text,4.9.1,What shows a couple examples of virtual test sets?,Fig. 4.8
+Raw Text,4.9.1,What figure shows a couple examples of virtual test sets?,4.8
+Raw Text,4.9.1,How many times do we repeatedly select a cell from row x with replacement?,n=10 times
+Raw Text,4.9.1,What would we create if we randomly selected the second cell of the x row?,first cell of the first virtual test set x(1)
+Raw Text,4.9.1,What can we do statistics on now that we have the b test sets?,how often A has an accidental advantage
+Raw Text,4.9.1,Who published a version of statistics on how often A has an accidental advantage?,Berg-Kirkpatrick et al.
+Raw Text,4.9.1,In what year did Berg-Kirkpatrick et al. publish a version of how often A has an accidental advantage?,(2012)
+Raw Text,4.9.1,What does H0 assume?,A isn't better than B
+Raw Text,4.9.1,What would we compute to measure exactly how surprising is our observed d(x)?,p-value
+Raw Text,4.9.1,Why is the expected value of d(X) over many test sets not true?,assuming A isn't better than B
+Raw Text,4.9.1,What is the bias of the original test set x in favor of A?,.20
+Raw Text,4.9.1,What is computed by counting over many test sets how often d(x(i)) exceeds the expected value of d(x),p-value
+Raw Text,4.9.1,"What is the threshold of 10,000 test sets x(i)?",.01
+Raw Text,4.9.1,Where is the full algorithm for the bootstrap shown?,Fig. 4.9
+Raw Text,4.9.1,The full algorithm for the bootstrap is shown in Fig. what?,4.9
+Raw Text,4.9.1,What is the num of samples b?,b
+Raw Text,4.9.1,What does the percentage of b bootstrap test sets in which d(x*(i)) > 2d(x) act as?,one-sided empirical p-value
+Raw Text,4.10,What is important to avoid that may result from classifiers?,harms
+Raw Text,4.10,What class of harms are caused by a system that demeans a social group?,representational harms
+Raw Text,4.10,What are representational harms caused by a system that perpetuates negative stereotypes about a social group?,demeans
+Raw Text,4.10,Who examined the performance of 200 sentiment analysis systems on pairs of sentences that were identical except for a common African American first name?,Kiritchenko and Mohammad
+Raw Text,4.10,Where did Caliskan and Mohammad examine the performance of 200 sentiment analysis systems on pairs of sentences that were identical except for a common African American,Chapter 6
+Raw Text,4.10,Who found that most systems assigned lower sentiment and more negative emotion to sentences with African American names?,"Popp et a1., 2003"
+Raw Text,4.10,"Classifiers can lead to representational harms and other harms, such as what?",censorship
+Raw Text,4.10,"What is the important text classification task of detecting hate speech, abuse, harassment, or other kinds of toxic language?",toxicity detection
+Raw Text,4.10,What classifiers can cause harms?,toxicity classifiers
+Raw Text,4.10,Who published a study in which toxicity classifiers incorrectly flag sentences that are non-toxic but simply mention minority identities?,Davidson et al.
+Raw Text,4.10,In what year did Davidson and his colleagues publish their findings about toxicity classifiers?,2019
+Raw Text,4.10,What could lead to the censoring of discourse by or about minority identities?,false positive errors
+Raw Text,4.10,What can cause model problems?,biases or other problems in the training data
+Raw Text,4.10,What can cause model problems?,the labels
+Raw Text,4.10,What is an important area of research?,mitigation
+Raw Text,4.10,What is important when introducing a NLP model?,study these kinds of factors and make them clear
+Raw Text,4.10,"What document documents a machine learning model with information like: training algorithms and parameters, motivation, and preprocessing, evaluation data sources, motivation, and",model card

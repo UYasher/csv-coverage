@@ -1,0 +1,675 @@
+Author,Section,Question,Answer
+Dahyeon Choi,2.0,What was an early natural language processing system that used pattern matching to recognize phrases?,ELIZA
+Dahyeon Choi,2.0,What is ELIZA an example of?,chatbot
+Dahyeon Choi,2.0,What is the most important tool for text pattern characterization?,Regular expressions
+Dahyeon Choi,2.0,What uses regular expressions to convert text into a more standard form?,Text normalization
+Dahyeon Choi,2.0,What breaks a sentence into a sequence of words and punctuation marks?,tokenizing
+Dahyeon Choi,2.0,What is the process of finding root words of inflected words called?,Lemmatization
+Dahyeon Choi,2.0,What is the process of finding root words of inflected words?,Lemmatization
+Dahyeon Choi,2.0,What removes suffixes from words?,stemming
+Dahyeon Choi,2.0,What is a measure of similarity between two strings?,Edit distance
+Dahyeon Choi,2.1.1,What are case sensitive?,Regular expressions
+Dahyeon Choi,2.1.1,What specifies a disjunction of characters that can be matched in a position in a longer regular expression?,Square braces
+Dahyeon Choi,2.1.1,What does the regular expression /[012]/ match to?,"any digit among 0, 1, and 2"
+Dahyeon Choi,2.1.1,What indicates a range of characters?,dash
+Dahyeon Choi,2.1.1,"When a caret() is used within square braces as the first symbol, what does it indicate?",it indicates that the pattern behind it is negated
+Dahyeon Choi,2.1.1,What is indicated by the question mark?,Optional elements
+Dahyeon Choi,2.1.1,Optional elements are indicated by the question mark(?) which means what can be included or not?,the character preceding the question mark
+Dahyeon Choi,2.1.1,What does the Kleene star mean?,0 or more occurrences
+Dahyeon Choi,2.1.1,What does the Kleene + mean?,1 or more occurrences
+Dahyeon Choi,2.1.1,What is a wildcard expression that matches any single character?,The period
+Dahyeon Choi,2.1.1,What is the period(.)?,a wildcard expression
+Dahyeon Choi,2.1.1,The wildcard does not match with what?,carriage return
+Dahyeon Choi,2.1.1,What can the wildcard match with the Kleene star?,any string of characters
+Dahyeon Choi,2.1.1,What are symbols that anchor regular expressions to certain positions?,Anchors
+Dahyeon Choi,2.1.1,What symbol matches the end of a line?,dollar sign
+Dahyeon Choi,2.1.1,What is an anchor that matches with a boundary?,Backslash-b
+Dahyeon Choi,2.1.2,What does disjunction use?,pipe symbol
+Dahyeon Choi,2.1.2,What is used to indicate precedence for matching?,Parentheses
+Dahyeon Choi,2.1.2,Parentheses can define strings to match with for symbols that apply to what by default?,single characters
+Dahyeon Choi,2.1.2,"What prefers parentheses, counters, sequences and anchors, and disjunction in that order?",operator precedence hierarchy
+Dahyeon Choi,2.1.2,Regular expressions always match what?,largest possible string
+Dahyeon Choi,2.1.3,What increases precision and recall?,Reducing error
+Dahyeon Choi,2.1.4,What can you specify?,the number of an instance in a pattern
+Dahyeon Choi,2.1.4,How many instances of the previous character or expression are there?,four
+Dahyeon Choi,2.1.4,What can you specify in a pattern?,ranges
+Dahyeon Choi,2.1.4,What can you refer to with a backslash?,special characters
+Dahyeon Choi,2.1.4,What are some special characters that you can refer to with a backslash?,"( ), ( )"
+Dahyeon Choi,2.1.6,What is an important use of regular expressions?,Substitutions
+Dahyeon Choi,2.1.6,What do we use number operators to do?,match a specific expression twice or more in a text
+Dahyeon Choi,2.1.6,What backslash operator refers to the nth instance of a certain phrase or pattern in the text?,n
+Dahyeon Choi,2.1.6,When does the command(? :) indicate a non-capturing group?,after an opening parenthesis
+Dahyeon Choi,2.1.6,What is not placed in the register?,A non-capturing group
+Dahyeon Choi,2.1.7,What searches text ahead for patterns?,Lookahead assertions
+Dahyeon Choi,2.1.7,What match does the question-mark-equal-sign search for?,zero-width
+Dahyeon Choi,2.2,What is a computer-readable collection of text or dialogue?,A corpus
+Dahyeon Choi,2.2,What are utterances?,spoken sentences
+Dahyeon Choi,2.2,What are disfluencies?,fragments or fillers
+Dahyeon Choi,2.2,Fragments are what?,broken words
+Dahyeon Choi,2.2,Disfluencies can be hindrances or what kind of signals?,useful
+Dahyeon Choi,2.2,What is the set of words that share the same major word?,lemma
+Dahyeon Choi,2.2,How can we differentiate the number of words?,by counting tokens or types
+Dahyeon Choi,2.2,What are tokens?,total number of words
+Dahyeon Choi,2.2,What are the number of unique words?,Types
+Dahyeon Choi,2.2,Herdan's Law or Heap's Law states that the type equals what to the power of beta?,k times token
+Dahyeon Choi,2.2,How can we measure a corpus?,counting the number of lemmas
+Dahyeon Choi,2.2,What is the rough upper limit for the number of possible lemmas?,Dictionary entries or boldface forms
+Dahyeon Choi,2.3,What are some variations in languages?,"dialect, code switching, genre"
+Dahyeon Choi,2.3,Who can build datasheets to organize the properties of a corpus?,Corpus creators
+Dahyeon Choi,2.4.1,What must be normalized in order to be processed?,natural languages
+Dahyeon Choi,2.4.1,What does normalization involve?,"tokenizing words, normalizing formats, and segmenting words"
+Dahyeon Choi,2.4.1,What is a basic method of tokenizing words?,Unix
+Dahyeon Choi,2.4.1,"Unix can collapse, sort, and build statistics for the words in a corpus using commands such as what?",tr
+Dahyeon Choi,2.4.1,What are the most common words in a corpus?,"articles, pronouns, and prepositions"
+Dahyeon Choi,2.4.2,What does actual tokenization involve?,segmenting text into words
+Dahyeon Choi,2.4.2,What must we account for according to where and how they are used?,punctuation and special characters
+Dahyeon Choi,2.4.2,What can a tokenizer do?,expand clitic contractions
+Dahyeon Choi,2.4.2,"What is the identification of names, dates, organizations, etc?",Named entity recognition
+Dahyeon Choi,2.4.2,What is an example of clitic contraction?,I'm
+Dahyeon Choi,2.4.2,What is used for parsed corpora released by the LDC?,Penn Treebank tokenization standard
+Dahyeon Choi,2.4.2,What is important to tokenization before any other natural language processing can take place?,speed
+Dahyeon Choi,2.4.2,What do algorithms have to deal with?,ambiguities
+Dahyeon Choi,2.4.2,What language has no spaces?,Chinese
+Dahyeon Choi,2.4.2,What is each character in a word barrier?,a morpheme
+Dahyeon Choi,2.4.2,What language requires word segmentation?,Japanese
+Dahyeon Choi,2.4.2,What is used for segmentation in languages with more ambiguities?,Neural sequence models
+Dahyeon Choi,2.4.3,What can be automatically identified instead of pre-defining tokens as words or characters?,type of token
+Dahyeon Choi,2.4.3,Automatic identification of tokens can solve what problem?,unknown word problem
+Dahyeon Choi,2.4.3,Tokenizers often do what in order to solve the unknown word problem?,induce subwords
+Dahyeon Choi,2.4.3,What are most tokenization schemes made out of?,token learner and a token segmenter
+Dahyeon Choi,2.4.3,What induces a set of tokens from raw data?,token learner
+Dahyeon Choi,2.4.3,What takes raw sentences and segments it based on the tokens produced by the learner?,token segmenter
+Dahyeon Choi,2.4.3,What are the three widely-used algorithms that employ this method?,"byte-pair encoding, unigram language modeling, and WordPiece"
+Dahyeon Choi,2.4.3,What library implements byte-pair encoding and unigram language modeling?,The SentencePiece library
+Dahyeon Choi,2.4.3,What is another name for byte-pair encoding?,BPE
+Dahyeon Choi,2.4.3,BPE repeats the process until what number of merges have happened?,k
+Dahyeon Choi,2.4.3,What is the number of ens in a vocabulary?,k
+Dahyeon Choi,2.4.4,What standardizes words and tokens?,Word Normalization
+Dahyeon Choi,2.4.4,What maps all characters to one type of casing?,Case Folding
+Dahyeon Choi,2.4.4,Why is case folding not used in some cases?,disadvantageous
+Dahyeon Choi,2.4.4,What is the process of determining shared roots among words?,Lemmatization
+Dahyeon Choi,2.4.4,What does lemmatization involve?,complete morphological parsing of a word
+Dahyeon Choi,2.4.4,What are the two broad classes of morphemes?,"stems, and affixes"
+Dahyeon Choi,2.4.4,Morphemes can be divided into two broad classes: what is the central morpheme and supply the main meaning?,stems
+Dahyeon Choi,2.4.4,What are the add-ons that alter meanings or add more on?,Affixes
+Dahyeon Choi,2.4.4,What is a simpler version of lemmatization?,Stemming
+Dahyeon Choi,2.4.4,What is a widely used stemming algorithm based on a cascade rewriting process governed by a set of rules?,The Porter algorithm
+Dahyeon Choi,2.4.5,What is one of the most successful cues for sentence segmentation?,punctuation
+Dahyeon Choi,2.4.5,A period can be used as part of what?,abbreviations
+Dahyeon Choi,2.4.5,What identifies the role of a period before segmentation?,sentence tokenization
+Dahyeon Choi,2.5.0,What often involves identifying similarities between strings?,Natural language processing
+Dahyeon Choi,2.5.0,What is another term for determining whether two strings refer to the same entity?,coreference
+Dahyeon Choi,2.5.0,What is a way to quantify this measure of similarity?,Edit distance
+Dahyeon Choi,2.5.0,What is the minimum number of editing operations required to make two strings equal?,Minimum edit distance
+Dahyeon Choi,2.5.0,What is a correspondence between two strings?,their alignment
+Dahyeon Choi,2.5.0,What indicates the editing operations needed to equalize two strings?,operation list
+Dahyeon Choi,2.5.0,What is the most simple way to assign weight to editing operations?,Levenshtein distance
+Dahyeon Choi,2.5.0,How many methods did Levenshtein propose?,two weighting methods
+Dahyeon Choi,2.5.1,What is used to find the minimum edit distance?,dynamic programming
+Dahyeon Choi,2.5.1,What is a class of algorithms that attempts to solve problems by combining solutions to sub-problems?,Dynamic programming
+Dahyeon Choi,2.5.1,What are two examples of dynamic programming?,Viterbi algorithm and the CKY algorithm
+Dahyeon Choi,2.5.1,Who named the minimum edit distance algorithm?,Wagner and Fischer
+Dahyeon Choi,2.5.1,What is the distance where insertion and deletion have cost 1 and substitution has cost 2?,Levenshtein
+Dahyeon Choi,2.5.1,What can be formed by extending the edit distance algorithm?,Alignments
+Dahyeon Choi,2.5.1,From what cell does an edit distance matrix backtrace?,last cell
+Dahyeon Choi,2.5.1,What is a probabilistic extension of the minimum edit distance?,Viterbi algorithm
+Dahyeon Choi,3.0,What can assign probabilities to word sequences to predict the next word in a sentence?,Models
+Dahyeon Choi,3.0,"Probabilities can be used for speech recognition, spelling correction, grammatical error correction, and what else?",machine translation
+Dahyeon Choi,3.0,How many different candidates may we have for a translation of a sentence?,three
+Dahyeon Choi,3.0,What are models that assign probabilities to word sequences called?,language models
+Dahyeon Choi,3.0,What can refer to both a sequence of n words and the predictive model that assigns it a probability?,n-gram
+Dahyeon Choi,3.1,What does P(w|h)> mean?,the probability of a word w given history h
+Dahyeon Choi,3.1,Why are joint probabilities difficult to calculate?,too many possible sentences of a certain length
+Dahyeon Choi,3.1,What is one way we can compute the probability of a sequence?,the chain rule of probability
+Dahyeon Choi,3.1,How can we calculate the joint probability of a sequence?,by multiplying together several conditional probabilities
+Dahyeon Choi,3.1,What model approximates the history of a sequence using the last few words and uses that approximated history to estimate the probability of a word?,The n-gram model
+Dahyeon Choi,3.1,What assumes that the probability of a word only depends on the previous word?,The Markov assumption
+Dahyeon Choi,3.1,What models try to predict future words without looking far into the past?,Markov models
+Dahyeon Choi,3.1,What is an intuitive way of estimating n-gram probabilities?,Maximum likelihood estimation
+Dahyeon Choi,3.1,"To calculate the bigram probability of x given y, we calculate count of what corpus?",C(xy)
+Dahyeon Choi,3.1,What is the MLE?,n-gram parameter estimation
+Dahyeon Choi,3.1,What is the ratio of dividing the observed frequency of a particular sequence by the observed frequency of a prefix?,relative frequency
+Dahyeon Choi,3.1,Some bigram probabilities encode what?,syntactic rules
+Dahyeon Choi,3.1,All language model probabilities are represented in log format as what?,log probabilities
+Dahyeon Choi,3.1,What prevents storing too-small numbers?,Log probabilities
+Dahyeon Choi,3.2.0,What embeds a model in an application and measures how much the application improves in an end to end evaluation?,Extrinsic evaluation
+Dahyeon Choi,3.2.0,What measures the quality of a model independent of any application and requires a test set of unseen data?,Intrinsic evaluation
+Dahyeon Choi,3.2.0,What would happen if we accidentally trained the model on the test set?,bias
+Dahyeon Choi,3.2.0,What is a test set that has been used so often that we need a fresher test set?,A development set
+Dahyeon Choi,3.2.0,What do we want when dividing our data?,smallest test set
+Dahyeon Choi,3.2.1,What is the inverse probability of the test set normalized by the number of words?,perplexity
+Dahyeon Choi,3.2.1,What is the inverse probability of the test set normalized by the number of words?,Perplexity
+Dahyeon Choi,3.2.1,What do we want to do with perplexity in a model?,minimize perplexity
+Dahyeon Choi,3.2.1,What is perplexity referred to as?,weighted average branching factor of a language
+Dahyeon Choi,3.2.1,What is the branching factor?,the number of possible words that can follow any word
+Dahyeon Choi,3.2.1,What does not necessarily mean an extrinsic improvement in the performance of a model?,intrinsic improvement in perplexity
+Dahyeon Choi,3.3.0,Many statistical models including the n-gram are dependent on what?,training corpus
+Dahyeon Choi,3.3.0,What can an n-gram model do as the value of N is increased?,increase
+Dahyeon Choi,3.3.0,What does the better the coherence of an n-gram model?,the longer the context on which we train an n-gram
+Dahyeon Choi,3.3.0,What do we want an n-gram to answer and predict?,sentences
+Dahyeon Choi,3.3.0,What can we use to build an n-gram to answer and predict sentences that make sense in context?,training corpus of a similar genre
+Dahyeon Choi,3.3.0,What type of questions would a model for answering be trained with?,scientific
+Dahyeon Choi,3.3.0,What is important to consider when training a model?,dialect and variety
+Dahyeon Choi,3.3.0,What must we consider even after considering dialect and genre when training a model?,sparsity
+Dahyeon Choi,3.3.0,"If a training corpus fails to contain certain sequences, it is possible that the model incorrectly estimates that those sequences have a probability of",0
+Dahyeon Choi,3.3.0,Why are 0 probabilities a problem?,we are underestimating the probability for various words
+Dahyeon Choi,3.3.1,"In closed vocabulary systems, test sets contain only what?",known words
+Dahyeon Choi,3.3.1,What is the term for unknown words?,out of vocabulary
+Dahyeon Choi,3.3.1,What is the percentage of OOV in a test set called?,the OOV rate
+Dahyeon Choi,3.3.1,What is the pseudo-word used to model potential OOVs in a test set?,UNK>
+Dahyeon Choi,3.3.1,How many ways are there to train probabilities of UNK>?,two
+Dahyeon Choi,3.3.1,How does the first method turn the problem into a closed vocabulary situation?,by choosing a vocabulary fixed in advance
+Dahyeon Choi,3.3.1,What metrics does the UNK> model effect?,perplexity
+Dahyeon Choi,3.4.0,What is it called when we remove some probability mass for more frequent events and reassign it to unseen events with known words?,smoothing or discounting
+Dahyeon Choi,3.4.0,How many main methods of smoothing are studied?,four
+Dahyeon Choi,3.4.1,What is another name for Laplace smoothing?,add-one smoothing
+Dahyeon Choi,3.4.1,What is the unigram probability of word w_i?,c_i
+Dahyeon Choi,3.4.1,What is the adjusted count c* easier to compare with?,MLE counts
+Dahyeon Choi,3.4.1,What is a smoothing algorithm described as?,relative discount d_c
+Dahyeon Choi,3.4.2,What moves less probability mass from the seen to the unseen than Laplace smoothing?,Add-k smoothing
+Dahyeon Choi,3.4.2,How can add-k smoothing be done?,by optimizing on a devset
+Dahyeon Choi,3.4.2,Add-k doesn't work well for what?,language modeling
+Dahyeon Choi,3.4.3,"In backoff, we use a less-context n-gram if what?",evidence is not sufficient
+Dahyeon Choi,3.4.3,What is the backoff with discounting called?,Katz backoff
+Dahyeon Choi,3.4.3,What smoothing method is Katz backoff often used with?,Good-Turing
+Dahyeon Choi,3.4.3,In what method do we mix the probability estimates from all the n-gram estimators?,interpolation
+Dahyeon Choi,3.4.3,What can converge on locally optimal lambda values?,EM algorithm
+Dahyeon Choi,3.5,What is one of the most used and best performing n-gram smoothing methods?,Kneser-Ney Smoothing
+Dahyeon Choi,3.5,What is Kneser-Ney based on?,absolute discounting
+Dahyeon Choi,3.5,What is the contexts of a word w?,the number of bigram types it completes
+Dahyeon Choi,3.5,What is the best performing Kneser-Ney smoothing?,modified Kneser-Ney smoothing
+Dahyeon Choi,3.6,What is it possible to build by using text from enormous collections such as the web?,huge language models
+Dahyeon Choi,3.6,What company released the Web 1 Trillion 5-gram corpus?,Google
+Dahyeon Choi,3.6,What type of hash numbers are stored in memory?,64-bit
+Dahyeon Choi,3.6,How can n-grams be shrunk?,pruning
+Dahyeon Choi,3.6,What is a method used to build approximate language models?,Bloom filters
+Dahyeon Choi,3.6,What toolkit uses sorted arrays to build efficient probability tables?,KenLM
+Dahyeon Choi,3.6,What is it possible to build huge language models using?,Kneser-Ney smoothing
+Dahyeon Choi,3.6,What does Brans et al. (2007) show can suffice?,simpler stupid backoff
+Dahyeon Choi,3.6,What does not attempt to make the language model a true probability distribution?,Stupid backoff
+Dahyeon Choi,3.6,Who found that a value of 0.4 works well for lambda in a stupid backoff algorithm?,S. Brants et al.
+Dahyeon Choi,3.6,What value works well for lambda in a stupid backoff algorithm?,0.4
+Dahyeon Choi,3.7,The concept of perplexity comes from the information-theoretic concept of what?,cross-entropy
+Dahyeon Choi,3.7,What is the entropy of random variable X?,p(x)
+Dahyeon Choi,3.7,What is entropy measured by using log base 2?,entropy in bits
+Dahyeon Choi,3.7,What can also be considered a lower bound on the number of bits required to encode something in the optimal coding scheme?,Entropy
+Dahyeon Choi,3.7,What is another name for the entropy rate?,per-word entropy
+Dahyeon Choi,3.7,What is the Shannon-McMillan-Breiman theorem?,if the language is stationary and ergodic
+Dahyeon Choi,3.7,What is stationary if the probabilities it assigns to a sequence are not affected by shifts in the time index?,A stochastic process
+Dahyeon Choi,3.7,What is an upper bound on entropy?,Cross-entropy
+Dahyeon Choi,3.7,What can now be defined as the exp of cross-entropy H?,Perplexity
+Dahyeon Choi,4.0,What is a core part of sentient intelligence?,Classification
+Dahyeon Choi,4.0,What is a task that classifies and assigns labels to a text or document?,Text categorization
+Dahyeon Choi,4.0,What identifies the positive or negative attitude of a writer towards an object?,Sentiment analysis
+Dahyeon Choi,4.0,What is a classification class that assigns an email to one of two classes spam or not-spam?,Spam detection
+Dahyeon Choi,4.0,What recognizes which language a task is written in?,Language id
+Dahyeon Choi,4.0,What is the task of identifying a text's author?,Authorship attribution
+Dahyeon Choi,4.0,What is one of the oldest text classification tasks?,Assigning a library subject category or topic to a text
+Dahyeon Choi,4.0,Where is classification needed?,levels smaller than the document
+Dahyeon Choi,4.0,What can be considered a form of classification?,"Period disambiguation, word tokenization, language modeling"
+Dahyeon Choi,4.0,What is the goal of classification?,"to take a single observation, extract features, and classify the observation into a specific class"
+Dahyeon Choi,4.0,What do many areas of language processing use?,rule-based classifiers
+Dahyeon Choi,4.0,What does a probabilistic classifier output?,probability of an object belonging to a certain class
+Dahyeon Choi,4.0,What type of classifier builds a model of how a class could generate input?,Generative classifiers
+Dahyeon Choi,4.0,What classifiers learn which features from an observation are most useful to differentiate classes?,Discriminative classifiers
+Dahyeon Choi,4.1,What is a probabilistic Bayesian classifier that makes simplifying assumptions about how features interact?,The multinomial naive Bayes classifier
+Dahyeon Choi,4.1,What does the naive Bayes classifier consider a document as?,a bag-of-words
+Dahyeon Choi,4.1,What type of model is naive Bayes?,generative
+Dahyeon Choi,4.1,How do we compute most probable class c-hat given document d?,choosing the class with the highest product of the prior probability P(c) and the likelihood P(d|c)
+Dahyeon Choi,4.1,What are the two assumptions that naive Bayes classifiers make?,"the bag-of-words assumption (position does not matter), and the naive Bayes assumption"
+Dahyeon Choi,4.1,What are classifiers like naive Bayes that use a linear combination of inputs called?,linear classifiers
+Dahyeon Choi,4.2,What must consist of the union of all word types in all classes involved?,Vocabulary V
+Dahyeon Choi,4.2,What naively multiplies all feature likelihoods?,naive Bayes
+Dahyeon Choi,4.2,What is the simplest solution for preventing zero probability classes?,Laplace smoothing
+Dahyeon Choi,4.2,What does the naive Bayes ignore?,unknown words
+Dahyeon Choi,4.2,What do some systems completely ignore?,stop words
+Dahyeon Choi,4.4,What is more important to optimize the naive Bayes text classification for sentiment analysis?,whether a word occurs or not
+Dahyeon Choi,4.4,What is another name for binary multinomial naive Bayes?,binary NB
+Dahyeon Choi,4.4,What is another issue to deal with?,negation
+Dahyeon Choi,4.4,What prefix is prepended to every word after a token of logical negation until the next punctuation mark?,NOT_
+Dahyeon Choi,4.4,What can we derive if we lack labeled training data to train accurate naive Bayes classifiers?,positive and negative features
+Dahyeon Choi,4.4,What are some popular sentiment lexicons?,"General Inquirer, LIWC, opinion lexicon of Hu and Liu, and MPQA Subjectivity Lexicon"
+Dahyeon Choi,4.5,What can change features to express any property of input text?,Naive Bayes
+Dahyeon Choi,4.5,What can non-linguistic features include in spam detection?,HTML details
+Dahyeon Choi,4.5,What are the most effective naive Bayes features?,character n-grams
+Dahyeon Choi,4.6,A naive Bayes model can be viewed as a set of what?,class-specific unigram language models
+Dahyeon Choi,4.7.0,Gold labels are human-defined labels for what?,documents
+Dahyeon Choi,4.7.0,What is a table visualizing how an algorithm performs with respect to human gold labels based on system output and gold labels?,confusion matrix
+Dahyeon Choi,4.7.0,What does each cell in a confusion matrix contain?,possible outcomes
+Dahyeon Choi,4.7.0,"Accuracy is not a good measurement for classifiers, so we turn to what?",precision and recall
+Dahyeon Choi,4.7.0,What is the percentage of items detected by the system that are in fact positive according to gold labels?,Precision
+Dahyeon Choi,4.7.0,What is the percentage of items actually present in input that were correctly identified?,Recall
+Dahyeon Choi,4.7.0,What is a single metric incorporating precision P and recall R?,F-measure
+Dahyeon Choi,4.7.0,What is the weighted mean of P and R?,harmonic mean
+Dahyeon Choi,4.7.1,Many classification involves what?,multiple classes
+Dahyeon Choi,4.7.1,What definitions must we modify to classify multiple classes?,precision and recall
+Dahyeon Choi,4.7.1,How do we combine precision and recall?,macroaveraging
+Dahyeon Choi,4.7.1,What is another way to combine precision and recall?,microaveraging
+Dahyeon Choi,4.8,Training and testing for text classification is similar to what?,language modeling
+Dahyeon Choi,4.8,What do we use to tune parameters and decide on the best model?,the development test set
+Dahyeon Choi,4.8,What randomly chooses a training and test set division of our data?,Cross-validation
+Dahyeon Choi,4.8,How many times does cross-validation give an average error rate?,10-fold
+Dahyeon Choi,4.8,What is the problem with cross-validation?,blind
+Dahyeon Choi,4.9.0,What is used to compare the performance of two systems?,Statistical significance testing
+Dahyeon Choi,4.9.0,"What is the performance difference between M(A,x) and M(A,b)?",delta(x)
+Dahyeon Choi,4.9.0,What is the effect size?,delta(x)
+Dahyeon Choi,4.9.0,What is the effect size?,larger
+Dahyeon Choi,4.9.0,"To check if system A is actually better than system B, we must check what over other test sets?",its superiority
+Dahyeon Choi,4.9.0,What is the null hypothesis that supposes that delta is negative or zero?,Hypothesis H_0
+Dahyeon Choi,4.9.0,What random variable is created over all test sets to find if we can rule out H_0?,X
+Dahyeon Choi,4.9.0,What determines a system difference is statistically significant?,the delta we saw has a probability under the threshold
+Dahyeon Choi,4.9.0,What are the two common non-parametric tests used in NLP?,approximate randomization and the bootstrap test
+Dahyeon Choi,4.9.0,What are tests where we compare two sets of aligned observations?,Paired tests
+Dahyeon Choi,4.9.1,What can apply to any metric?,bootstrap test
+Dahyeon Choi,4.9.1,The bootstrap test refers to repeatedly drawing what with replacement from an original larger sample?,large numbers of smaller samples
+Dahyeon Choi,4.9.1,What does the bootstrap test create from an observed test set?,virtual tests
+Dahyeon Choi,4.10,What can cause a variety of harms?,classifiers
+Dahyeon Choi,4.10,What class of harms are caused by a system that demeans a social group?,Representational
+Dahyeon Choi,4.10,"What aim to detect hate speech abuse, harassment, etc. but may act as censors instead?",Toxicity detection
+Dahyeon Choi,4.10,What can cause these issues?,biases in training data
+Dahyeon Choi,4.10,What is one way to study and clarify biases in training data?,releasing a model card
+Author,Section,Question,Answer
+Diana Yuan,2.0,What is an early natural language processing system that mimiced a Rogerian psychotherapist to carry on conversation?,ELIZA
+Diana Yuan,2.0,ELIZA's responses were what?,limited
+Diana Yuan,2.0,ELIZA and what other system still play a crucial role in natural language processing today?,chatbots
+Diana Yuan,2.0,"What does ELIZA use to convert text into a more convenient, standard form?",text normalization
+Diana Yuan,2.0,What identifies the implicit shared roots between words?,lemmatization
+Diana Yuan,2.0,How is lemmatization done?,stripping the suffixes
+Diana Yuan,2.0,What is used to break up a text into individual sentences?,punctuation
+Diana Yuan,2.0,What does edit distance evaluate?,degree of resemblance between two strings
+Diana Yuan,2.1.1,What is an algebraic notation for characterizing a set of strings that is useful for searching for a pattern or through a corpus?,The regular expression
+Diana Yuan,2.1.1,What will be shown in the regular expression?,first matching result
+Diana Yuan,2.1.1,Is the search string case sensitive or case sensitive?,case sensitive
+Diana Yuan,2.1.1,What can more easily look for characters over a range?,dash
+Diana Yuan,2.1.1,What specifies the non-existence of a character?,The caret
+Diana Yuan,2.1.1,What does the (?) mean?,the preceding character or nothing
+Diana Yuan,2.1.1,What does the (?) mean?,the preceding character or nothing
+Diana Yuan,2.1.1,What means zero or more occurrences of the immediately preceding character or regular expression in square braces?,the Kleene star
+Diana Yuan,2.1.1,What special case is equivalent to the Kleene star with one more occurrences?,Kleene plus
+Diana Yuan,2.1.1,What is an expression that matches any single character in the form of a period?,wildcard
+Diana Yuan,2.1.1,What are special characters that fix regular expressions to particular places in a string?,Anchors
+Diana Yuan,2.1.1,What matches a non-word boundary?,B
+Diana Yuan,2.1.2,The pipe symbol signifies what?,disjunction
+Diana Yuan,2.1.2,The parenthesis operator is often used in combination with what?,counters
+Diana Yuan,2.1.2,"What does the regular expression follow in the order of parenthesis, counters, sequences and anchors, and disjunction?",the operator precedence hierarchy
+Diana Yuan,2.1.2,Non-greedy matching can be enforced by what?,question mark qualifier
+Diana Yuan,2.1.3,How can we avoid false positives?,increasing precision
+Diana Yuan,2.1.3,How can we avoid false negatives?,increasing recall
+Diana Yuan,2.1.4,How can we use explicit numbers as counters?,curly brackets
+Diana Yuan,2.1.4,What expression can be used to indicate occurrences within a range?,Modified curly brackets
+Diana Yuan,2.1.4,The newline character and tab character are referred to by special notation based on what?,the backslash
+Diana Yuan,2.1.4,Characters that are special themselves are what?,preceded with a backslash
+Diana Yuan,2.1.6,What operator allows a string characterized by a regular expression to be replaced by another string?,substitution operator
+Diana Yuan,2.1.6,What refers back to the first pattern described by the parenthesis operator?,The number operator
+Diana Yuan,2.1.6,What is the use of parentheses to store a pattern in a numbered register?,The capture group
+Diana Yuan,2.1.6,What is matched with?,second capture group
+Diana Yuan,2.1.6,What is used to group but not capture the resulting pattern in a register?,non-capturing group
+Diana Yuan,2.1.6,What are crucial in implementing simple chatbots like ELIZA?,Substitutions and capture groups
+Diana Yuan,2.1.7,What assertion looks for future matchings without advancing the match cursor?,lookahead
+Diana Yuan,2.1.7,What is the operator of the lookahead assertion?,zero-width
+Diana Yuan,2.1.7,What is used to rule out special cases while parsing complex pattern?,Negative lookahead
+Diana Yuan,2.2,What is a computer-readable collection of text or speech?,A corpus
+Diana Yuan,2.2,What is an utterance?,spoken correlate of a sentence
+Diana Yuan,2.2,What are examples of disfluencies?,fragments and fillers or filled pauses
+Diana Yuan,2.2,"What is a set of lexical forms having the same stem, major part-of-speech, and word sense?",A lemma
+Diana Yuan,2.2,What is the derived form of a word?,The word-form
+Diana Yuan,2.2,What are Types |V|?,the numbers of distinct words in a corpus
+Diana Yuan,2.2,What is the relationship between the number of types |V| and number of tokens N called?,Herdan's Law or Heaps' Law
+Diana Yuan,2.2,What is a rough upper bound on the number of lemmas?,boldface forms
+Diana Yuan,2.3,How many languages are there in the world?,7098
+Diana Yuan,2.3,What is the phenomenon where speakers and writers use multiple languages in a single communicative act?,Code switching
+Diana Yuan,2.3,What are other dimensions of variation?,"genre, demographic characteristics of the writer or speaker, and time"
+Diana Yuan,2.3,What specifies properties of a dataset used in the development of computational models?,data statement
+Diana Yuan,2.3,What does the datasheet outline?,"motivation, situation, language variety, speaker demographics, collection process, annotation process, and distribution"
+Diana Yuan,2.4.1,What are the minimal tasks applied as part of any normalization process?,"Tokenizing words, normalizing word formats, and segmenting sentences"
+Diana Yuan,2.4.1,What command in Unix changes particular characters in the input?,The tr command
+Diana Yuan,2.4.1,The sort command sorts input lines in what order?,alphabetical order
+Diana Yuan,2.4.1,What are function words?,"articles, pronouns, prepositions"
+Diana Yuan,2.4.2,What is the task of segmenting running text into words?,Tokenization
+Diana Yuan,2.4.2,What are intentionally included in most NLP applications because they represent word boundaries?,Punctuations and numbers
+Diana Yuan,2.4.2,What can a tokenizer do in alphabetic languages?,expand clitic contractions
+Diana Yuan,2.4.2,What standard separates out clitics?,Penn Treebank tokenization
+Diana Yuan,2.4.2,What do deterministic algorithms compile into?,finite state automata
+Diana Yuan,2.4.2,What is more complex in languages that do not use spaces to mark potential word-boundaries?,Word tokenization
+Diana Yuan,2.4.2,What does each character represent in Chinese?,a morpheme
+Diana Yuan,2.4.2,What do most Chinese NLP tasks take as input?,characters
+Diana Yuan,2.4.2,What are too small to be a unit?,Japanese and Thai characters
+Diana Yuan,2.4.3,What learns facts about an unknown language from a training corpus?,NLP algorithms
+Diana Yuan,2.4.3,What are tokens smaller than words?,Subwords
+Diana Yuan,2.4.3,Most tokenization schemes have a token learner and what?,token segmenter
+Diana Yuan,2.4.3,What is the second part of most tokenization schemes?,token segmenter
+Diana Yuan,2.4.3,What segments a raw test sentence into the tokens in the vocabulary?,token segmenter
+Diana Yuan,2.4.3,What is one of the three widely used algorithms?,WordPiece
+Diana Yuan,2.4.3,What implements both byte-pair encoding and unigram language modeling?,a SentencePiece library
+Diana Yuan,2.4.3,What is also known as the BPE algorithm?,byte-pair encoding
+Diana Yuan,2.4.3,What does the BPE algorithm run?,inside words that are white-space-separated
+Diana Yuan,2.4.3,What is a parameter of the BPE algorithm?,k
+Diana Yuan,2.4.3,The BPE token parser evaluates the test sentence using what?,the given vocabulary
+Diana Yuan,2.4.3,"In real BPE algorithms, only what words will be represented by their parts?",very rare
+Diana Yuan,2.4.4,What is the task of putting words and tokens in a standard format?,Word normalization
+Diana Yuan,2.4.4,What is case folding not used for?,"sentiment analysis, information extraction, and machine translation"
+Diana Yuan,2.4.4,What is the task of determining that two words have the same root?,Lemmatization
+Diana Yuan,2.4.4,What can all morphemes be grouped into?,stems
+Diana Yuan,2.4.5,What are the most useful cues for sentence segmentation?,punctuations
+Diana Yuan,2.4.5,What determines the purpose of a punctuation?,the sentence tokenization
+Diana Yuan,2.5.0,What is the task of deciding whether two strings refer to the same entity?,Coreference
+Diana Yuan,2.5.0,What quantifies string similarity?,Edit distance
+Diana Yuan,2.5.0,What is a correspondence between substrings of the two sequences?,An alignment
+Diana Yuan,2.5.0,"The operation list contains symbols expressing the editing operations needed, following what?","d for deletion, s for substitution, and i for insertion"
+Diana Yuan,2.5.0,What is the weighting factor in which each of the three editing operations has a cost of 1?,The Levenshtein distance between two sequences
+Diana Yuan,2.5.1,What is a class of algorithms that solve problems by combining solutions to sub-problems?,Dynamic programming
+Diana Yuan,2.5.1,What are two examples of algorithms that use dynamic programming?,Viterbi algorithm and the CKY algorithm
+Diana Yuan,2.5.1,Who named the minimum edit distance algorithm?,Wagner and Fischer
+Diana Yuan,2.5.1,What step of the minimum edit distance algorithm calculates the distance for the zeroth row and column?,The initialization step
+Diana Yuan,2.5.1,What step takes the minimum of three possible paths to determine the minimum edit distance for the rest of the matrix?,The recurrence relation
+Diana Yuan,2.5.1,What is one way to visualize the minimum edit distance algorithm?,boldfaced cells
+Diana Yuan,2.5.1,What does each boldfaced cell represent?,an alignment of a pair of letters in the two strings
+Diana Yuan,2.5.1,What do two boldfaced cells present in the same row?,insertion
+Diana Yuan,2.5.1,What is a procedure in which we follow the pointers from the last cell?,The backtrace
+Diana Yuan,3.0,"What is used in speech recognition, spelling correction, and machine translation?",Probability
+Diana Yuan,3.0,Probability is important for what type of devices for the disabled?,AAC devices
+Diana Yuan,3.0,What are models that assign probability to sequences of a word called?,language models
+Diana Yuan,3.0,What is the simplest example of LMs?,n-gram
+Diana Yuan,3.1,What doesn't give good estimates when new sentences are created?,Estimating probabilities directly from counts
+Diana Yuan,3.1,What computes probability of a word given previous words?,chain rule of probability
+Diana Yuan,3.1,What model approximates the history by just the last few words?,The n-gram model
+Diana Yuan,3.1,What does the bigram model predict given the first word?,the conditional probability of the last word
+Diana Yuan,3.1,What assumption states that the probability of a word depends only on the previous word?,Markov
+Diana Yuan,3.1,What gives the parameters of an n-gram model by normalizing the counts from a corpus so that they lie between 0 and 1?,MLE
+Diana Yuan,3.1,What is given by the bigram of xy over the unigram count for x?,x
+Diana Yuan,3.1,What is the ratio between the observed frequency of a particular sequence and the observed frequency of a prefix?,relative frequency
+Diana Yuan,3.1,How are bigram probabilities normalized?,by dividing each cell by the set of unigram probabilities
+Diana Yuan,3.1,What model is used when there is sufficient training data?,trigram models
+Diana Yuan,3.1,"To avoid numerical underflow, language model probabilities are always represented and computed as what?",log probabilities
+Diana Yuan,3.2.0,How does an extrinsic evaluation determine the performance of a language model?,by embedding it in an application
+Diana Yuan,3.2.0,What measures the quality of a model independent of any application?,intrinsic evaluation metric
+Diana Yuan,3.2.0,What is the quality of an n-gram model from its training set measured by?,performance on a test set in the held out corpora
+Diana Yuan,3.2.0,Which n-gram model assigns a higher probability to the test set?,the one that better fits the test set
+Diana Yuan,3.2.0,What is the initial test set that has never been used before?,The development test
+Diana Yuan,3.2.0,Training on the same test set introduces a bias that gives disproportionally high probabilities and causes what?,huge inaccuracies in perplexity
+Diana Yuan,3.2.1,What is the perplexity of a language model on a test set?,the inverse probability of the test set
+Diana Yuan,3.2.1,What is the greater the language model's test set probability?,The smaller the perplexity
+Diana Yuan,3.2.1,What is another definition of perplexity?,the weighted average branching factor of a language
+Diana Yuan,3.2.1,How must the n-gram model P be constructed?,without any knowledge of the test set or its vocabulary
+Diana Yuan,3.2.1,What does not guarantee an extrinsic improvement in the performance of a specific language processing task?,an intrinsic improvement in perplexity
+Diana Yuan,3.3.0,The n-gram model is dependent on what?,training corpus
+Diana Yuan,3.3.0,What increases in the n-gram model?,the word tokens N
+Diana Yuan,3.3.0,What is important to get training data in?,dialect or variety
+Diana Yuan,3.3.0,What are phrases that don't occur in the training set but do occur in the test set?,Zeros
+Diana Yuan,3.3.0,Zeros cause the underestimation of all other phrases and give what probability of the entire test set?,false negative probability
+Diana Yuan,3.3.1,What is a closed vocabulary system?,the test set doesn't contain any words outside of the given lexicon
+Diana Yuan,3.3.1,The closed vocabulary system is often used in speech recognition or what?,machine translation
+Diana Yuan,3.3.1,Unknown words are also called what?,out of vocabulary
+Diana Yuan,3.3.1,What is the percentage of OOV words that appear in the test set?,OOV
+Diana Yuan,3.3.1,What is a pseudo-word called in an open vocabulary system?,UNK
+Diana Yuan,3.3.1,How can we train the probabilities of unknown words in an open vocabulary system?,convert any unknown words to the word token
+Diana Yuan,3.3.1,What can a language model achieve by choosing a small vocabulary and assigning the unknown word a high probability?,low perplexity
+Diana Yuan,3.4.0,What is the procedure of transferring the probability mass of frequent events to other words that appear in the test set in an unseen context?,Smoothing or discounting
+Diana Yuan,3.4.1,How many bigram counts does the Laplace smoothing algorithm add?,one
+Diana Yuan,3.4.1,What is the Laplace smoothing algorithm used for?,text classification
+Diana Yuan,3.4.1,What does the Laplace smoothing algorithm define instead of adding one to both the numerator and denominator of the probability?,an adjusted count
+Diana Yuan,3.4.1,What is the normalization factor N over N plus V?,the total number of word tokens
+Diana Yuan,3.4.1,What can the smoothing algorithm be viewed as?,discounting non-zero counts and reassigning probability mass to zero counts
+Diana Yuan,3.4.1,The smoothing algorithm can be described in terms of what?,relative discount d
+Diana Yuan,3.4.1,What shows both the discounted previously-nonzero counts and increased previously-zero counts?,The reconstructed count matrix
+Diana Yuan,3.4.2,What is the algorithm that adds a fractional count k to each count called?,add-k smoothing
+Diana Yuan,3.4.2,How can the fractional count k be chosen?,by optimizing on a devset
+Diana Yuan,3.4.3,What helps to generalize more for unlearned contexts?,bigram
+Diana Yuan,3.4.3,When do we move along the n-gram hierarchy?,until there is sufficient evidence
+Diana Yuan,3.4.3,In what method do we mix the probability estimates from all n-gram estimators?,interpolation
+Diana Yuan,3.4.3,The different order n-grams are each weighted by what?,lambda value
+Diana Yuan,3.4.3,Where are lambda values or coefficients learned from?,held-out corpus
+Diana Yuan,3.4.3,What is an iterative learning algorithm that converges on locally optimal lambdas?,EM algorithm
+Diana Yuan,3.4.3,What are the higher-order n-grams discounted by a function alpha to save some probability mass for?,lower-order n-grams
+Diana Yuan,3.4.3,What is the backoff n-gram model with discounting called?,Katz backoff
+Diana Yuan,3.5,What is the most commonly used and best performing n-gram smoothing method?,interpolated Knerser-Ney algorithm
+Diana Yuan,3.5,What did the interpolated Knerser-Ney algorithm originate from?,absolute discounting
+Diana Yuan,3.5,What is the unigram model created by the Knerser-Ney algorithm called?,PContunuation
+Diana Yuan,3.5,What is the best performing version of Knerser-Ney smoothing called?,modified Knerser-Ney smoothing
+Diana Yuan,3.6,By using text from web or other what is it possible to build extremely large language models?,enormous collections
+Diana Yuan,3.6,What is the COCA?,Corpus of Contemporary American English
+Diana Yuan,3.6,How many bit hash numbers do large sets of n grams usually store each word as?,sixtyfour
+Diana Yuan,3.6,How can n grams be shrunk?,pruning
+Diana Yuan,3.6,What is used to build appropriate language models?,Bloom filters
+Diana Yuan,3.6,What do efficient language model toolkits use?,sorted arrays
+Diana Yuan,3.6,What is used when the full Knerser-ney smoothing is unnecessary?,The stupid backoff algorithm
+Diana Yuan,3.7,What is the measure of information?,Entropy
+Diana Yuan,3.7,What is the resulting entropy measured as?,lower bound on the number of bits it would take to encode a certain piece of information in the optimal coding scheme
+Diana Yuan,3.7,What is the entropy of a sequence divided by the number of words?,The entropy rate or per-word entropy
+Diana Yuan,3.7,"What theorem states that if the language is regular, the entropy of the given language would be the entropy of",Shannon-McMillan-Breiman theorem
+Diana Yuan,3.7,What is stationary if the probabilities it assigns to a sequence are independent of the shifts in the time index?,The stochastic process
+Diana Yuan,3.7,"What are stationary, but natural language is not stationary?",Markov models and n-grams
+Diana Yuan,3.7,How can we compute the entropy of natural language?,taking a sufficiently long sample of the output to determine its average log probability
+Diana Yuan,3.7,When is cross-entropy useful?,when the actual probability distribution p used to generate some data is unknown
+Diana Yuan,3.7,What model of the probability distribution p is used to calculate the cross-entropy of m on p?,m
+Diana Yuan,3.7,What would give a lower cross-entropy?,The more accurate model
+Diana Yuan,3.7,The perplexity of a model P on a sequence of words W can be formally defined as what?,some exponential of the cross-entropy
+Diana Yuan,4.0,What is the task of assigning a label or category to an entire text or document?,Text categorization
+Diana Yuan,4.0,"What is the extraction of sentiment, the positive or negative orientation that a writer expresses towards some object?",Sentiment analysis
+Diana Yuan,4.0,What is the binary classification task of assigning an email to either spam or not-spam?,Spam detection
+Diana Yuan,4.0,What is the task of determining the language of a text?,Language id
+Diana Yuan,4.0,"Related text classification tasks like what are relevant to digital humanities, social sciences, and forensic linguistics?",authorship attribution
+Diana Yuan,4.0,What is the goal of classification?,"to take a single observation, extract some useful features, and classify the given observation into one of a set of discrete classes"
+Diana Yuan,4.0,Who determines the rules of classification?,humans
+Diana Yuan,4.0,Most classifications in language processing are done through what?,supervised machine learning
+Diana Yuan,4.0,What is the goal of supervised machine learning?,learn a classifier that is capable of mapping from a new document to its correct class
+Diana Yuan,4.0,What does a probabilistic classifier give?,probability of the observation being in the class
+Diana Yuan,4.0,What type of classifiers return the class most likely to have generated some given observation?,Generative classifiers
+Diana Yuan,4.0,Discriminative classifiers like what learn about the features of the input to discriminate between the different possible classes?,logistic regression
+Diana Yuan,4.1,What is the simplifying assumption made by the multinomial naive Bayes classifier?,bag-of-words
+Diana Yuan,4.1,What is a probabilistic classifier?,Naive Bayes
+Diana Yuan,4.1,Who first applied the Bayesian inference to text classification?,Mosteller and Wallace
+Diana Yuan,4.1,Naive Bayes generates words by sampling from what?,conditional probability
+Diana Yuan,4.1,The class that has the greatest product of the prior probability and the likelihood is considered what?,the most probable class
+Diana Yuan,4.1,What is the conditional independence assumption?,the probabilities of features given a class are independent and can be multiplied directly
+Diana Yuan,4.1,Why are Naive Bayes calculations done in log space?,increase speed
+Diana Yuan,4.1,Naive Bayes and linear regression belong to the class of linear classifiers that use what to make a classification decision?,lienar combination of inputs
+Diana Yuan,4.2,What is calculated as the fraction of times a word appears among all words in all documents of a class?,The maximum likelihood estimate of the conditional probability
+Diana Yuan,4.2,What would happen if a word gave a zero probability with maximum likelihood training?,probability of the entire class would evaluate to zero
+Diana Yuan,4.2,What is the simplest solution to avoid a zero overall probability?,add-one (Laplace) smoothing
+Diana Yuan,4.2,What do not occur in any training document in any class?,Unknown words
+Diana Yuan,4.2,What are frequent words like the and a?,Stop words
+Diana Yuan,4.2,How do some systems ignore stop words?,by sorting the vocabulary
+Diana Yuan,4.4,What is another name for binary multinomial naive Bayes?,binary NB
+Diana Yuan,4.4,When is binary NB more efficient?,when the existence of a word matters more than its frequency
+Diana Yuan,4.4,How is negation dealt with in sentiment analysis?,prepending the prefix
+Diana Yuan,4.4,"When there's insufficient labeled training data to train accurate naive Bayes classifiers, positive and negative word features can",sentiment lexicons
+Diana Yuan,4.5,Features in naive Bayes may express what?,any property of the input text
+Diana Yuan,4.5,What are features in naive Bayes for spam detection?,a set of likely words or phrases
+Diana Yuan,4.5,What determines what language a given piece of information is written in?,Language ID
+Diana Yuan,4.5,What are the most effective naive Bayes features for Language ID?,character n-grams or byte n-grams
+Diana Yuan,4.5,What naive Bayes system uses feature selection to determine the most informative final features?,langid.py
+Diana Yuan,4.5,What type of texts are Language ID systems trained on?,multilingual
+Diana Yuan,4.5,What does the naive Bayes system add to Wikipedia?,slang websites
+Diana Yuan,4.6,What are similar to language modeling in that they can be viewed as a set of class-specific unigram language models?,Naive Bayes models
+Diana Yuan,4.6,What is the probability of a sentence being positive?,the total product of the individual probabilities that each word in the sentence is positive
+Diana Yuan,4.7.0,What do gold labels do?,verify system outputs
+Diana Yuan,4.7.0,What is a table for visualizing how an algorithm performs with respect to the human gold labels?,confusion matrix
+Diana Yuan,4.7.0,What is calculated as the percentage of correct system output?,Accuracy
+Diana Yuan,4.7.0,What measures the percentage of true gold-labeled positives out of all system-labeled positives?,Precision
+Diana Yuan,4.7.0,What measures the percentage of true gold-labeled positives out of true positives and true negatives?,Recall
+Diana Yuan,4.7.0,What is the F-measure expressed as?,Harmonic mean
+Diana Yuan,4.7.1,What is a multi-class classification algorithm that can perform sentiment analysis beyond the positive and negative class?,The Naive Bayes algorithm
+Diana Yuan,4.7.1,What can the Naive Bayes algorithm perform beyond the positive and negative classes?,sentiment analysis
+Diana Yuan,4.7.1,What averages over the performance for each class?,Macroaveraging
+Diana Yuan,4.8,What allows all data to be used for both training and testing?,Cross-validation
+Diana Yuan,4.8,What does 10-fold cross-validation involve?,training the classifier on a set of randomly selected data
+Diana Yuan,4.8,What does 10-fold cross-validation involve?,computing the error rate on the test set
+Diana Yuan,4.8,What does cross-validation prohibit?,previewing the data
+Diana Yuan,4.9.0,What compares the performance of multiple systems?,Statistical significance testing
+Diana Yuan,4.9.0,What presents the degree to which system A is better than system B?,The effect size
+Diana Yuan,4.9.0,The null hypothesis assumes that the effective size is what?,negative or zero
+Diana Yuan,4.9.0,What attempts to rule out the null hypothesis?,statistical significance testing
+Diana Yuan,4.9.0,What is the probability that the actual effect size is higher than it was in the hypothesis?,The p-value
+Diana Yuan,4.9.0,A p-value below what threshold indicates that the result is statistically significant and the null hypothesis can be rejected?,0.05 or 0.1
+Diana Yuan,4.9.0,NLP research usually use non-parametric tests based on what?,sampling
+Diana Yuan,4.9.0,What are the two most common non-parametric tests in NLP?,approximate randomization and the bootstrap test
+Diana Yuan,4.9.0,What compares two sets of observations that are aligned?,The paired version of the bootstrap test
+Diana Yuan,4.9.1,What refers to drawing large numbers of smaller samples with replacement from an original large sample?,bootstrap test
+Diana Yuan,4.10,What is crucial to avoid that exist both for naive Bayes classifiers and other classification algorithms?,harms
+Diana Yuan,4.10,What type of harms are caused by a system that demeans a social group?,Representational
+Diana Yuan,4.10,What is another class of harms that may exist in toxicity detection?,Censorship
+Diana Yuan,4.10,Non-toxic sentences that simply mention what identifies can lead to the censoring discourses by or about minority groups.,minority
+Diana Yuan,4.10,What could have replicated and amplified biases in their training data?,Machine learning systems
+Diana Yuan,4.10,What is released with each version of a model and clarifies any flaws that the model might have?,A model card
+Author,Section,Question,Answer
+Hannah Gonzalez,2.0,What is an example of an early NLP processing system that recognizes patterns and matches them with appropriate responses?,ELIZA
+Hannah Gonzalez,2.0,What is the essence of ELIZA?,regular expressions
+Hannah Gonzalez,2.0,Regular expressions are what?,strings
+Hannah Gonzalez,2.0,What is it called when we want to standardize a text?,text normalization
+Hannah Gonzalez,2.0,What is another example of text normalization?,splitting sentences
+Hannah Gonzalez,2.0,What algorithm determines how similar words are between each other?,edit distance
+Hannah Gonzalez,2.1.1,What is a simple type of regular expressions?,a sequence of characters
+Hannah Gonzalez,2.1.1,What defines a disjunction of characters when we are matching them to the regular expressions?,Square braces
+Hannah Gonzalez,2.1.1,What is used when we know the range of characters to match?,Dash
+Hannah Gonzalez,2.1.1,What is used when you don't want to use a certain character?,Caret
+Hannah Gonzalez,2.1.1,Where should the symbol go in order to negate the pattern?,the beginning of the square brackets
+Hannah Gonzalez,2.1.1,What lets us match the word if it has the character before the question mark?,Question mark
+Hannah Gonzalez,2.1.1,What lets us match the word if it has the character before the question mark?,if it has the character before the question mark
+Hannah Gonzalez,2.1.1,What lets us match the word if it has the character before the question mark?,if it has the character before the question mark
+Hannah Gonzalez,2.1.1,What lets us match the word if it has zero or more occurrences of the character before it or a regular expression before it?,Kleene star
+Hannah Gonzalez,2.1.1,What lets us match the character with one or more occurrences of the character or regular expression before the Kleene (+)?,Kleene
+Hannah Gonzalez,2.1.1,What is Period (.)?,a wildcard expression
+Hannah Gonzalez,2.1.1,What is Period (.)?,a wildcard expression
+Hannah Gonzalez,2.1.1,What do anchors do?,hold regular expressions to certain locations of the string
+Hannah Gonzalez,2.1.2,"What means ""or""?",Pipe
+Hannah Gonzalez,2.1.2,"What does (( )) mean ""and""?",Parentheses
+Hannah Gonzalez,2.1.2,What determines which operator has higher precedence than another?,precedence hierarchy
+Hannah Gonzalez,2.1.2,What is the order from highest precedence to lowest precedence?,"parenthesis, counters, sequences and anchors, disjunction"
+Hannah Gonzalez,2.1.2,"When regular expressions are not matched, we match them with what?",largest string they can
+Hannah Gonzalez,2.1.3,How many types of errors are there?,two
+Hannah Gonzalez,2.1.3,What are the two types of errors?,false positives
+Hannah Gonzalez,2.1.3,What is the other type of error called?,false negatives
+Hannah Gonzalez,2.1.3,What is when we incorrectly match strings?,False positive
+Hannah Gonzalez,2.1.3,What is when we incorrectly miss strings?,False negative
+Hannah Gonzalez,2.1.3,What do less false positives errors mean?,more precision
+Hannah Gonzalez,2.1.3,Less false negatives errors mean more what?,recall
+Hannah Gonzalez,2.1.4,What can you specify?,the number of an instance in a pattern
+Hannah Gonzalez,2.1.4,How many instances of the previous character or expression are there?,four
+Hannah Gonzalez,2.1.4,What can you specify in a pattern?,ranges
+Hannah Gonzalez,2.1.4,What can you refer to with a backslash?,special characters
+Hannah Gonzalez,2.1.4,What are some special characters that you can refer to with a backslash?,"( ), ( )"
+Hannah Gonzalez,2.1.6,What means replacing one string characterized with a regular expression with another string?,Substitution
+Hannah Gonzalez,2.1.6,Capture group means using what to store a pattern in memory?,parentheses
+Hannah Gonzalez,2.1.7,What syntax do Lookahead assertions use?,non-capture groups' syntax
+Hannah Gonzalez,2.2,What is a collection of text or speech that a computer can read?,Corpus
+Hannah Gonzalez,2.2,"Punctuation, fillers, and disfluencies are treated as what?",words
+Hannah Gonzalez,2.2,"What is a set of lexical forms that share the steam, major part-of-speech, and word sense?",A lemma
+Hannah Gonzalez,2.3,"What should be tested with many languages, not just one?",NLP algorithms
+Hannah Gonzalez,2.3,What is the phenomenon of people using multiple languages in a single communicative act called?,code switching
+Hannah Gonzalez,2.3,What is the ideal way of creating a corpus creator?,build a datasheet
+Hannah Gonzalez,2.3,What does a datasheet help understand?,context
+Hannah Gonzalez,2.3,What are the properties of a datasheet?,"motivation, situation, language variety, speaker demographics, collection process, annotation process, and distribution"
+Hannah Gonzalez,2.4.1,What does normalizing a text mean?,tokenizing words
+Hannah Gonzalez,2.4.1,How many words is a normalized text divided into?,one word per line
+Hannah Gonzalez,2.4.1,What are the most frequent words?,function words
+Hannah Gonzalez,2.4.1,What are some examples of function words?,"articles, pronouns, and prepositions"
+Hannah Gonzalez,2.4.2,What is the task of segmenting running text into words?,Tokenization
+Hannah Gonzalez,2.4.2,What do we keep in our tokenizations?,punctuation and numbers
+Hannah Gonzalez,2.4.2,What are clitic contractions marked by?,apostrophes
+Hannah Gonzalez,2.4.2,Tokenization is tied to what?,named entity recognition
+Hannah Gonzalez,2.4.2,What is a common tokenization standard called?,Penn Treebank tokenization standard
+Hannah Gonzalez,2.4.2,What does the Penn Treebank tokenization standard do?,"separates out clitics, keeps hyphenated words and separates punctuation"
+Hannah Gonzalez,2.4.2,Tokenization is a task that can differ between what?,languages
+Hannah Gonzalez,2.4.2,Tokenization can be segmented into what?,characters or into words
+Hannah Gonzalez,2.4.3,What are sets of tokens that include tokens smaller than words called?,Subwords
+Hannah Gonzalez,2.4.3,What are the two parts of tokenizations?,token learner and a token segmenter
+Hannah Gonzalez,2.4.3,What is BPE?,byte-pair encoding
+Hannah Gonzalez,2.4.4,What is standardizing the format of words and tokens?,Word normalization
+Hannah Gonzalez,2.4.4,What is another kind of normalization?,Case folding
+Hannah Gonzalez,2.4.4,What is an example of case folding?,mapping everything to lowercase
+Hannah Gonzalez,2.4.4,What determines if two words share the same root?,Lemmatization
+Hannah Gonzalez,2.4.5,What is an important step in text processing?,Sentence segmentation
+Hannah Gonzalez,2.4.5,What are some clues in sentence segmentation?,"periods, question marks, and exclamation points"
+Hannah Gonzalez,2.4.5,What are some challenges in sentence segmentation?,knowing whether a period is a full-stop or it's the end of an abbreviation
+Hannah Gonzalez,2.5.0,What can help to quantify the similarity between strings?,Minimum edit distance
+Hannah Gonzalez,2.5.0,What does minimum edit distance return?,the minimum number of editing operations needed to transform one string into another
+Hannah Gonzalez,2.5.1,What is a method to solve problems that combines solutions to sub-problems?,Dynamic programming
+Hannah Gonzalez,2.5.1,What are two examples of dynamic programming?,Viterbi algorithm and the CKY algorithm
+Hannah Gonzalez,2.5.1,What is an application of the minimum edit distance algorithm?,spelling errors
+Hannah Gonzalez,2.5.1,What is the name of the imum edit distance algorithm?,n
+Hannah Gonzalez,2.5.1,What is the name of the relation where costs of insertion and deletion are calculated?,recurrence relation
+Hannah Gonzalez,2.5.1,What is a probabilistic extension of the minimum edit distance algorithm?,Viterbi's algorithm
+Hannah Gonzalez,3.0,"What is essential for speech recognition, spelling or grammar correction, machine translation, and augmentative communication technologies?",Predicting upcoming words
+Hannah Gonzalez,3.0,What are models that assign probabilities to sequences of words called?,Language models
+Hannah Gonzalez,3.1,What is a model that estimates the probability of the last word given the previous words?,N-gram
+Hannah Gonzalez,3.1,Why is the N-gram model not as effective?,the constant change in languages
+Hannah Gonzalez,3.1,What shows the link between computing the joint probability of a sequence and computing the conditional probability of a word given previous words?,The chain rule of probability
+Hannah Gonzalez,3.1,What model approximates this probability by using only the conditional of the previous words?,The bigram model
+Hannah Gonzalez,3.1,The n-gram model looks at how many words into the past?,n-1
+Hannah Gonzalez,3.1,What is the assumption that the probability of a word depends only on the previous word?,Markov assumption
+Hannah Gonzalez,3.1,What is another name for the maximum likelihood estimation?,MLE
+Hannah Gonzalez,3.1,What are the normalized counts of a corpus?,between 0 and 1
+Hannah Gonzalez,3.1,How do we estimate the n-gram probability?,by dividing the observed frequency of a particular sequence by the observed frequency of a prefix
+Hannah Gonzalez,3.1,What is dividing the observed frequency of a particular sequence by the observed frequency of a prefix called?,relative frequency
+Hannah Gonzalez,3.1,What do we usually convert the relative frequency of a particular sequence by the observed frequency of a prefix into?,logarithmic space
+Hannah Gonzalez,3.2.0,What is used to evaluate the performance of a language model?,extrinsic evaluation
+Hannah Gonzalez,3.2.0,What is the downside of extrinsic evaluation?,very expensive
+Hannah Gonzalez,3.2.0,What ensures the quality of a model independent of any application?,intrinsic evaluation
+Hannah Gonzalez,3.2.0,What are the three types of data that we divide the data in?,"training set, test set, held out set"
+Hannah Gonzalez,3.2.0,What is the better model?,Whichever model assigns a higher probability to the test set
+Hannah Gonzalez,3.2.0,What is problematic because it introduces a bias in the probabilities and causes inaccuracies in perplexity?,Training on the test set
+Hannah Gonzalez,3.2.1,What is the inverse probability of a test set?,Perplexity
+Hannah Gonzalez,3.2.1,What is equal to maximizing the test set probability according to the language model?,Minimizing perplexity
+Hannah Gonzalez,3.3.0,N-grams are dependent on what?,training corpus
+Hannah Gonzalez,3.3.0,To build a better model we need to do what in the training corpus?,match genres and dialects
+Hannah Gonzalez,3.3.1,What do we call the words that are not known in our dictionary?,unknown words
+Hannah Gonzalez,3.4.0,What is another name for not assigning zero to the probability of an unseen word in a test set?,discounting
+Hannah Gonzalez,3.4.0,What is the name of the smoothing method?,Kneser-Ney
+Hannah Gonzalez,3.4.1,What algorithm adds one to all the bigram counts before normalizing them into probabilities?,Laplace smoothing
+Hannah Gonzalez,3.4.2,What smoothing is to move a bit less of the probability mass from the seen to the unseen events?,Add-k
+Hannah Gonzalez,3.4.2,What does add-k smoothing add?,fractional count
+Hannah Gonzalez,3.4.3,What does backoff use if the evidence is sufficient?,bigram
+Hannah Gonzalez,3.4.3,What does backoff use if the evidence is sufficient?,trigram
+Hannah Gonzalez,3.4.3,In what method do we mix the probability estimates from all the n-gram estimators?,interpolation
+Hannah Gonzalez,3.5,What company augments absolute discounting with a more sophisticated way to handle the lower-order unigram distribution?,Kneser-Ney
+Hannah Gonzalez,3.5,"How many different discounts does Kneser-Ney use for n-grams with counts of 1,2,3 or more?",three
+Hannah Gonzalez,3.6,Efficient language model toolkits use what to build probability tables in a minimal number of passes through a large corpus?,merge sorts
+Hannah Gonzalez,3.6,What do efficient language model toolkits use to combine probabilities and backoffs in a single value?,sorted arrays
+Hannah Gonzalez,3.7,What do we use to measure information?,entropy
+Hannah Gonzalez,3.7,What is the entropy of a sequence divided by the number of words?,Entropy rate
+Hannah Gonzalez,3.7,What is used when the actual probability distribution that generated some data is unknown?,cross entropy
+Hannah Gonzalez,4.0,What is the task of assigning a label to a text?,Text categorization
+Hannah Gonzalez,4.0,What is the positive or negative experience that the writer expresses towards an object?,Sentiment analysis
+Hannah Gonzalez,4.0,What is another example of Sentiment analysis?,Spam detection
+Hannah Gonzalez,4.0,What is the goal of supervised machine learning?,to learn how to mpa
+Hannah Gonzalez,4.1,The Bayesian classifier makes a simplifying assumption of what?,how features interact
+Hannah Gonzalez,4.1,What does the Bayesian classifier present the text as?,a bag of words
+Hannah Gonzalez,4.1,How do we calculate the most probable class given some document?,by choosing the class which has the highest product of the prior probability of the class and the likelihood of the document
+Hannah Gonzalez,4.1,What is the naive Bayes assumption?,conditional independence assumption
+Hannah Gonzalez,4.1,What are the Bayesian classifiers called?,linear classifiers
+Hannah Gonzalez,4.2,What do we use in the data to estimate the maximum likelihood?,frequencies
+Hannah Gonzalez,4.2,What is used to avoid zeros?,Laplace smoothing
+Hannah Gonzalez,4.2,What is the solution for unknown words?,ignore them and remove them from the document
+Hannah Gonzalez,4.2,Some systems decide to ignore a class of what?,very frequent words
+Hannah Gonzalez,4.4,What is the variant of binary NB called?,binary multinomial naive Bayes
+Hannah Gonzalez,4.4,What can modify a negative word and produce a positive review?,Negation
+Hannah Gonzalez,4.4,What is an example of a sentiment lexicon?,MPQA Subjectivity Lexicon
+Hannah Gonzalez,4.4,What are lists of words that are pre annotated with a positive or negative sentiment?,sentiment lexicons
+Hannah Gonzalez,4.5,What does Bayes not require to use all the words in training data as a feature?,the classifier
+Hannah Gonzalez,4.5,Language iD systems are trained on multilingual texts such as what?,Wikipedia
+Hannah Gonzalez,4.6,What can be viewed as a set of class-specific unigram language models?,naive Bayes model
+Hannah Gonzalez,4.6,A naive Bayes model can be viewed as a set of what?,class-specific unigram language models
+Hannah Gonzalez,4.7.0,What does a human define?,Gold labels
+Hannah Gonzalez,4.7.0,What helps visualize how an algorithm performs with respect to the human gold labels?,confusion matrix
+Hannah Gonzalez,4.7.0,"Instead of measuring accuracy, we measure what?",precision
+Hannah Gonzalez,4.7.0,What measures the percentage of items actually present in the input that were correctly identified by the system?,Recall
+Hannah Gonzalez,4.7.1,What is a multi-class classification algorithm?,naive Bayes algorithm
+Hannah Gonzalez,4.7.1,What method computes the performance of each class and averages over classes?,macroaveraging
+Hannah Gonzalez,4.7.1,In what class classification algorithm do we collect the decisions for all classes into a single confusion matrix?,microaveraging
+Hannah Gonzalez,4.8,What allows you to randomly select a training set and a test set division of our data?,k fold cross validation
+Hannah Gonzalez,4.8,How many times does k fold cross validation repeat?,k times
+Hannah Gonzalez,4.9.0,What represents if a model is better than another model?,The effect size
+Hannah Gonzalez,4.9.0,What are the two common non-parametric tests used in NLP?,"approximate randomization, and the bootstrap test"
+Hannah Gonzalez,4.9.1,What test can be applied to any metric?,bootstrap
+Hannah Gonzalez,4.9.1,Bootstrap refers to repeatedly drawing what with replacement?,large numbers of smaller samples
+Hannah Gonzalez,4.10,What are representational harms caused by?,systems that demeans a social group
+Hannah Gonzalez,4.10,What are some tasks that include toxicity detection?,"hate speech, abuse, harassment, or other kinds of toxic language"
+Hannah Gonzalez,5.0,What can help discover the link between features and some outcome?,Logistic regression
+Hannah Gonzalez,5.0,What is the algorithm used for classification in nlp?,Logistics regression
+Hannah Gonzalez,5.0,How many classes can logistic regression classify?,2
+Hannah Gonzalez,5.0,What type of classifier is naive Bayes?,generative
+Hannah Gonzalez,5.0,What does a discriminative model try to directly compute?,P(c/d)
+Hannah Gonzalez,5.0,How many components does a machine learning system have?,four
+Hannah Gonzalez,5.0,What are the two phases of logistic regression?,training and testing
+Hannah Gonzalez,5.1,What classifier can help make a binary decision about the class of a new input observation?,sigmoid

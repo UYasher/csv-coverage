@@ -1,0 +1,244 @@
+Author,Section,Question,Answer
+Diana Yuan,2.0,What is an early natural language processing system that mimiced a Rogerian psychotherapist to carry on conversation?,ELIZA
+Diana Yuan,2.0,ELIZA's responses were what?,limited
+Diana Yuan,2.0,ELIZA and what other system still play a crucial role in natural language processing today?,chatbots
+Diana Yuan,2.0,"What does ELIZA use to convert text into a more convenient, standard form?",text normalization
+Diana Yuan,2.0,What identifies the implicit shared roots between words?,lemmatization
+Diana Yuan,2.0,How is lemmatization done?,stripping the suffixes
+Diana Yuan,2.0,What is used to break up a text into individual sentences?,punctuation
+Diana Yuan,2.0,What does edit distance evaluate?,degree of resemblance between two strings
+Diana Yuan,2.1.1,What is an algebraic notation for characterizing a set of strings that is useful for searching for a pattern or through a corpus?,The regular expression
+Diana Yuan,2.1.1,What will be shown in the regular expression?,first matching result
+Diana Yuan,2.1.1,Is the search string case sensitive or case sensitive?,case sensitive
+Diana Yuan,2.1.1,What can more easily look for characters over a range?,dash
+Diana Yuan,2.1.1,What specifies the non-existence of a character?,The caret
+Diana Yuan,2.1.1,What does the (?) mean?,the preceding character or nothing
+Diana Yuan,2.1.1,What does the (?) mean?,the preceding character or nothing
+Diana Yuan,2.1.1,What means zero or more occurrences of the immediately preceding character or regular expression in square braces?,the Kleene star
+Diana Yuan,2.1.1,What special case is equivalent to the Kleene star with one more occurrences?,Kleene plus
+Diana Yuan,2.1.1,What is an expression that matches any single character in the form of a period?,wildcard
+Diana Yuan,2.1.1,What are special characters that fix regular expressions to particular places in a string?,Anchors
+Diana Yuan,2.1.1,What matches a non-word boundary?,B
+Diana Yuan,2.1.2,The pipe symbol signifies what?,disjunction
+Diana Yuan,2.1.2,The parenthesis operator is often used in combination with what?,counters
+Diana Yuan,2.1.2,"What does the regular expression follow in the order of parenthesis, counters, sequences and anchors, and disjunction?",the operator precedence hierarchy
+Diana Yuan,2.1.2,Non-greedy matching can be enforced by what?,question mark qualifier
+Diana Yuan,2.1.3,How can we avoid false positives?,increasing precision
+Diana Yuan,2.1.3,How can we avoid false negatives?,increasing recall
+Diana Yuan,2.1.4,How can we use explicit numbers as counters?,curly brackets
+Diana Yuan,2.1.4,What expression can be used to indicate occurrences within a range?,Modified curly brackets
+Diana Yuan,2.1.4,The newline character and tab character are referred to by special notation based on what?,the backslash
+Diana Yuan,2.1.4,Characters that are special themselves are what?,preceded with a backslash
+Diana Yuan,2.1.6,What operator allows a string characterized by a regular expression to be replaced by another string?,substitution operator
+Diana Yuan,2.1.6,What refers back to the first pattern described by the parenthesis operator?,The number operator
+Diana Yuan,2.1.6,What is the use of parentheses to store a pattern in a numbered register?,The capture group
+Diana Yuan,2.1.6,What is matched with?,second capture group
+Diana Yuan,2.1.6,What is used to group but not capture the resulting pattern in a register?,non-capturing group
+Diana Yuan,2.1.6,What are crucial in implementing simple chatbots like ELIZA?,Substitutions and capture groups
+Diana Yuan,2.1.7,What assertion looks for future matchings without advancing the match cursor?,lookahead
+Diana Yuan,2.1.7,What is the operator of the lookahead assertion?,zero-width
+Diana Yuan,2.1.7,What is used to rule out special cases while parsing complex pattern?,Negative lookahead
+Diana Yuan,2.2,What is a computer-readable collection of text or speech?,A corpus
+Diana Yuan,2.2,What is an utterance?,spoken correlate of a sentence
+Diana Yuan,2.2,What are examples of disfluencies?,fragments and fillers or filled pauses
+Diana Yuan,2.2,"What is a set of lexical forms having the same stem, major part-of-speech, and word sense?",A lemma
+Diana Yuan,2.2,What is the derived form of a word?,The word-form
+Diana Yuan,2.2,What are Types |V|?,the numbers of distinct words in a corpus
+Diana Yuan,2.2,What is the relationship between the number of types |V| and number of tokens N called?,Herdan's Law or Heaps' Law
+Diana Yuan,2.2,What is a rough upper bound on the number of lemmas?,boldface forms
+Diana Yuan,2.3,How many languages are there in the world?,7098
+Diana Yuan,2.3,What is the phenomenon where speakers and writers use multiple languages in a single communicative act?,Code switching
+Diana Yuan,2.3,What are other dimensions of variation?,"genre, demographic characteristics of the writer or speaker, and time"
+Diana Yuan,2.3,What specifies properties of a dataset used in the development of computational models?,data statement
+Diana Yuan,2.3,What does the datasheet outline?,"motivation, situation, language variety, speaker demographics, collection process, annotation process, and distribution"
+Diana Yuan,2.4.1,What are the minimal tasks applied as part of any normalization process?,"Tokenizing words, normalizing word formats, and segmenting sentences"
+Diana Yuan,2.4.1,What command in Unix changes particular characters in the input?,The tr command
+Diana Yuan,2.4.1,The sort command sorts input lines in what order?,alphabetical order
+Diana Yuan,2.4.1,What are function words?,"articles, pronouns, prepositions"
+Diana Yuan,2.4.2,What is the task of segmenting running text into words?,Tokenization
+Diana Yuan,2.4.2,What are intentionally included in most NLP applications because they represent word boundaries?,Punctuations and numbers
+Diana Yuan,2.4.2,What can a tokenizer do in alphabetic languages?,expand clitic contractions
+Diana Yuan,2.4.2,What standard separates out clitics?,Penn Treebank tokenization
+Diana Yuan,2.4.2,What do deterministic algorithms compile into?,finite state automata
+Diana Yuan,2.4.2,What is more complex in languages that do not use spaces to mark potential word-boundaries?,Word tokenization
+Diana Yuan,2.4.2,What does each character represent in Chinese?,a morpheme
+Diana Yuan,2.4.2,What do most Chinese NLP tasks take as input?,characters
+Diana Yuan,2.4.2,What are too small to be a unit?,Japanese and Thai characters
+Diana Yuan,2.4.3,What learns facts about an unknown language from a training corpus?,NLP algorithms
+Diana Yuan,2.4.3,What are tokens smaller than words?,Subwords
+Diana Yuan,2.4.3,Most tokenization schemes have a token learner and what?,token segmenter
+Diana Yuan,2.4.3,What is the second part of most tokenization schemes?,token segmenter
+Diana Yuan,2.4.3,What segments a raw test sentence into the tokens in the vocabulary?,token segmenter
+Diana Yuan,2.4.3,What is one of the three widely used algorithms?,WordPiece
+Diana Yuan,2.4.3,What implements both byte-pair encoding and unigram language modeling?,a SentencePiece library
+Diana Yuan,2.4.3,What is also known as the BPE algorithm?,byte-pair encoding
+Diana Yuan,2.4.3,What does the BPE algorithm run?,inside words that are white-space-separated
+Diana Yuan,2.4.3,What is a parameter of the BPE algorithm?,k
+Diana Yuan,2.4.3,The BPE token parser evaluates the test sentence using what?,the given vocabulary
+Diana Yuan,2.4.3,"In real BPE algorithms, only what words will be represented by their parts?",very rare
+Diana Yuan,2.4.4,What is the task of putting words and tokens in a standard format?,Word normalization
+Diana Yuan,2.4.4,What is case folding not used for?,"sentiment analysis, information extraction, and machine translation"
+Diana Yuan,2.4.4,What is the task of determining that two words have the same root?,Lemmatization
+Diana Yuan,2.4.4,What can all morphemes be grouped into?,stems
+Diana Yuan,2.4.5,What are the most useful cues for sentence segmentation?,punctuations
+Diana Yuan,2.4.5,What determines the purpose of a punctuation?,the sentence tokenization
+Diana Yuan,2.5.0,What is the task of deciding whether two strings refer to the same entity?,Coreference
+Diana Yuan,2.5.0,What quantifies string similarity?,Edit distance
+Diana Yuan,2.5.0,What is a correspondence between substrings of the two sequences?,An alignment
+Diana Yuan,2.5.0,"The operation list contains symbols expressing the editing operations needed, following what?","d for deletion, s for substitution, and i for insertion"
+Diana Yuan,2.5.0,What is the weighting factor in which each of the three editing operations has a cost of 1?,The Levenshtein distance between two sequences
+Diana Yuan,2.5.1,What is a class of algorithms that solve problems by combining solutions to sub-problems?,Dynamic programming
+Diana Yuan,2.5.1,What are two examples of algorithms that use dynamic programming?,Viterbi algorithm and the CKY algorithm
+Diana Yuan,2.5.1,Who named the minimum edit distance algorithm?,Wagner and Fischer
+Diana Yuan,2.5.1,What step of the minimum edit distance algorithm calculates the distance for the zeroth row and column?,The initialization step
+Diana Yuan,2.5.1,What step takes the minimum of three possible paths to determine the minimum edit distance for the rest of the matrix?,The recurrence relation
+Diana Yuan,2.5.1,What is one way to visualize the minimum edit distance algorithm?,boldfaced cells
+Diana Yuan,2.5.1,What does each boldfaced cell represent?,an alignment of a pair of letters in the two strings
+Diana Yuan,2.5.1,What do two boldfaced cells present in the same row?,insertion
+Diana Yuan,2.5.1,What is a procedure in which we follow the pointers from the last cell?,The backtrace
+Diana Yuan,3.0,"What is used in speech recognition, spelling correction, and machine translation?",Probability
+Diana Yuan,3.0,Probability is important for what type of devices for the disabled?,AAC devices
+Diana Yuan,3.0,What are models that assign probability to sequences of a word called?,language models
+Diana Yuan,3.0,What is the simplest example of LMs?,n-gram
+Diana Yuan,3.1,What doesn't give good estimates when new sentences are created?,Estimating probabilities directly from counts
+Diana Yuan,3.1,What computes probability of a word given previous words?,chain rule of probability
+Diana Yuan,3.1,What model approximates the history by just the last few words?,The n-gram model
+Diana Yuan,3.1,What does the bigram model predict given the first word?,the conditional probability of the last word
+Diana Yuan,3.1,What assumption states that the probability of a word depends only on the previous word?,Markov
+Diana Yuan,3.1,What gives the parameters of an n-gram model by normalizing the counts from a corpus so that they lie between 0 and 1?,MLE
+Diana Yuan,3.1,What is given by the bigram of xy over the unigram count for x?,x
+Diana Yuan,3.1,What is the ratio between the observed frequency of a particular sequence and the observed frequency of a prefix?,relative frequency
+Diana Yuan,3.1,How are bigram probabilities normalized?,by dividing each cell by the set of unigram probabilities
+Diana Yuan,3.1,What model is used when there is sufficient training data?,trigram models
+Diana Yuan,3.1,"To avoid numerical underflow, language model probabilities are always represented and computed as what?",log probabilities
+Diana Yuan,3.2.0,How does an extrinsic evaluation determine the performance of a language model?,by embedding it in an application
+Diana Yuan,3.2.0,What measures the quality of a model independent of any application?,intrinsic evaluation metric
+Diana Yuan,3.2.0,What is the quality of an n-gram model from its training set measured by?,performance on a test set in the held out corpora
+Diana Yuan,3.2.0,Which n-gram model assigns a higher probability to the test set?,the one that better fits the test set
+Diana Yuan,3.2.0,What is the initial test set that has never been used before?,The development test
+Diana Yuan,3.2.0,Training on the same test set introduces a bias that gives disproportionally high probabilities and causes what?,huge inaccuracies in perplexity
+Diana Yuan,3.2.1,What is the perplexity of a language model on a test set?,the inverse probability of the test set
+Diana Yuan,3.2.1,What is the greater the language model's test set probability?,The smaller the perplexity
+Diana Yuan,3.2.1,What is another definition of perplexity?,the weighted average branching factor of a language
+Diana Yuan,3.2.1,How must the n-gram model P be constructed?,without any knowledge of the test set or its vocabulary
+Diana Yuan,3.2.1,What does not guarantee an extrinsic improvement in the performance of a specific language processing task?,an intrinsic improvement in perplexity
+Diana Yuan,3.3.0,The n-gram model is dependent on what?,training corpus
+Diana Yuan,3.3.0,What increases in the n-gram model?,the word tokens N
+Diana Yuan,3.3.0,What is important to get training data in?,dialect or variety
+Diana Yuan,3.3.0,What are phrases that don't occur in the training set but do occur in the test set?,Zeros
+Diana Yuan,3.3.0,Zeros cause the underestimation of all other phrases and give what probability of the entire test set?,false negative probability
+Diana Yuan,3.3.1,What is a closed vocabulary system?,the test set doesn't contain any words outside of the given lexicon
+Diana Yuan,3.3.1,The closed vocabulary system is often used in speech recognition or what?,machine translation
+Diana Yuan,3.3.1,Unknown words are also called what?,out of vocabulary
+Diana Yuan,3.3.1,What is the percentage of OOV words that appear in the test set?,OOV
+Diana Yuan,3.3.1,What is a pseudo-word called in an open vocabulary system?,UNK
+Diana Yuan,3.3.1,How can we train the probabilities of unknown words in an open vocabulary system?,convert any unknown words to the word token
+Diana Yuan,3.3.1,What can a language model achieve by choosing a small vocabulary and assigning the unknown word a high probability?,low perplexity
+Diana Yuan,3.4.0,What is the procedure of transferring the probability mass of frequent events to other words that appear in the test set in an unseen context?,Smoothing or discounting
+Diana Yuan,3.4.1,How many bigram counts does the Laplace smoothing algorithm add?,one
+Diana Yuan,3.4.1,What is the Laplace smoothing algorithm used for?,text classification
+Diana Yuan,3.4.1,What does the Laplace smoothing algorithm define instead of adding one to both the numerator and denominator of the probability?,an adjusted count
+Diana Yuan,3.4.1,What is the normalization factor N over N plus V?,the total number of word tokens
+Diana Yuan,3.4.1,What can the smoothing algorithm be viewed as?,discounting non-zero counts and reassigning probability mass to zero counts
+Diana Yuan,3.4.1,The smoothing algorithm can be described in terms of what?,relative discount d
+Diana Yuan,3.4.1,What shows both the discounted previously-nonzero counts and increased previously-zero counts?,The reconstructed count matrix
+Diana Yuan,3.4.2,What is the algorithm that adds a fractional count k to each count called?,add-k smoothing
+Diana Yuan,3.4.2,How can the fractional count k be chosen?,by optimizing on a devset
+Diana Yuan,3.4.3,What helps to generalize more for unlearned contexts?,bigram
+Diana Yuan,3.4.3,When do we move along the n-gram hierarchy?,until there is sufficient evidence
+Diana Yuan,3.4.3,In what method do we mix the probability estimates from all n-gram estimators?,interpolation
+Diana Yuan,3.4.3,The different order n-grams are each weighted by what?,lambda value
+Diana Yuan,3.4.3,Where are lambda values or coefficients learned from?,held-out corpus
+Diana Yuan,3.4.3,What is an iterative learning algorithm that converges on locally optimal lambdas?,EM algorithm
+Diana Yuan,3.4.3,What are the higher-order n-grams discounted by a function alpha to save some probability mass for?,lower-order n-grams
+Diana Yuan,3.4.3,What is the backoff n-gram model with discounting called?,Katz backoff
+Diana Yuan,3.5,What is the most commonly used and best performing n-gram smoothing method?,interpolated Knerser-Ney algorithm
+Diana Yuan,3.5,What did the interpolated Knerser-Ney algorithm originate from?,absolute discounting
+Diana Yuan,3.5,What is the unigram model created by the Knerser-Ney algorithm called?,PContunuation
+Diana Yuan,3.5,What is the best performing version of Knerser-Ney smoothing called?,modified Knerser-Ney smoothing
+Diana Yuan,3.6,By using text from web or other what is it possible to build extremely large language models?,enormous collections
+Diana Yuan,3.6,What is the COCA?,Corpus of Contemporary American English
+Diana Yuan,3.6,How many bit hash numbers do large sets of n grams usually store each word as?,sixtyfour
+Diana Yuan,3.6,How can n grams be shrunk?,pruning
+Diana Yuan,3.6,What is used to build appropriate language models?,Bloom filters
+Diana Yuan,3.6,What do efficient language model toolkits use?,sorted arrays
+Diana Yuan,3.6,What is used when the full Knerser-ney smoothing is unnecessary?,The stupid backoff algorithm
+Diana Yuan,3.7,What is the measure of information?,Entropy
+Diana Yuan,3.7,What is the resulting entropy measured as?,lower bound on the number of bits it would take to encode a certain piece of information in the optimal coding scheme
+Diana Yuan,3.7,What is the entropy of a sequence divided by the number of words?,The entropy rate or per-word entropy
+Diana Yuan,3.7,"What theorem states that if the language is regular, the entropy of the given language would be the entropy of",Shannon-McMillan-Breiman theorem
+Diana Yuan,3.7,What is stationary if the probabilities it assigns to a sequence are independent of the shifts in the time index?,The stochastic process
+Diana Yuan,3.7,"What are stationary, but natural language is not stationary?",Markov models and n-grams
+Diana Yuan,3.7,How can we compute the entropy of natural language?,taking a sufficiently long sample of the output to determine its average log probability
+Diana Yuan,3.7,When is cross-entropy useful?,when the actual probability distribution p used to generate some data is unknown
+Diana Yuan,3.7,What model of the probability distribution p is used to calculate the cross-entropy of m on p?,m
+Diana Yuan,3.7,What would give a lower cross-entropy?,The more accurate model
+Diana Yuan,3.7,The perplexity of a model P on a sequence of words W can be formally defined as what?,some exponential of the cross-entropy
+Diana Yuan,4.0,What is the task of assigning a label or category to an entire text or document?,Text categorization
+Diana Yuan,4.0,"What is the extraction of sentiment, the positive or negative orientation that a writer expresses towards some object?",Sentiment analysis
+Diana Yuan,4.0,What is the binary classification task of assigning an email to either spam or not-spam?,Spam detection
+Diana Yuan,4.0,What is the task of determining the language of a text?,Language id
+Diana Yuan,4.0,"Related text classification tasks like what are relevant to digital humanities, social sciences, and forensic linguistics?",authorship attribution
+Diana Yuan,4.0,What is the goal of classification?,"to take a single observation, extract some useful features, and classify the given observation into one of a set of discrete classes"
+Diana Yuan,4.0,Who determines the rules of classification?,humans
+Diana Yuan,4.0,Most classifications in language processing are done through what?,supervised machine learning
+Diana Yuan,4.0,What is the goal of supervised machine learning?,learn a classifier that is capable of mapping from a new document to its correct class
+Diana Yuan,4.0,What does a probabilistic classifier give?,probability of the observation being in the class
+Diana Yuan,4.0,What type of classifiers return the class most likely to have generated some given observation?,Generative classifiers
+Diana Yuan,4.0,Discriminative classifiers like what learn about the features of the input to discriminate between the different possible classes?,logistic regression
+Diana Yuan,4.1,What is the simplifying assumption made by the multinomial naive Bayes classifier?,bag-of-words
+Diana Yuan,4.1,What is a probabilistic classifier?,Naive Bayes
+Diana Yuan,4.1,Who first applied the Bayesian inference to text classification?,Mosteller and Wallace
+Diana Yuan,4.1,Naive Bayes generates words by sampling from what?,conditional probability
+Diana Yuan,4.1,The class that has the greatest product of the prior probability and the likelihood is considered what?,the most probable class
+Diana Yuan,4.1,What is the conditional independence assumption?,the probabilities of features given a class are independent and can be multiplied directly
+Diana Yuan,4.1,Why are Naive Bayes calculations done in log space?,increase speed
+Diana Yuan,4.1,Naive Bayes and linear regression belong to the class of linear classifiers that use what to make a classification decision?,lienar combination of inputs
+Diana Yuan,4.2,What is calculated as the fraction of times a word appears among all words in all documents of a class?,The maximum likelihood estimate of the conditional probability
+Diana Yuan,4.2,What would happen if a word gave a zero probability with maximum likelihood training?,probability of the entire class would evaluate to zero
+Diana Yuan,4.2,What is the simplest solution to avoid a zero overall probability?,add-one (Laplace) smoothing
+Diana Yuan,4.2,What do not occur in any training document in any class?,Unknown words
+Diana Yuan,4.2,What are frequent words like the and a?,Stop words
+Diana Yuan,4.2,How do some systems ignore stop words?,by sorting the vocabulary
+Diana Yuan,4.4,What is another name for binary multinomial naive Bayes?,binary NB
+Diana Yuan,4.4,When is binary NB more efficient?,when the existence of a word matters more than its frequency
+Diana Yuan,4.4,How is negation dealt with in sentiment analysis?,prepending the prefix
+Diana Yuan,4.4,"When there's insufficient labeled training data to train accurate naive Bayes classifiers, positive and negative word features can",sentiment lexicons
+Diana Yuan,4.5,Features in naive Bayes may express what?,any property of the input text
+Diana Yuan,4.5,What are features in naive Bayes for spam detection?,a set of likely words or phrases
+Diana Yuan,4.5,What determines what language a given piece of information is written in?,Language ID
+Diana Yuan,4.5,What are the most effective naive Bayes features for Language ID?,character n-grams or byte n-grams
+Diana Yuan,4.5,What naive Bayes system uses feature selection to determine the most informative final features?,langid.py
+Diana Yuan,4.5,What type of texts are Language ID systems trained on?,multilingual
+Diana Yuan,4.5,What does the naive Bayes system add to Wikipedia?,slang websites
+Diana Yuan,4.6,What are similar to language modeling in that they can be viewed as a set of class-specific unigram language models?,Naive Bayes models
+Diana Yuan,4.6,What is the probability of a sentence being positive?,the total product of the individual probabilities that each word in the sentence is positive
+Diana Yuan,4.7.0,What do gold labels do?,verify system outputs
+Diana Yuan,4.7.0,What is a table for visualizing how an algorithm performs with respect to the human gold labels?,confusion matrix
+Diana Yuan,4.7.0,What is calculated as the percentage of correct system output?,Accuracy
+Diana Yuan,4.7.0,What measures the percentage of true gold-labeled positives out of all system-labeled positives?,Precision
+Diana Yuan,4.7.0,What measures the percentage of true gold-labeled positives out of true positives and true negatives?,Recall
+Diana Yuan,4.7.0,What is the F-measure expressed as?,Harmonic mean
+Diana Yuan,4.7.1,What is a multi-class classification algorithm that can perform sentiment analysis beyond the positive and negative class?,The Naive Bayes algorithm
+Diana Yuan,4.7.1,What can the Naive Bayes algorithm perform beyond the positive and negative classes?,sentiment analysis
+Diana Yuan,4.7.1,What averages over the performance for each class?,Macroaveraging
+Diana Yuan,4.8,What allows all data to be used for both training and testing?,Cross-validation
+Diana Yuan,4.8,What does 10-fold cross-validation involve?,training the classifier on a set of randomly selected data
+Diana Yuan,4.8,What does 10-fold cross-validation involve?,computing the error rate on the test set
+Diana Yuan,4.8,What does cross-validation prohibit?,previewing the data
+Diana Yuan,4.9.0,What compares the performance of multiple systems?,Statistical significance testing
+Diana Yuan,4.9.0,What presents the degree to which system A is better than system B?,The effect size
+Diana Yuan,4.9.0,The null hypothesis assumes that the effective size is what?,negative or zero
+Diana Yuan,4.9.0,What attempts to rule out the null hypothesis?,statistical significance testing
+Diana Yuan,4.9.0,What is the probability that the actual effect size is higher than it was in the hypothesis?,The p-value
+Diana Yuan,4.9.0,A p-value below what threshold indicates that the result is statistically significant and the null hypothesis can be rejected?,0.05 or 0.1
+Diana Yuan,4.9.0,NLP research usually use non-parametric tests based on what?,sampling
+Diana Yuan,4.9.0,What are the two most common non-parametric tests in NLP?,approximate randomization and the bootstrap test
+Diana Yuan,4.9.0,What compares two sets of observations that are aligned?,The paired version of the bootstrap test
+Diana Yuan,4.9.1,What refers to drawing large numbers of smaller samples with replacement from an original large sample?,bootstrap test
+Diana Yuan,4.10,What is crucial to avoid that exist both for naive Bayes classifiers and other classification algorithms?,harms
+Diana Yuan,4.10,What type of harms are caused by a system that demeans a social group?,Representational
+Diana Yuan,4.10,What is another class of harms that may exist in toxicity detection?,Censorship
+Diana Yuan,4.10,Non-toxic sentences that simply mention what identifies can lead to the censoring discourses by or about minority groups.,minority
+Diana Yuan,4.10,What could have replicated and amplified biases in their training data?,Machine learning systems
+Diana Yuan,4.10,What is released with each version of a model and clarifies any flaws that the model might have?,A model card

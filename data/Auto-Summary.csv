@@ -1,0 +1,318 @@
+Author,Section,Question,Answer
+Auto Summary,2.0,What is the name of the early natural language processing system that could carry on a limited conversation with a user by imitating the responses of ,ELIZA
+Auto Summary,2.0,ELIZA could carry on a limited conversation with a user by imitating the responses of what?,Rogerian psychotherapist
+Auto Summary,2.0,Who's mimicry of human conversation was remarkably successful?,Eliza
+Auto Summary,2.0,What do modern conversational agents rely on?,more sophisticated understanding of the user's intent
+Auto Summary,2.0,English words are separated from each other by what?,whitespace
+Auto Summary,2.0,What is an example of a hashtag?,#nlproc
+Auto Summary,2.0,What language doesn't have spaces between words?,Japanese
+Auto Summary,2.1.0,What is an algebraic notation for characterizing a set of strings?,regular expression
+Auto Summary,2.1.0,What are two examples of regular expressions?,Unix tools grep or Emacs
+Auto Summary,2.1.0,What types of regular expressions do regular expressions come in?,variants
+Auto Summary,2.1.1,"To search for woodchuck, we type what?",/woodchuck/
+Auto Summary,2.1.1,What does the expression /Buttercup/ match?,any string containing the substring Buttercup
+Auto Summary,2.1.1,What can the search string consist of?,a single character
+Auto Summary,2.1.1,The pattern /[wW]/ matches patterns containing what two characters?,w or W
+Auto Summary,2.1.1,What do square brackets not allow us to say?,s or nothing
+Auto Summary,2.1.1,What does the question mark /?/ mean?,the preceding character or nothing
+Auto Summary,2.1.1,What does the question mark /?/ mean?,the preceding character or nothing
+Auto Summary,2.1.1,"What means ""any string of zero or more as""?",/a*/
+Auto Summary,2.1.1,"What means ""any string of zero or more as""?",/a*/
+Auto Summary,2.1.1,What can we extend /[0-9//. for a single digit?,multiple digits
+Auto Summary,2.1.1,"For specifying multiple digits, we can extend /[0-9//. for what?",single digit
+Auto Summary,2.1.1,"What are two ways to specify ""at least one"" of some character?",/baaa*!/ or /baa+!/
+Auto Summary,2.1.1,"How many ways to specify ""at least one"" of some character?",two
+Auto Summary,2.1.1,"What pattern matches the word ""The"" only at the start of a line?",The
+Auto Summary,2.1.2,What is another name for the disjunction operator?,pipe symbol
+Auto Summary,2.1.2,When do we need to use the disjunction operator?,in the midst of a larger sequence
+Auto Summary,2.1.2,What do I want to search for for my cousin David?,pet fish
+Auto Summary,2.1.2,What will the expression /Column [0-9] */ match?,a single column followed by a number of spaces
+Auto Summary,2.1.2,The idea that one operator may take precedence over another is formalized by what for regular expressions?,operator precedence hierarchy
+Auto Summary,2.1.2,What is a Kleene star that matches as little text as possible?,*
+Auto Summary,2.1.2,What is the operator *??,Kleene star
+Auto Summary,2.1.3,What is an example of an incorrect pattern?,/the/
+Auto Summary,2.1.3,What happens when a pattern begins a sentence?,miss the word
+Auto Summary,2.1.3,What is the pattern that will miss the word when it begins a sentence?,/[tT]he/
+Auto Summary,2.1.3,What do we want instances with on both sides?,word boundary
+Auto Summary,2.1.3,What does /b/ not treat as word boundaries?,underscores and numbers
+Auto Summary,2.1.3,What are two kinds of errors?,false positives and false negatives
+Auto Summary,2.1.3,Reducing error rate involves increasing precision (minimizing false positives) and what?,increasing recall
+Auto Summary,2.1.3,When will we come back to precision and recall with more precise definitions?,Chapter 4
+Auto Summary,2.1.4,Where can a range of numbers be specified by enclosing them?,curly brackets
+Auto Summary,2.1.4,Where can a range of numbers be specified by enclosing them?,curly brackets
+Auto Summary,2.1.4,What are referred to by special notation based on the backslash?,special characters
+Auto Summary,2.1.5,What is a simple regular expression for a dollar sign followed by a string of digits?,/$[0-9+/
+Auto Summary,2.1.5,What character has a different function here than the end-of-line function?,$
+Auto Summary,2.1.5,Let's try out a more significant example of the power of what?,REs
+Auto Summary,2.1.5,What do we need to allow for?,optional fractions
+Auto Summary,2.1.5,What does this pattern only allow?,$199.99
+Auto Summary,2.1.5,What do we need to do to allow for optional fractions?,limit the dollars
+Auto Summary,2.1.5,What is the limit to the dollars?,*(GB|[Gg]igabytes
+Auto Summary,2.1.5,What is the limit of dollars?,b/
+Auto Summary,2.1.6,What is an important use of regular expressions?,substitutions
+Auto Summary,2.1.6,What is the substitution operator used in Python and in Unix commands like vim or sed?,s/regexp1/pattern/
+Auto Summary,2.1.6,What is the substitution operator s/regexp1/pattern/ often useful to be able to refer to?,a particular subpart of the string matching the first pattern
+Auto Summary,2.1.6,What simulates a Rogerian psychologist?,ELIZA
+Auto Summary,2.1.6,Substitutions and what are very useful in implementing simple chatbots?,capture groups
+Auto Summary,2.1.6,What do the first substitutions do?,"change all instances of MY to YOUR, and I'M to YOU ARE"
+Auto Summary,2.1.6,What does the next set of substitutions do in the input?,matches and replaces other patterns
+Auto Summary,2.1.7,What is commonly used when we are parsing complex patterns but want to rule out a special case?,Negative lookahead
+Auto Summary,2.1.7,What is the operator true if pattern occurs?,pattern
+Auto Summary,2.1.7,"The operator (?= pattern) is true if pattern occurs, but is zero-width, i.e. what doesn't advance",match pointer
+Auto Summary,2.2,What is a million-word collection of samples from 500 written English texts from different genres called?,The Brown corpus
+Auto Summary,2.2,What is critical for finding boundaries of things?,Punctuation
+Auto Summary,2.2,"For some tasks, like part-of-speech tagging or parsing or speech synthesis, we treat punctuation marks as",separate words
+Auto Summary,2.2,What are words like uh and um called fillers?,filled pauses
+Auto Summary,2.2,What is helpful in speech recognition in predicting the upcoming word?,Disfluencies
+Auto Summary,2.2,What is a useful feature for part-of-speech or named-entity tagging?,capitalization
+Auto Summary,2.2,"For morphologically complex languages like Arabic, we often need to deal with what?",lemmatization
+Auto Summary,2.2,"The more corpora we look at, the more word types we find.",larger
+Auto Summary,2.2,What is the relationship between word types in the Brown corpus called?,Herdan's Law or Heaps' Law
+Auto Summary,2.2,How many entries were in the 1989 edition of the Oxford English Dictionary?,"615,000"
+Auto Summary,2.2,What is sufficient for many tasks in English?,wordforms
+Auto Summary,2.3,When are NLP algorithms most useful?,when they apply across many languages
+Auto Summary,2.3,How many languages does the world have?,7097
+Auto Summary,2.3,"When developing computational models for language processing from a corpus, it's important to consider what?","who produced the language, in what context, for what purpose"
+Auto Summary,2.3,Text also reflects what of the writer?,demographic characteristics
+Auto Summary,2.3,How does a corpus of texts from different historical periods change?,Language changes over time
+Auto Summary,2.4.0,"Before almost any natural language processing of a text, the text has to be what?",normalized
+Auto Summary,2.4.0,What is the term for segmenting words?,Tokenizing
+Auto Summary,2.4.0,How do we go through each of these tasks?,walk through
+Auto Summary,2.4.1,"tr, sort, uniq, sort and uniq are commands from what operating system?",Unix
+Auto Summary,2.4.1,What is the name of the textfile that contains the complete words of Shakespeare?,sh.txt
+Auto Summary,2.4.1,"What is an easy, if somewhat naive version of word?",tokenization
+Auto Summary,2.4.1,What can Unix tools be useful for?,building quick word count statistics
+Auto Summary,2.4.1,What can we use to tokenize the words by changing every sequence of non-alphabetic characters to a newline?,tr
+Auto Summary,2.4.1,What are the most frequent words in Shakespeare?,"articles, pronouns, prepositions"
+Auto Summary,2.4.2,What do most NLP applications need to keep?,"punctuation, numbers and punctuation"
+Auto Summary,2.4.2,What is a useful piece of information for parsers?,break off punctuation
+Auto Summary,2.4.2,What are clitic contractions marked by?,apostrophes
+Auto Summary,2.4.2,What is a common tokenization standard?,Penn Treebank tokenization
+Auto Summary,2.4.2,What are deterministic algorithms compiled into?,finite state automata
+Auto Summary,2.4.2,How many characters long are words on average?,2.4
+Auto Summary,2.4.2,What is a single unit of meaning called in Chinese?,a morpheme
+Auto Summary,2.4.2,For most Chinese NLP tasks it works better to take what as input?,characters
+Auto Summary,2.4.2,What NLP algorithms require algorithms for word segmentation?,Japanese and Thai
+Auto Summary,2.4.3,What is another name for a corpus that NLP algorithms learn from?,training corpus
+Auto Summary,2.4.3,What can be arbitrary substrings?,Subwords
+Auto Summary,2.4.3,What is an important problem in language processing?,unknown words
+Auto Summary,2.4.3,What is the name of the algorithm used by Schuster and Nakajima in 2012?,WordPiece
+Auto Summary,2.4.3,What does the BPE token learner begin with?,a vocabulary
+Auto Summary,2.4.3,What is the new merged symbol added to the vocabulary?,AB
+Auto Summary,2.4.3,What is the most frequent pair of adjacent symbols?,e r
+Auto Summary,2.4.3,What runs on the test data the merges we have learned from the training data?,The token parser
+Auto Summary,2.4.4,What is the task of putting words/tokens in a standard format?,Word normalization
+Auto Summary,2.4.4,Mapping everything to lower case means what are represented identically?,Woodchuck and woodchuck
+Auto Summary,2.4.4,What is generally not done for sentiment analysis analysis and machine translation?,case folding
+Auto Summary,2.4.4,What is the study of the way words are built up from smaller meaning-bearing units called morphemes?,Morphology
+Auto Summary,2.4.4,What is the most sophisticated method for lemmatization?,complete morphological parsing
+Auto Summary,2.4.4,What is the Porter stemmer algorithm based on?,"series of rewrite rules run in series, as a cascade"
+Auto Summary,2.4.5,What is another important step in text processing?,Sentence segmentation
+Auto Summary,2.4.5,What is one of the most useful cues for segmenting a text into sentences?,punctuation
+Auto Summary,2.4.5,Periods are what type of cues for segmenting a text into sentences?,more ambiguous
+Auto Summary,2.4.5,What can be addressed jointly?,sentence tokenization and word tokenization
+Auto Summary,2.5.0,What is much of natural language processing concerned with?,measuring how similar two strings are
+Auto Summary,2.5.0,What is the minimum edit distance?,minimum number of editing operations needed to transform one string into another
+Auto Summary,2.5.0,What is the most important visualization for string distances?,an alignment between the two strings
+Auto Summary,2.5.0,What is a correspondence between substrings of the two sequences?,an alignment
+Auto Summary,2.5.0,What represents an operation list for converting the top string into the bottom string?,a series of symbols
+Auto Summary,2.5.0,What can we assign to each of these operations?,a particular cost or weight
+Auto Summary,2.5.1,When was dynamic programming first introduced?,1957
+Auto Summary,2.5.1,What is the name for a class of algorithms that apply a table-driven method to solve problems by combining solutions to sub-problems?,Dynamic programming
+Auto Summary,2.5.1,Some of the most commonly used algorithms in natural language processing make use of what?,dynamic programming
+Auto Summary,2.5.1,Who named the minimum edit distance algorithm?,Wagner and Fischer
+Auto Summary,2.5.1,Where is the minimum edit distance algorithm summarized?,Fig.2.17
+Auto Summary,2.5.1,What is the version of the minimum edit distance algorithm?,Levenshtein
+Auto Summary,2.5.1,What is useful throughout speech and language processing?,Aligning two strings
+Auto Summary,2.5.1,What is used to compute the word error rate?,minimum edit distance alignment
+Auto Summary,2.5.1,What plays a role in machine translation?,Alignment
+Auto Summary,2.5.1,What exercise asks you to modify the minimum edit distance algorithm to store the pointers and compute the backtrace to output an alignment?,Exercise 2.7
+Auto Summary,2.5.1,What does the backpointer from a cell point to?,previous cell (or cells)
+Auto Summary,2.5.1,Some cells have what because the minimum extension could have come from multiple previous cells?,multiple backpointers
+Auto Summary,3.0,What is essential in any task in which we have to identify words in noisy input?,Predictions
+Auto Summary,3.0,Assigning probabilities to sequences of words is essential in what?,machine translation
+Auto Summary,3.0,"What writing tools need to find and correct errors in writing like ""Their are two midterms""?",spelling correction or grammatical error correction
+Auto Summary,3.1,What is the probability of a word w given some history h?,P(w|h)
+Auto Summary,3.1,"With a large enough corpus, such as the web, we can compute these counts and estimate the probability from Eq. what?",2.2
+Auto Summary,3.1,What isn't big enough to give us good estimates in most cases?,web
+Auto Summary,3.1,We'll represent a sequence of N words as what?,w1...wn or w1:n
+Auto Summary,3.1,What is the class of probabilistic models that assume we can predict the probability of some future unit without looking too far into the past?,Markov models
+Auto Summary,3.1,What model is used to predict the conditional probability of the next word?,bigram model
+Auto Summary,3.1,The bigram model can be generalized to what?,trigram
+Auto Summary,3.1,How does Eq.11 estimate the n-gram probability?,by dividing the observed frequency of a particular sequence by the frequency of a prefix
+Auto Summary,3.1,How many times does the word Chinese occur in a corpus of a million words?,400
+Auto Summary,3.1,What does the parameter set maximize in MLE?,the likelihood of the training set T
+Auto Summary,3.1,"What is the name of the dialogue system that answered questions about a database of restaurants in Berkeley, California?",Berkeley Restaurant Project
+Auto Summary,3.1,What shows the bigram counts from a piece of a bigram grammar from the Berkeley Restaurant Project?,Figure 3.1
+Auto Summary,3.1,What are the majority of the bigram counts from a piece of a bigram grammar from the Berkeley Restaurant Project?,zero
+Auto Summary,3.1,How many words would be more sparse than a random set of?,seven
+Auto Summary,3.1,What encode some facts that we think of as strictly syntactic in nature?,Bigram probabilities
+Auto Summary,3.1,"Bigram probabilities encode some facts that we think of as strictly syntactic in nature. In practice, it's more common to use what",trigram models
+Auto Summary,3.1,How many pseudo-words are used to compute trigram probabilities at the very beginning of a sentence?,two
+Auto Summary,3.2.0,What is the best way to evaluate the performance of a language model?,measure how much it improves
+Auto Summary,3.2.0,What is the best way to evaluate the performance of a language model?,extrinsic evaluation
+Auto Summary,3.2.0,What are the probabilities of an n-gram model trained on?,the training set or test corpus
+Auto Summary,3.2.0,How can we measure the quality of an n-gram model?,performance on some unseen data
+Auto Summary,3.2.0,What can be taken from a continuous sequence of text inside the corpus?,test data
+Auto Summary,3.2.0,Why do we want our test set to be as large as possible?,small test set may be accidentally unrepresentative
+Auto Summary,3.2.1,What is the perplexity of a language model on a test set?,the inverse probability of the test set
+Auto Summary,3.2.1,What can we use to expand the probability of W?,the chain rule
+Auto Summary,3.2.1,What is the number of possible next words that can follow any word?,The branching factor
+Auto Summary,3.2.1,What are the digits in English?,"zero, one, two..., nine"
+Auto Summary,3.2.1,What is the perplexity of a mini-language?,10
+Auto Summary,3.2.1,Perplexity is closely related to the information-theoretic notion of what?,entropy
+Auto Summary,3.2.1,"The lower the perplexity, the more information the n-gram gives us about what?",the word sequence
+Auto Summary,3.2.1,The perplexity of two language models is only comparable if they use what?,identical vocabularies
+Auto Summary,3.3.0,The n-gram model is dependent on what?,training corpus
+Auto Summary,3.3.0,"The longer the context on which we train the model, the more coherent what?",sentences
+Auto Summary,3.3.0,What random sentences can we generate sentences from?,"bigrams, trigrams, and 4-grams"
+Auto Summary,3.3.0,What sentences have no coherent relation between words or any sentence-final punctuation?,unigram sentences
+Auto Summary,3.3.0,What sentences have some local word-to-word coherence?,bigram sentences
+Auto Summary,3.3.0,What type of sentences are beginning to look a lot like Shakespeare?,4-gram
+Auto Summary,3.3.0,"The words ""It cannot be but so"" are directly from what?",King John
+Auto Summary,3.3.0,What should a training corpus have?,similar genre
+Auto Summary,3.3.0,What is important to get training data in?,appropriate dialect or variety
+Auto Summary,3.3.0,"For any n-gram that occurred a sufficient number of times, we might have what?",a good estimate of its probability
+Auto Summary,3.3.0,What language is bound to be missing from a training corpus?,English
+Auto Summary,3.3.0,What is still not sufficient?,Matching genres and dialects
+Auto Summary,3.3.0,Our models may still be subject to the problem of what?,sparsity
+Auto Summary,3.3.1,What is zero for words that we haven't seen before?,bigram probability
+Auto Summary,3.3.1,What is the problem of words whose bigram probability is zero?,words we simply have never seen before
+Auto Summary,3.3.1,What do we know in a language task?,all the words that can occur
+Auto Summary,3.3.1,What are OOV words?,out of vocabulary
+Auto Summary,3.3.1,What can a language model achieve by choosing a small vocabulary and assigning the unknown word a high probability?,low perplexity
+Auto Summary,3.3.1,The exact choice of UNK> model does have an effect on metrics like what?,perplexity
+Auto Summary,3.3.1,What should only be compared across language models with the same vocabularies?,perplexities
+Auto Summary,3.4.0,What context do words that are in our vocabulary appear in a test set in?,unseen
+Auto Summary,3.4.0,What do we do to keep a language model from assigning zero probability to unseen events?,shave off a bit of probability mass
+Auto Summary,3.4.0,What is a modification called to keep a language model from assigning zero probability to unseen events?,smoothing or discounting
+Auto Summary,3.4.1,What does not perform well enough to be used in modern n-gram models?,Laplace smoothing
+Auto Summary,3.4.1,What is the algorithm that introduces many concepts that we see in other smoothing algorithms called?,add-one smoothing
+Auto Summary,3.4.1,How many counts does add-one smoothing add to each count?,one
+Auto Summary,3.4.1,How can we turn c* into a probability P*?,normalizing by N
+Auto Summary,3.4.1,What algorithm has made a very big change to the counts?,Add-one smoothing
+Auto Summary,3.4.1,C(want to) changed from what to 238?,609
+Auto Summary,3.4.1,What decreases from.66 in the unsmoothed case to.26 in the smoothed case?,P(to|want)
+Auto Summary,3.4.2,"Instead of adding I to each count, we add what?",fractional count k
+Auto Summary,3.4.2,What is the algorithm that adds fractional count k called?,add-k smoothing
+Auto Summary,3.4.2,Add-k smoothing doesn't work well for what?,language modeling
+Auto Summary,3.4.3,What can help solve the problem of zero frequency n-grams?,Discounting
+Auto Summary,3.4.3,What can we draw on to solve the problem of zero frequency n-grams?,additional source of knowledge
+Auto Summary,3.4.3,What can we use to estimate the probability of a particular trigram?,bigram probability
+Auto Summary,3.4.3,"If we don't have counts to compute the bigrams probability, what can we look to?",unigrams
+Auto Summary,3.4.3,How do we estimate the trigram probability?,"by mixing together the unigram, bigram, and trigram probabilities, each weighted by a lambdas"
+Auto Summary,3.4.3,How is each weight computed in a slightly more sophisticated version of linear interpolation?,by conditioning on the context
+Auto Summary,3.4.3,What shows the equation for interpolation with context-conditioned weights?,Equation 3.28
+Auto Summary,3.4.3,How do we approximate a backoff n-gram model?,by backing off to the (N-1)-gram
+Auto Summary,3.4.3,In what model do we rely on a discounted probability P* if we've seen this n-ram before?,Katz backoff
+Auto Summary,3.5,What method does Kneser-Ney have roots in?,absolute discounting
+Auto Summary,3.5,Why is it necessary to save some probability mass for the smoothing algorithm?,to distribute to unseen n-grams
+Auto Summary,3.5,Who used a clever idea to see how to save some probability mass for the smoothing algorithm to distribute to unseen n-grams?,Church and Gale
+Auto Summary,3.5,What formalizes this intuition by subtracting a fixed (absolute) discount d from each count?,Absolute discounting
+Auto Summary,3.5,What will not affect the very high counts?,a small discount d
+Auto Summary,3.5,Kneser-Ney discounting augments absolute discounting with a more sophisticated way to handle what?,lower-order unigram distribution
+Auto Summary,3.5,What does the Kneser-Ney intuition base our estimate of P on?,number of different contexts word w has appeared in
+Auto Summary,3.5,How many contexts have words appeared in in the past?,more
+Auto Summary,3.5,How many contexts does a frequent word (Kong) occur in?,one
+Auto Summary,3.5,What is the final equation for Interpolated Kneser-Ney smoothing for bigrams?,3.35
+Auto Summary,3.5,What is the best performing version of smoothing called?,modified Kneer Ney
+Auto Summary,3.5,"How many different discounts does modified Kneer Ney use for n-grams with counts of 1, 2 and 3 or more?",three
+Auto Summary,3.6,What does the Web 1 Trillion 5-gram corpus include?,n-grams
+Auto Summary,3.6,What corpora includes n-rams drawn from their book collections?,Google Books Ngrams
+Auto Summary,3.6,How many words are in the Google Books Ngrams corpus?,"1,024,908,267,229"
+Auto Summary,3.6,What do language model toolkits use to combine probabilities and backoffs in a single value?,sorted arrays
+Auto Summary,3.6,What algorithm does not produce a probability distribution?,stupid backoff
+Auto Summary,3.6,What does stupid backoff not produce?,probability distribution
+Auto Summary,3.6,Where does the stupid backoff end?,unigram
+Auto Summary,3.7,What is a lower bound on the number of bits it would take to encode a certain decision or piece of information in the optimal coding scheme?,entropy
+Auto Summary,3.7,A better n-gram model assigns what to the test data?,higher probability
+Auto Summary,3.7,What gives us a lower bound on the number of bits?,X ranges over horses
+Auto Summary,3.7,"A code that averages what bit per race can be built with short encodings for more probable horses, and longer encodesings for less",2 bits
+Auto Summary,3.7,What is the entropy of the choice of horses?,3 bits
+Auto Summary,3.7,"To measure the true entropy of a language, we need to consider what?",sequences of infinite length
+Auto Summary,3.7,"What theorem states that if the language is regular in certain ways (to be exact, if it is both stationary and ergo",Shannon-McMillan-Breiman theorem
+Auto Summary,3.7,What can be dependent on events that were arbitrarily distant and time dependent?,the probability of upcoming words
+Auto Summary,3.7,When is the cross-entropy useful?,when we don't know the actual probability distribution
+Auto Summary,3.7,"The cross-entropy allows us to use some m, which is a model of what?",p
+Auto Summary,4.0,What lies at the heart of both human and machine intelligence?,Classification
+Auto Summary,4.0,What is applied to text categorization?,The Bayes algorithm
+Auto Summary,4.0,What is the extraction of sentiment?,sentiment analysis
+Auto Summary,4.0,What is the first step in most language processing pipelines?,language id
+Auto Summary,4.0,What is another important commercial application?,Spam detection
+Auto Summary,4.0,"Related text classification tasks like what are relevant to the digital humanities, social sciences, and forensic linguistics?",authorship attribution
+Auto Summary,4.0,"What classifies each occurrence of a word in a sentence as, e.g., a noun or a verb?",A part-of-speech tagger
+Auto Summary,4.0,What is the goal of classification?,"to take a single observation, extract some useful features, and classify the observation into one of a set of discrete classes"
+Auto Summary,4.0,What is classification essential for?,tasks below the level of the document
+Auto Summary,4.0,What are the output classes of supervised classification?,"y1,y2...,yM"
+Auto Summary,4.0,What is the output variable for lassification?,c
+Auto Summary,4.0,What is the training set of in supervised classification?,N documents
+Auto Summary,4.1,What classifier is introduced in this section?,multinomial naive Bayes
+Auto Summary,4.1,What is the multinomial naive Bayes classifier?,a Bayesian classifier
+Auto Summary,4.1,Where is the intuition of the naive Bayes classifier shown?,Fig. 4.1
+Auto Summary,4.1,Where is the intuition of the naive Bayes classifier shown?,Fig. 4.1
+Auto Summary,4.1,What does the classifier represent a text document as if it were?,a bag-of-words
+Auto Summary,4.1,What type of model is naive Bayes?,generative model
+Auto Summary,4.1,What does the naive Bayes classifier state about how a document is generated?,implicit assumption
+Auto Summary,4.1,In what chapter will we talk about generative models?,Chapter 5
+Auto Summary,4.1,What could we imagine by following this process?,generating artificial documents
+Auto Summary,4.1,Why are naive Bayes calculations done in log space?,increase speed
+Auto Summary,4.1,How do we apply the naive Bayes classifier to text?,by simply walking an index through every word position in the document
+Auto Summary,4.1,What computes the predicted class as a linear function of input features?,Eq.10
+Auto Summary,4.2,What probability do we assume a feature is just the existence of a word in the document's bag of words?,P(fi|c
+Auto Summary,4.2,"What is P(w, c) computed as?",the fraction of times the word wi appears among all words in all documents of topic c
+Auto Summary,4.2,What is the simplest solution introduced in Chapter 3?,add-one smoothing
+Auto Summary,4.2,What smoothing algorithm is usually replaced by more sophisticated smoothing algorithms?,Laplace
+Auto Summary,4.2,Laplace smoothing is commonly used in what?,naive Bayes text categorization
+Auto Summary,4.4,What do small changes in Bayes text classification do?,improve performance
+Auto Summary,4.4,What seems to matter more than its frequency?,whether a word occurs or not
+Auto Summary,4.4,What can modify a negative word to produce a positive review?,negation
+Auto Summary,4.4,What can modify a negative word to produce a positive review?,Negation
+Auto Summary,4.4,What might cause us to train accurate Bayes classifiers using all words in the training set to estimate positive and negative sentiment?,insufficient labeled training data
+Auto Summary,4.4,What can we derive from sentiment lexicons?,positive and negative word features
+Auto Summary,4.4,What are the four popular lexicons?,"General Inquirer, LIWC, the opinion lexicon of Hu and Liu and the MPQA Subjectivity Lexicon"
+Auto Summary,4.5,SpamAssassin predefines features like what?,one hundred percent guaranteed
+Auto Summary,4.5,What can features in naive Bayes express?,any property of the input text
+Auto Summary,4.5,What are the most effective Bayes features?,"character n-grams, or byte n-rams"
+Auto Summary,4.5,"Language ID systems are trained on multilingual text, such as what?",Wikipedia
+Auto Summary,4.5,What language has a low ratio of text to image area?,HTML
+Auto Summary,4.6,What can be viewed as a set of class-specific unigram language models?,naive Bayes Bayes model
+Auto Summary,4.6,A naive Bayes Bayes model for each class instantiates what?,language model
+Auto Summary,4.6,What do likelihood features assign to each word P(word|c)?,probability
+Auto Summary,4.7.0,What is a table for visualizing how an algorithm performs with respect to the human gold labels?,confusion matrix
+Auto Summary,4.7.0,What is the goal of spam detection?,"to label every text as being in the spam category (""positive"") or not in the spam category (""negative"")"
+Auto Summary,4.7.0,How many false negatives would a simple classifier have?,100
+Auto Summary,4.7.0,What is the goal of accuracy?,to discover something that is rare
+Auto Summary,4.7.0,What are the two metric we use instead of accuracy?,precision and recall
+Auto Summary,4.7.0,What measures the percentage of items actually present in input that were correctly identified by the system?,Recall
+Auto Summary,4.7.0,What do precision and recall emphasize?,true positives
+Auto Summary,4.7.1,What is already a multi-class classification algorithm?,Bayes algorithm
+Auto Summary,4.7.1,What are the three classes for sentiment analysis?,"positive, negative, neutral"
+Auto Summary,4.7.1,What is the name of the process that collects decisions for all classes into a single confusion matrix?,microaveraging
+Auto Summary,4.8,What is the training and testing procedure for text classification similar to?,language modeling
+Auto Summary,4.8,What do we use to train the model?,the training set
+Auto Summary,4.8,"Why is there a problem with a fixed training set, devset, and test set?",the test set might not be large enough to be representative
+Auto Summary,4.9.0,What do we often need to do in building systems?,compare the performance of two systems
+Auto Summary,4.9.0,How can we know if the new system we just built is better or worse than the old one?,better
+Auto Summary,4.9.0,Where can we know if the new system we just built is better than the old one?,the literature
+Auto Summary,4.9.0,What is the domain of comparing the performance of two systems?,statistical hypothesis testing
+Auto Summary,4.9.0,In this section we introduce tests for statistical significance for what?,NLP classifiers
+Auto Summary,4.9.0,How do we test statistical significance for NLP classifiers?,by formalizing two hypotheses
+Auto Summary,4.9.0,What does the hypothesis H0 suppose?,d(x) is actually negative or zero
+Auto Summary,4.9.0,What do we want to know about A's superiority over B?,if A's superiority over B is likely to hold again if we checked another test set x'
+Auto Summary,4.9.0,"What is the probability, assuming the null hypothesis H0 is true, of seeing the d(X) that we saw?",p-value
+Auto Summary,4.9.0,What are two examples of simple parametric tests in NLP?,t-tests or ANOVAs
+Auto Summary,4.9.0,If the d we saw has a probability that is what?,below the threshold
+Auto Summary,4.9.0,What type of tests do we artificially create many versions of the experimental setup?,non-parametric tests based on sampling
+Auto Summary,4.9.1,What can apply to any metric?,bootstrap test
+Auto Summary,4.9.1,What are large numbers of smaller samples with replacement called?,bootstrap samples
+Auto Summary,4.9.1,What is the test set for a tiny text classification example?,x of 10 documents
+Auto Summary,4.9.1,How many times do we repeatedly select a cell from row x with replacement?,n=10 times
+Auto Summary,4.9.1,What is the large num of virtual test sets x?,b
+Auto Summary,4.9.1,What can we do statistics on now that we have the b test sets?,how often A has an accidental advantage
+Auto Summary,4.9.1,Where is the full algorithm for the bootstrap shown?,Fig.9
+Auto Summary,4.9.1,What does the percentage of b bootstrap test sets in which d(x*(i) ) > 2d(x) act as,p-value
+Auto Summary,4.10,What is one class of harms caused by a system that perpetuates negative stereotypes about a social group?,demeans
+Auto Summary,4.10,Classifiers can lead to both representational harms and what other harm?,censorship
+Auto Summary,4.10,What do some widely used toxicity classifiers incorrectly flag as being?,toxic sentences
+Auto Summary,4.10,What could lead to the censoring of discourse by or about groups?,false positive errors
+Auto Summary,4.10,What can cause model problems?,biases or other problems in the training data

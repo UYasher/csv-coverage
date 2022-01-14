@@ -1,0 +1,270 @@
+Author,Section,Question,Answer
+Dahyeon Choi,2.0,What was an early natural language processing system that used pattern matching to recognize phrases?,ELIZA
+Dahyeon Choi,2.0,What is ELIZA an example of?,chatbot
+Dahyeon Choi,2.0,What is the most important tool for text pattern characterization?,Regular expressions
+Dahyeon Choi,2.0,What uses regular expressions to convert text into a more standard form?,Text normalization
+Dahyeon Choi,2.0,What breaks a sentence into a sequence of words and punctuation marks?,tokenizing
+Dahyeon Choi,2.0,What is the process of finding root words of inflected words called?,Lemmatization
+Dahyeon Choi,2.0,What is the process of finding root words of inflected words?,Lemmatization
+Dahyeon Choi,2.0,What removes suffixes from words?,stemming
+Dahyeon Choi,2.0,What is a measure of similarity between two strings?,Edit distance
+Dahyeon Choi,2.1.1,What are case sensitive?,Regular expressions
+Dahyeon Choi,2.1.1,What specifies a disjunction of characters that can be matched in a position in a longer regular expression?,Square braces
+Dahyeon Choi,2.1.1,What does the regular expression /[012]/ match to?,"any digit among 0, 1, and 2"
+Dahyeon Choi,2.1.1,What indicates a range of characters?,dash
+Dahyeon Choi,2.1.1,"When a caret() is used within square braces as the first symbol, what does it indicate?",it indicates that the pattern behind it is negated
+Dahyeon Choi,2.1.1,What is indicated by the question mark?,Optional elements
+Dahyeon Choi,2.1.1,Optional elements are indicated by the question mark(?) which means what can be included or not?,the character preceding the question mark
+Dahyeon Choi,2.1.1,What does the Kleene star mean?,0 or more occurrences
+Dahyeon Choi,2.1.1,What does the Kleene + mean?,1 or more occurrences
+Dahyeon Choi,2.1.1,What is a wildcard expression that matches any single character?,The period
+Dahyeon Choi,2.1.1,What is the period(.)?,a wildcard expression
+Dahyeon Choi,2.1.1,The wildcard does not match with what?,carriage return
+Dahyeon Choi,2.1.1,What can the wildcard match with the Kleene star?,any string of characters
+Dahyeon Choi,2.1.1,What are symbols that anchor regular expressions to certain positions?,Anchors
+Dahyeon Choi,2.1.1,What symbol matches the end of a line?,dollar sign
+Dahyeon Choi,2.1.1,What is an anchor that matches with a boundary?,Backslash-b
+Dahyeon Choi,2.1.2,What does disjunction use?,pipe symbol
+Dahyeon Choi,2.1.2,What is used to indicate precedence for matching?,Parentheses
+Dahyeon Choi,2.1.2,Parentheses can define strings to match with for symbols that apply to what by default?,single characters
+Dahyeon Choi,2.1.2,"What prefers parentheses, counters, sequences and anchors, and disjunction in that order?",operator precedence hierarchy
+Dahyeon Choi,2.1.2,Regular expressions always match what?,largest possible string
+Dahyeon Choi,2.1.3,What increases precision and recall?,Reducing error
+Dahyeon Choi,2.1.4,What can you specify?,the number of an instance in a pattern
+Dahyeon Choi,2.1.4,How many instances of the previous character or expression are there?,four
+Dahyeon Choi,2.1.4,What can you specify in a pattern?,ranges
+Dahyeon Choi,2.1.4,What can you refer to with a backslash?,special characters
+Dahyeon Choi,2.1.4,What are some special characters that you can refer to with a backslash?,"( ), ( )"
+Dahyeon Choi,2.1.6,What is an important use of regular expressions?,Substitutions
+Dahyeon Choi,2.1.6,What do we use number operators to do?,match a specific expression twice or more in a text
+Dahyeon Choi,2.1.6,What backslash operator refers to the nth instance of a certain phrase or pattern in the text?,n
+Dahyeon Choi,2.1.6,When does the command(? :) indicate a non-capturing group?,after an opening parenthesis
+Dahyeon Choi,2.1.6,What is not placed in the register?,A non-capturing group
+Dahyeon Choi,2.1.7,What searches text ahead for patterns?,Lookahead assertions
+Dahyeon Choi,2.1.7,What match does the question-mark-equal-sign search for?,zero-width
+Dahyeon Choi,2.2,What is a computer-readable collection of text or dialogue?,A corpus
+Dahyeon Choi,2.2,What are utterances?,spoken sentences
+Dahyeon Choi,2.2,What are disfluencies?,fragments or fillers
+Dahyeon Choi,2.2,Fragments are what?,broken words
+Dahyeon Choi,2.2,Disfluencies can be hindrances or what kind of signals?,useful
+Dahyeon Choi,2.2,What is the set of words that share the same major word?,lemma
+Dahyeon Choi,2.2,How can we differentiate the number of words?,by counting tokens or types
+Dahyeon Choi,2.2,What are tokens?,total number of words
+Dahyeon Choi,2.2,What are the number of unique words?,Types
+Dahyeon Choi,2.2,Herdan's Law or Heap's Law states that the type equals what to the power of beta?,k times token
+Dahyeon Choi,2.2,How can we measure a corpus?,counting the number of lemmas
+Dahyeon Choi,2.2,What is the rough upper limit for the number of possible lemmas?,Dictionary entries or boldface forms
+Dahyeon Choi,2.3,What are some variations in languages?,"dialect, code switching, genre"
+Dahyeon Choi,2.3,Who can build datasheets to organize the properties of a corpus?,Corpus creators
+Dahyeon Choi,2.4.1,What must be normalized in order to be processed?,natural languages
+Dahyeon Choi,2.4.1,What does normalization involve?,"tokenizing words, normalizing formats, and segmenting words"
+Dahyeon Choi,2.4.1,What is a basic method of tokenizing words?,Unix
+Dahyeon Choi,2.4.1,"Unix can collapse, sort, and build statistics for the words in a corpus using commands such as what?",tr
+Dahyeon Choi,2.4.1,What are the most common words in a corpus?,"articles, pronouns, and prepositions"
+Dahyeon Choi,2.4.2,What does actual tokenization involve?,segmenting text into words
+Dahyeon Choi,2.4.2,What must we account for according to where and how they are used?,punctuation and special characters
+Dahyeon Choi,2.4.2,What can a tokenizer do?,expand clitic contractions
+Dahyeon Choi,2.4.2,"What is the identification of names, dates, organizations, etc?",Named entity recognition
+Dahyeon Choi,2.4.2,What is an example of clitic contraction?,I'm
+Dahyeon Choi,2.4.2,What is used for parsed corpora released by the LDC?,Penn Treebank tokenization standard
+Dahyeon Choi,2.4.2,What is important to tokenization before any other natural language processing can take place?,speed
+Dahyeon Choi,2.4.2,What do algorithms have to deal with?,ambiguities
+Dahyeon Choi,2.4.2,What language has no spaces?,Chinese
+Dahyeon Choi,2.4.2,What is each character in a word barrier?,a morpheme
+Dahyeon Choi,2.4.2,What language requires word segmentation?,Japanese
+Dahyeon Choi,2.4.2,What is used for segmentation in languages with more ambiguities?,Neural sequence models
+Dahyeon Choi,2.4.3,What can be automatically identified instead of pre-defining tokens as words or characters?,type of token
+Dahyeon Choi,2.4.3,Automatic identification of tokens can solve what problem?,unknown word problem
+Dahyeon Choi,2.4.3,Tokenizers often do what in order to solve the unknown word problem?,induce subwords
+Dahyeon Choi,2.4.3,What are most tokenization schemes made out of?,token learner and a token segmenter
+Dahyeon Choi,2.4.3,What induces a set of tokens from raw data?,token learner
+Dahyeon Choi,2.4.3,What takes raw sentences and segments it based on the tokens produced by the learner?,token segmenter
+Dahyeon Choi,2.4.3,What are the three widely-used algorithms that employ this method?,"byte-pair encoding, unigram language modeling, and WordPiece"
+Dahyeon Choi,2.4.3,What library implements byte-pair encoding and unigram language modeling?,The SentencePiece library
+Dahyeon Choi,2.4.3,What is another name for byte-pair encoding?,BPE
+Dahyeon Choi,2.4.3,BPE repeats the process until what number of merges have happened?,k
+Dahyeon Choi,2.4.3,What is the number of ens in a vocabulary?,k
+Dahyeon Choi,2.4.4,What standardizes words and tokens?,Word Normalization
+Dahyeon Choi,2.4.4,What maps all characters to one type of casing?,Case Folding
+Dahyeon Choi,2.4.4,Why is case folding not used in some cases?,disadvantageous
+Dahyeon Choi,2.4.4,What is the process of determining shared roots among words?,Lemmatization
+Dahyeon Choi,2.4.4,What does lemmatization involve?,complete morphological parsing of a word
+Dahyeon Choi,2.4.4,What are the two broad classes of morphemes?,"stems, and affixes"
+Dahyeon Choi,2.4.4,Morphemes can be divided into two broad classes: what is the central morpheme and supply the main meaning?,stems
+Dahyeon Choi,2.4.4,What are the add-ons that alter meanings or add more on?,Affixes
+Dahyeon Choi,2.4.4,What is a simpler version of lemmatization?,Stemming
+Dahyeon Choi,2.4.4,What is a widely used stemming algorithm based on a cascade rewriting process governed by a set of rules?,The Porter algorithm
+Dahyeon Choi,2.4.5,What is one of the most successful cues for sentence segmentation?,punctuation
+Dahyeon Choi,2.4.5,A period can be used as part of what?,abbreviations
+Dahyeon Choi,2.4.5,What identifies the role of a period before segmentation?,sentence tokenization
+Dahyeon Choi,2.5.0,What often involves identifying similarities between strings?,Natural language processing
+Dahyeon Choi,2.5.0,What is another term for determining whether two strings refer to the same entity?,coreference
+Dahyeon Choi,2.5.0,What is a way to quantify this measure of similarity?,Edit distance
+Dahyeon Choi,2.5.0,What is the minimum number of editing operations required to make two strings equal?,Minimum edit distance
+Dahyeon Choi,2.5.0,What is a correspondence between two strings?,their alignment
+Dahyeon Choi,2.5.0,What indicates the editing operations needed to equalize two strings?,operation list
+Dahyeon Choi,2.5.0,What is the most simple way to assign weight to editing operations?,Levenshtein distance
+Dahyeon Choi,2.5.0,How many methods did Levenshtein propose?,two weighting methods
+Dahyeon Choi,2.5.1,What is used to find the minimum edit distance?,dynamic programming
+Dahyeon Choi,2.5.1,What is a class of algorithms that attempts to solve problems by combining solutions to sub-problems?,Dynamic programming
+Dahyeon Choi,2.5.1,What are two examples of dynamic programming?,Viterbi algorithm and the CKY algorithm
+Dahyeon Choi,2.5.1,Who named the minimum edit distance algorithm?,Wagner and Fischer
+Dahyeon Choi,2.5.1,What is the distance where insertion and deletion have cost 1 and substitution has cost 2?,Levenshtein
+Dahyeon Choi,2.5.1,What can be formed by extending the edit distance algorithm?,Alignments
+Dahyeon Choi,2.5.1,From what cell does an edit distance matrix backtrace?,last cell
+Dahyeon Choi,2.5.1,What is a probabilistic extension of the minimum edit distance?,Viterbi algorithm
+Dahyeon Choi,3.0,What can assign probabilities to word sequences to predict the next word in a sentence?,Models
+Dahyeon Choi,3.0,"Probabilities can be used for speech recognition, spelling correction, grammatical error correction, and what else?",machine translation
+Dahyeon Choi,3.0,How many different candidates may we have for a translation of a sentence?,three
+Dahyeon Choi,3.0,What are models that assign probabilities to word sequences called?,language models
+Dahyeon Choi,3.0,What can refer to both a sequence of n words and the predictive model that assigns it a probability?,n-gram
+Dahyeon Choi,3.1,What does P(w|h)> mean?,the probability of a word w given history h
+Dahyeon Choi,3.1,Why are joint probabilities difficult to calculate?,too many possible sentences of a certain length
+Dahyeon Choi,3.1,What is one way we can compute the probability of a sequence?,the chain rule of probability
+Dahyeon Choi,3.1,How can we calculate the joint probability of a sequence?,by multiplying together several conditional probabilities
+Dahyeon Choi,3.1,What model approximates the history of a sequence using the last few words and uses that approximated history to estimate the probability of a word?,The n-gram model
+Dahyeon Choi,3.1,What assumes that the probability of a word only depends on the previous word?,The Markov assumption
+Dahyeon Choi,3.1,What models try to predict future words without looking far into the past?,Markov models
+Dahyeon Choi,3.1,What is an intuitive way of estimating n-gram probabilities?,Maximum likelihood estimation
+Dahyeon Choi,3.1,"To calculate the bigram probability of x given y, we calculate count of what corpus?",C(xy)
+Dahyeon Choi,3.1,What is the MLE?,n-gram parameter estimation
+Dahyeon Choi,3.1,What is the ratio of dividing the observed frequency of a particular sequence by the observed frequency of a prefix?,relative frequency
+Dahyeon Choi,3.1,Some bigram probabilities encode what?,syntactic rules
+Dahyeon Choi,3.1,All language model probabilities are represented in log format as what?,log probabilities
+Dahyeon Choi,3.1,What prevents storing too-small numbers?,Log probabilities
+Dahyeon Choi,3.2.0,What embeds a model in an application and measures how much the application improves in an end to end evaluation?,Extrinsic evaluation
+Dahyeon Choi,3.2.0,What measures the quality of a model independent of any application and requires a test set of unseen data?,Intrinsic evaluation
+Dahyeon Choi,3.2.0,What would happen if we accidentally trained the model on the test set?,bias
+Dahyeon Choi,3.2.0,What is a test set that has been used so often that we need a fresher test set?,A development set
+Dahyeon Choi,3.2.0,What do we want when dividing our data?,smallest test set
+Dahyeon Choi,3.2.1,What is the inverse probability of the test set normalized by the number of words?,perplexity
+Dahyeon Choi,3.2.1,What is the inverse probability of the test set normalized by the number of words?,Perplexity
+Dahyeon Choi,3.2.1,What do we want to do with perplexity in a model?,minimize perplexity
+Dahyeon Choi,3.2.1,What is perplexity referred to as?,weighted average branching factor of a language
+Dahyeon Choi,3.2.1,What is the branching factor?,the number of possible words that can follow any word
+Dahyeon Choi,3.2.1,What does not necessarily mean an extrinsic improvement in the performance of a model?,intrinsic improvement in perplexity
+Dahyeon Choi,3.3.0,Many statistical models including the n-gram are dependent on what?,training corpus
+Dahyeon Choi,3.3.0,What can an n-gram model do as the value of N is increased?,increase
+Dahyeon Choi,3.3.0,What does the better the coherence of an n-gram model?,the longer the context on which we train an n-gram
+Dahyeon Choi,3.3.0,What do we want an n-gram to answer and predict?,sentences
+Dahyeon Choi,3.3.0,What can we use to build an n-gram to answer and predict sentences that make sense in context?,training corpus of a similar genre
+Dahyeon Choi,3.3.0,What type of questions would a model for answering be trained with?,scientific
+Dahyeon Choi,3.3.0,What is important to consider when training a model?,dialect and variety
+Dahyeon Choi,3.3.0,What must we consider even after considering dialect and genre when training a model?,sparsity
+Dahyeon Choi,3.3.0,"If a training corpus fails to contain certain sequences, it is possible that the model incorrectly estimates that those sequences have a probability of",0
+Dahyeon Choi,3.3.0,Why are 0 probabilities a problem?,we are underestimating the probability for various words
+Dahyeon Choi,3.3.1,"In closed vocabulary systems, test sets contain only what?",known words
+Dahyeon Choi,3.3.1,What is the term for unknown words?,out of vocabulary
+Dahyeon Choi,3.3.1,What is the percentage of OOV in a test set called?,the OOV rate
+Dahyeon Choi,3.3.1,What is the pseudo-word used to model potential OOVs in a test set?,UNK>
+Dahyeon Choi,3.3.1,How many ways are there to train probabilities of UNK>?,two
+Dahyeon Choi,3.3.1,How does the first method turn the problem into a closed vocabulary situation?,by choosing a vocabulary fixed in advance
+Dahyeon Choi,3.3.1,What metrics does the UNK> model effect?,perplexity
+Dahyeon Choi,3.4.0,What is it called when we remove some probability mass for more frequent events and reassign it to unseen events with known words?,smoothing or discounting
+Dahyeon Choi,3.4.0,How many main methods of smoothing are studied?,four
+Dahyeon Choi,3.4.1,What is another name for Laplace smoothing?,add-one smoothing
+Dahyeon Choi,3.4.1,What is the unigram probability of word w_i?,c_i
+Dahyeon Choi,3.4.1,What is the adjusted count c* easier to compare with?,MLE counts
+Dahyeon Choi,3.4.1,What is a smoothing algorithm described as?,relative discount d_c
+Dahyeon Choi,3.4.2,What moves less probability mass from the seen to the unseen than Laplace smoothing?,Add-k smoothing
+Dahyeon Choi,3.4.2,How can add-k smoothing be done?,by optimizing on a devset
+Dahyeon Choi,3.4.2,Add-k doesn't work well for what?,language modeling
+Dahyeon Choi,3.4.3,"In backoff, we use a less-context n-gram if what?",evidence is not sufficient
+Dahyeon Choi,3.4.3,What is the backoff with discounting called?,Katz backoff
+Dahyeon Choi,3.4.3,What smoothing method is Katz backoff often used with?,Good-Turing
+Dahyeon Choi,3.4.3,In what method do we mix the probability estimates from all the n-gram estimators?,interpolation
+Dahyeon Choi,3.4.3,What can converge on locally optimal lambda values?,EM algorithm
+Dahyeon Choi,3.5,What is one of the most used and best performing n-gram smoothing methods?,Kneser-Ney Smoothing
+Dahyeon Choi,3.5,What is Kneser-Ney based on?,absolute discounting
+Dahyeon Choi,3.5,What is the contexts of a word w?,the number of bigram types it completes
+Dahyeon Choi,3.5,What is the best performing Kneser-Ney smoothing?,modified Kneser-Ney smoothing
+Dahyeon Choi,3.6,What is it possible to build by using text from enormous collections such as the web?,huge language models
+Dahyeon Choi,3.6,What company released the Web 1 Trillion 5-gram corpus?,Google
+Dahyeon Choi,3.6,What type of hash numbers are stored in memory?,64-bit
+Dahyeon Choi,3.6,How can n-grams be shrunk?,pruning
+Dahyeon Choi,3.6,What is a method used to build approximate language models?,Bloom filters
+Dahyeon Choi,3.6,What toolkit uses sorted arrays to build efficient probability tables?,KenLM
+Dahyeon Choi,3.6,What is it possible to build huge language models using?,Kneser-Ney smoothing
+Dahyeon Choi,3.6,What does Brans et al. (2007) show can suffice?,simpler stupid backoff
+Dahyeon Choi,3.6,What does not attempt to make the language model a true probability distribution?,Stupid backoff
+Dahyeon Choi,3.6,Who found that a value of 0.4 works well for lambda in a stupid backoff algorithm?,S. Brants et al.
+Dahyeon Choi,3.6,What value works well for lambda in a stupid backoff algorithm?,0.4
+Dahyeon Choi,3.7,The concept of perplexity comes from the information-theoretic concept of what?,cross-entropy
+Dahyeon Choi,3.7,What is the entropy of random variable X?,p(x)
+Dahyeon Choi,3.7,What is entropy measured by using log base 2?,entropy in bits
+Dahyeon Choi,3.7,What can also be considered a lower bound on the number of bits required to encode something in the optimal coding scheme?,Entropy
+Dahyeon Choi,3.7,What is another name for the entropy rate?,per-word entropy
+Dahyeon Choi,3.7,What is the Shannon-McMillan-Breiman theorem?,if the language is stationary and ergodic
+Dahyeon Choi,3.7,What is stationary if the probabilities it assigns to a sequence are not affected by shifts in the time index?,A stochastic process
+Dahyeon Choi,3.7,What is an upper bound on entropy?,Cross-entropy
+Dahyeon Choi,3.7,What can now be defined as the exp of cross-entropy H?,Perplexity
+Dahyeon Choi,4.0,What is a core part of sentient intelligence?,Classification
+Dahyeon Choi,4.0,What is a task that classifies and assigns labels to a text or document?,Text categorization
+Dahyeon Choi,4.0,What identifies the positive or negative attitude of a writer towards an object?,Sentiment analysis
+Dahyeon Choi,4.0,What is a classification class that assigns an email to one of two classes spam or not-spam?,Spam detection
+Dahyeon Choi,4.0,What recognizes which language a task is written in?,Language id
+Dahyeon Choi,4.0,What is the task of identifying a text's author?,Authorship attribution
+Dahyeon Choi,4.0,What is one of the oldest text classification tasks?,Assigning a library subject category or topic to a text
+Dahyeon Choi,4.0,Where is classification needed?,levels smaller than the document
+Dahyeon Choi,4.0,What can be considered a form of classification?,"Period disambiguation, word tokenization, language modeling"
+Dahyeon Choi,4.0,What is the goal of classification?,"to take a single observation, extract features, and classify the observation into a specific class"
+Dahyeon Choi,4.0,What do many areas of language processing use?,rule-based classifiers
+Dahyeon Choi,4.0,What does a probabilistic classifier output?,probability of an object belonging to a certain class
+Dahyeon Choi,4.0,What type of classifier builds a model of how a class could generate input?,Generative classifiers
+Dahyeon Choi,4.0,What classifiers learn which features from an observation are most useful to differentiate classes?,Discriminative classifiers
+Dahyeon Choi,4.1,What is a probabilistic Bayesian classifier that makes simplifying assumptions about how features interact?,The multinomial naive Bayes classifier
+Dahyeon Choi,4.1,What does the naive Bayes classifier consider a document as?,a bag-of-words
+Dahyeon Choi,4.1,What type of model is naive Bayes?,generative
+Dahyeon Choi,4.1,How do we compute most probable class c-hat given document d?,choosing the class with the highest product of the prior probability P(c) and the likelihood P(d|c)
+Dahyeon Choi,4.1,What are the two assumptions that naive Bayes classifiers make?,"the bag-of-words assumption (position does not matter), and the naive Bayes assumption"
+Dahyeon Choi,4.1,What are classifiers like naive Bayes that use a linear combination of inputs called?,linear classifiers
+Dahyeon Choi,4.2,What must consist of the union of all word types in all classes involved?,Vocabulary V
+Dahyeon Choi,4.2,What naively multiplies all feature likelihoods?,naive Bayes
+Dahyeon Choi,4.2,What is the simplest solution for preventing zero probability classes?,Laplace smoothing
+Dahyeon Choi,4.2,What does the naive Bayes ignore?,unknown words
+Dahyeon Choi,4.2,What do some systems completely ignore?,stop words
+Dahyeon Choi,4.4,What is more important to optimize the naive Bayes text classification for sentiment analysis?,whether a word occurs or not
+Dahyeon Choi,4.4,What is another name for binary multinomial naive Bayes?,binary NB
+Dahyeon Choi,4.4,What is another issue to deal with?,negation
+Dahyeon Choi,4.4,What prefix is prepended to every word after a token of logical negation until the next punctuation mark?,NOT_
+Dahyeon Choi,4.4,What can we derive if we lack labeled training data to train accurate naive Bayes classifiers?,positive and negative features
+Dahyeon Choi,4.4,What are some popular sentiment lexicons?,"General Inquirer, LIWC, opinion lexicon of Hu and Liu, and MPQA Subjectivity Lexicon"
+Dahyeon Choi,4.5,What can change features to express any property of input text?,Naive Bayes
+Dahyeon Choi,4.5,What can non-linguistic features include in spam detection?,HTML details
+Dahyeon Choi,4.5,What are the most effective naive Bayes features?,character n-grams
+Dahyeon Choi,4.6,A naive Bayes model can be viewed as a set of what?,class-specific unigram language models
+Dahyeon Choi,4.7.0,Gold labels are human-defined labels for what?,documents
+Dahyeon Choi,4.7.0,What is a table visualizing how an algorithm performs with respect to human gold labels based on system output and gold labels?,confusion matrix
+Dahyeon Choi,4.7.0,What does each cell in a confusion matrix contain?,possible outcomes
+Dahyeon Choi,4.7.0,"Accuracy is not a good measurement for classifiers, so we turn to what?",precision and recall
+Dahyeon Choi,4.7.0,What is the percentage of items detected by the system that are in fact positive according to gold labels?,Precision
+Dahyeon Choi,4.7.0,What is the percentage of items actually present in input that were correctly identified?,Recall
+Dahyeon Choi,4.7.0,What is a single metric incorporating precision P and recall R?,F-measure
+Dahyeon Choi,4.7.0,What is the weighted mean of P and R?,harmonic mean
+Dahyeon Choi,4.7.1,Many classification involves what?,multiple classes
+Dahyeon Choi,4.7.1,What definitions must we modify to classify multiple classes?,precision and recall
+Dahyeon Choi,4.7.1,How do we combine precision and recall?,macroaveraging
+Dahyeon Choi,4.7.1,What is another way to combine precision and recall?,microaveraging
+Dahyeon Choi,4.8,Training and testing for text classification is similar to what?,language modeling
+Dahyeon Choi,4.8,What do we use to tune parameters and decide on the best model?,the development test set
+Dahyeon Choi,4.8,What randomly chooses a training and test set division of our data?,Cross-validation
+Dahyeon Choi,4.8,How many times does cross-validation give an average error rate?,10-fold
+Dahyeon Choi,4.8,What is the problem with cross-validation?,blind
+Dahyeon Choi,4.9.0,What is used to compare the performance of two systems?,Statistical significance testing
+Dahyeon Choi,4.9.0,"What is the performance difference between M(A,x) and M(A,b)?",delta(x)
+Dahyeon Choi,4.9.0,What is the effect size?,delta(x)
+Dahyeon Choi,4.9.0,What is the effect size?,larger
+Dahyeon Choi,4.9.0,"To check if system A is actually better than system B, we must check what over other test sets?",its superiority
+Dahyeon Choi,4.9.0,What is the null hypothesis that supposes that delta is negative or zero?,Hypothesis H_0
+Dahyeon Choi,4.9.0,What random variable is created over all test sets to find if we can rule out H_0?,X
+Dahyeon Choi,4.9.0,What determines a system difference is statistically significant?,the delta we saw has a probability under the threshold
+Dahyeon Choi,4.9.0,What are the two common non-parametric tests used in NLP?,approximate randomization and the bootstrap test
+Dahyeon Choi,4.9.0,What are tests where we compare two sets of aligned observations?,Paired tests
+Dahyeon Choi,4.9.1,What can apply to any metric?,bootstrap test
+Dahyeon Choi,4.9.1,The bootstrap test refers to repeatedly drawing what with replacement from an original larger sample?,large numbers of smaller samples
+Dahyeon Choi,4.9.1,What does the bootstrap test create from an observed test set?,virtual tests
+Dahyeon Choi,4.10,What can cause a variety of harms?,classifiers
+Dahyeon Choi,4.10,What class of harms are caused by a system that demeans a social group?,Representational
+Dahyeon Choi,4.10,"What aim to detect hate speech abuse, harassment, etc. but may act as censors instead?",Toxicity detection
+Dahyeon Choi,4.10,What can cause these issues?,biases in training data
+Dahyeon Choi,4.10,What is one way to study and clarify biases in training data?,releasing a model card
